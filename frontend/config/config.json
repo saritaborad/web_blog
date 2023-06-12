@@ -1,0 +1,60 @@
+{
+ "site": {
+  "title": "Athh Technology",
+  "base_url": "/",
+  "favicon": "/images/favicon.ico",
+  "logo": "Athh Technology",
+  "logo_white": "",
+  "logo_width": "150",
+  "logo_height": "39",
+  "logo_text": "Athh Technology"
+ },
+ "settings": {
+  "theme_switcher": true,
+  "default_theme": "system",
+  "pagination": 6,
+  "InnerPaginationOptions": {
+   "enableTop": false,
+   "enableBottom": true
+  },
+  "summary_length": 200,
+  "blog_folder": "posts"
+ },
+ "params": {
+  "tag_manager_id": "",
+  "footer_content": "Athh Technology is app development and web development company in surat.",
+  "copyright": "Designed and Developed By [Athh Technology](https://athh.co/)"
+ },
+ "metadata": {
+  "meta_author": "Statichunt",
+  "meta_image": "/images/og-image.png",
+  "meta_description": "Athh Technology"
+ },
+ "widgets": {
+  "about": {
+   "enable": true,
+   "content": "we are athh technolgy we work on app development and web development we are reputed service provider in app development sector"
+  },
+  "featured_posts": {
+   "enable": true,
+   "title": "Blog Categories",
+   "showPost": 3
+  },
+  "categories": {
+   "enable": true,
+   "title": "Blog Categories"
+  },
+  "newsletter": {
+   "enable": true,
+   "title": "Newsletter",
+   "content": "Join thousands of users and get ddaily blog on new topic!",
+   "privacy_policy_page": "/privacy-policy",
+   "malichipm_url": "http://localhost:3000/"
+  }
+ },
+ "disqus": {
+  "enable": true,
+  "shortname": "themefisher-template",
+  "settings": {}
+ }
+}

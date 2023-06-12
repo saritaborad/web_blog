@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind about;
+@tailwind footer;
+@tailwind post;
+@tailwind home;
+@tailwind contact;
+
+
+@layer base {
+  @import "base";
+}
+
+@layer components {
+  @import "components";
+  @import "navigation";
+  @import "buttons";
+  @import "about";
+  @import "footer";
+  @import "post";
+  @import "home";
+  @import "contact";
+}
+
+@layer utilities {
+  @import "utilities";
+}
+
+.bg-image {
+  background-image: url('/images/bg.png');
+  object-fit: cover;
+}
+

@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "featured_posts": {
+      "type": "json"
+    },
+    "promotion": {
+      "type": "json"
+    },
+    "recent_posts": {
+      "type": "json"
+    },
+    "banner": {
+      "type": "json"
+    }
+  }
+}

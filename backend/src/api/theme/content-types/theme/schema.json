@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "themes",
+  "info": {
+    "singularName": "theme",
+    "pluralName": "themes",
+    "displayName": "theme"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "colors": {
+      "type": "json"
+    },
+    "fonts": {
+      "type": "json"
+    }
+  }
+}

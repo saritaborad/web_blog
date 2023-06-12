@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "notfounds",
+  "info": {
+    "singularName": "notfound",
+    "pluralName": "notfounds",
+    "displayName": "notfound",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "draft": {
+      "type": "boolean"
+    }
+  }
+}

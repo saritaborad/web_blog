@@ -1,0 +1,2 @@
+https://www.figma.com/file/5HsZCAjNcEJQKD8eWqyHvA/Verselix-website-(24-02-2023)?type=design&node-id=144-3515&t=uwHuUAEK6hTPbyGX-0
+=> html, css, tailwind css

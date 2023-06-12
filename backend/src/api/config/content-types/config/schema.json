@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "configs",
+  "info": {
+    "singularName": "config",
+    "pluralName": "configs",
+    "displayName": "config",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "site": {
+      "type": "json"
+    },
+    "settings": {
+      "type": "json"
+    },
+    "params": {
+      "type": "json"
+    },
+    "metadata": {
+      "type": "json"
+    },
+    "widgets": {
+      "type": "json"
+    },
+    "menu": {
+      "type": "json"
+    },
+    "social": {
+      "type": "json"
+    }
+  }
+}
