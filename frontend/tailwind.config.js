@@ -24,11 +24,13 @@ module.exports = {
  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./layouts/**/*.{js,ts,jsx,tsx}", "./content/**/*.{md,mdx}"],
  theme: {
   screens: {
+   xs: "350px",
    sm: "540px",
    md: "768px",
    lg: "992px",
    xl: "1280px",
    "2xl": "1536px",
+   "3xl": "1700px",
   },
   container: {
    center: true,
@@ -36,6 +38,7 @@ module.exports = {
   },
   extend: {
    colors: {
+    linkColor: "#1F6BFF",
     text: theme.colors.default.text_color.default,
     dark: theme.colors.default.text_color.dark,
     primary: theme.colors.default.theme_color.primary,

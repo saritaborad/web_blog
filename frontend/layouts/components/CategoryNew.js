@@ -11,7 +11,7 @@ const CategoryNew = ({ categories }) => {
  };
 
  return (
-  <div className="cat-section">
+  <div className="cat-section xs:pl-2 sm:pl-8 3xl:pl-0">
    <p className="cat-title">recent articles</p>
    <p className="cat-sub">Browse the blog</p>
    <div className="cat-tabs">

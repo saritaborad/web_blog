@@ -13,7 +13,7 @@ const FooterNew = () => {
     <div className="">
      <Social source={social} className="footer-social" />
     </div>
-    <span className="footer-copy">Copyright © Verselix LLP 2023</span>
+    <span className="footer-copy xs:hidden">Copyright © Verselix LLP 2023</span>
    </div>
    <div className="footer-sec2">
     <Link href="/about" className="f-sec2">
@@ -49,12 +49,13 @@ const FooterNew = () => {
     <p className="f-sec5-title">Supercharge your inbox</p>
     <p className="f-sec5-desc">Sign up for our developer newsletter:</p>
     <div className="f-sec5-content">
-     <input placeholder="Enter Your Email" className="px-4 py-2" />
+     <input placeholder="Enter Email" className="px-4 py-2" />
      <button className="f-sec5-btn ">
       <img src="/images/arrow.svg" />
      </button>
     </div>
    </div>
+   <span className="footer-copy sm:hidden">Copyright © Verselix LLP 2023</span>
   </div>
  );
 };

@@ -57,9 +57,9 @@
   @apply prose-li:marker:dark:text-darkmode-light;
   
 
-  img + em {
-    @apply -mt-4 block text-center text-gray-500;
-  }
+  // img + em {
+  //   @apply -mt-4 block text-center text-gray-500;
+  // }
   blockquote {
     & > p {
       @apply relative text-2xl text-black;
@@ -184,12 +184,12 @@ footer .socials {
   @apply bg-theme-light dark:bg-darkmode-theme-dark;
 }
 
-.post {
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
+// .post {
+//   img {
+//     width: 100%;
+//     height: auto;
+//   }
+// }
 
 .single-blog {
   blockquote {
@@ -229,18 +229,33 @@ footer .socials {
 //navbar css
 
 .navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
+  // align-items: center;
   padding: 0px 50px;
-  position: absolute;
   max-width: 1920px;
-  width: 100%;
   height: 114px;
-  top: 0px;
+  // top: 0px;
+  // left:0px;
   background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(8px);
+  // backdrop-filter: blur(8px);
+  // z-index: 3;
+  
+}
+
+.nav-open {
+  background-color: #1D1C28;
+  color: white;
+  top: 114px;
+  font-family: 'Helvetica Now Display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.custom-icon {
+  color: black;
 }
 
 .nav-menu {
@@ -262,16 +277,21 @@ footer .socials {
   color: #FFFFFF;
 }
 
+.nav-item:hover {
+  color: #1F6BFF;
+  background: #181621;
+  padding: 44px  20px;
+  border-bottom: 2px solid #1F6BFF;
+}
+
 .nav-btn {
-  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 19px 60px;
   gap: 10px;
   background: #1F6BFF;
   color: white;
-  height: 50px;
+  min-height: 50px;
   font-family: 'Helvetica Now Display',sans-serif;
   font-style: normal;
 }
@@ -280,8 +300,8 @@ footer .socials {
 //banner section
 
 .banner {
-  width: 100%;
   max-width: 1920px;
+  width: 100%;
   height: 569px;
   position: relative;
   display: flex;
@@ -293,8 +313,6 @@ footer .socials {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   z-index: 0;
 }
