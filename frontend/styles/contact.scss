@@ -1,9 +1,11 @@
 .contact-main {
-    width: 1920px;
+    max-width: 1920px;
+    width: 100%;
 }
 
 .contact-container {
-    width: 1920px;
+    max-width: 1920px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,14 +15,16 @@
 
 
 .contact-inner {
-    width: 1563px;
+    max-width: 1563px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .contact-title {
-    width: 150px;
+    max-width: 150px;
+    width: 100%;
     height: 35px;
     font-family: 'Helvetica Now Display',sans-serif;
     font-style: normal;
@@ -56,7 +60,8 @@
     font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
-    width: 228px;
+    max-width: 228px;
+    width: 100%;
     height: 29px;
 }
 
@@ -68,7 +73,8 @@
     gap: 20px;
     margin-bottom: 10px;
     flex-wrap: wrap;
-    width: 841px;;
+    max-width: 841px;
+    width: 100%;
 }
 
 .cont-tab {
@@ -112,8 +118,9 @@
     align-items: center;
     padding: 0px;
     gap: 10px;
-    width: 841px;
-    height: 55px;
+    max-width: 841px;
+    width: 100%;
+    min-height: 55px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     background: transparent;
     font-family: 'Helvetica Now Display',sans-serif;
@@ -130,7 +137,8 @@
     align-items: center;
     padding: 0px;
     gap: 10px;
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
     height: 55px;
     background: #1F6BFF;
     font-family: 'Helvetica Now Display',sans-serif;
@@ -141,7 +149,8 @@
 }
 
 .info {
-    width: 608px;
+    max-width: 608px;
+    width: 100%;
     height: 753px;
     display: flex;
     justify-content: center;
@@ -150,7 +159,8 @@
 }
 
 .info-main {
-    width: 472px;
+    max-width: 472px;
+    width: 100%;
     height: 631px;
 }
 
@@ -218,7 +228,8 @@
     padding: 0px;
     gap: 15px;
     position: absolute;
-    width: 176px;
+    max-width: 176px;
+    width: 100%;
     height: 120px;
 }
 
@@ -236,7 +247,8 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 31px;
+  max-width: 31px;
+  width: 100%;
   height: 17px;
   
 }

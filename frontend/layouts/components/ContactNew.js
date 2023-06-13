@@ -37,8 +37,8 @@ const ContactNew = () => {
  return (
   <div className="contact-main">
    <BaseNew image="/images/contactbanner.png" isBanner={true}>
-    <div className="contact-container">
-     <div className="contact-inner">
+    <div className="contact-container ">
+     <div className="contact-inner grid grid-cols-1 ">
       <form className="contact-form" onSubmit={(e) => handleSubmit(e)}>
        <p className="contact-title">CONTACT</p>
        <p className="contact-desc">

@@ -15,11 +15,11 @@ const Authors = ({ authors }) => {
        </div>
       )}
       <h3 className="h4 mb-2">
-       <Link href={`/authors/${slugify(author?.name)}`} className="block  text-white hover:text-blue">
+       <Link href={`/authors/${slugify(author?.name)}`} className="block text-white hover:text-blue">
         {author?.name}
        </Link>
       </h3>
-      {markdownify(author?.about.slice(0, 120), "p",)}
+      {markdownify(author?.about.slice(0, 120), "p")}
      </div>
     ))}
   </div>
