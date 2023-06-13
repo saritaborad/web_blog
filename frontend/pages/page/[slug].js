@@ -18,44 +18,18 @@ const BlogPagination = ({ posts, currentPage, pagination, categories }) => {
  let smallcard = currentPosts.slice(2, 8)?.length > 0;
 
  return (
-  <BaseNew image={"/images/homebanner.png"} isBanner={true}>
-   <div className="flex flex-col justify-center items-center mt-12">
-    {/* {markdownify("Blog post", "h1", "h2 mb-8 text-center title-text")} */}
+  <div className="home-container">
+   <BaseNew image="/images/homebanner.png" isBanner={true}>
     <div className="home-main">
-     <div className="home-inner">
+     <div className="home-inner xxs:mx-4">
       <CategoryNew categories={categories} />
-      {bigcard && (
-       <div className={`big-post ${smallcard ? "" : "mb-12"}`}>
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
-         {currentPosts &&
-          currentPosts.length > 0 &&
-          currentPosts.slice(0, 2).map((post, i) => (
-           <div key={i} className="mb-4 sm:mb-0">
-            <BigCard post={post} />
-           </div>
-          ))}
-        </div>
-       </div>
-      )}
-
-      {smallcard && (
-       <div className={`small-post ${smallcard ? "mb-12" : ""}`}>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-12">
-         {currentPosts &&
-          currentPosts.length > 0 &&
-          currentPosts.slice(2, 5).map((post, i) => (
-           <div key={i} className="mb-4 sm:mb-0">
-            <Card post={post} />
-           </div>
-          ))}
-        </div>
-       </div>
-      )}
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 big-post">{bigcard && currentPosts.length > 0 && currentPosts.slice(0, 2).map((post, i) => <BigCard post={post} key={i} />)}</div>
+      <div className="grid grid-cols-1 xs:gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 small-post">{smallcard && currentPosts.length > 0 && currentPosts.slice(2, 5).map((post, i) => <Card post={post} key={i} />)}</div>
      </div>
     </div>
     <Pagination totalPages={totalPages} currentPage={currentPage} />
-   </div>
-  </BaseNew>
+   </BaseNew>
+  </div>
  );
 };
 

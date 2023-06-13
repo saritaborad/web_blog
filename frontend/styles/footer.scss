@@ -115,13 +115,13 @@
 
   
   .f-sec5-title {
-    height: 24px;
+    min-height: 24px;
+    height: 100%;
     font-family: 'Syne', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    text-align: center;
     text-transform: uppercase;
     background: linear-gradient(90deg, #2496FF 0%, #D47AFF 100%);
     -webkit-background-clip: text;
@@ -135,7 +135,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    text-align: center;
     color: #FFFFFF;
     margin-bottom: 25px;
   }

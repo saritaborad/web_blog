@@ -31,7 +31,7 @@ const PostSingle = ({ post, slug, posts, allCategories, relatedPosts }) => {
  return (
   <BaseNew isBanner={false} image={"/images/homebanner.png"}>
    <div className="spost-main">
-    <div className="spost-container">
+    <div className="spost-container xxs:mx-8 2xl:mx-0">
      {markdownify(title, "h1", "lg:text-[42px] mt-4 post-title")}
      <div className="text-center">{image && <img src={"http://127.0.0.1:1337" + image.url} height="500" style={{ maxWidth: "100%" }} alt={title} className="rounded-lg" />}</div>
      {config.settings.InnerPaginationOptions.enableTop && (
@@ -76,15 +76,13 @@ const PostSingle = ({ post, slug, posts, allCategories, relatedPosts }) => {
 
    {/* Related posts */}
    {relatedPosts.length > 0 && (
-    <div className="rel-main">
-     <div className="related">
-      <div className="flex flex-col mt-20 ">
-       <h2 className="section-title title-text">Related Posts</h2>
-       <div className="mt-10 flex gap-4">
+    <div className="rel-main mb-10">
+     <div className="related xs:flex xs:justify-center">
+      <div className="mt-20">
+       <h2 className="section-title title-text xs:ml-4 ">Related Posts</h2>
+       <div className="mt-10 xxs:mx-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {relatedPosts.slice(0, 3).map((post, index) => (
-         <div key={"post-" + index} className="mb-12">
-          <Card post={post} />
-         </div>
+         <Card post={post} key={index} />
         ))}
        </div>
       </div>

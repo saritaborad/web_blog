@@ -11,12 +11,12 @@ const CategoryNew = ({ categories }) => {
  };
 
  return (
-  <div className="cat-section xs:pl-2 sm:pl-8 3xl:pl-0">
+  <div className="cat-section xxs:pl-4 xs:pl-4 sm:pl-8 3xl:pl-0 ">
    <p className="cat-title">recent articles</p>
-   <p className="cat-sub">Browse the blog</p>
-   <div className="cat-tabs">
+   <p className="cat-sub md:mb-8">Browse the blog</p>
+   <div className="cat-tabs xxs:hidden md:block md:flex">
     {categories.map((cat) => (
-     <button key={cat.id} className={`cat-btn ${activeButton === cat.id ? "active" : ""}`} onClick={() => handleButtonClick(cat.id, cat.name)}>
+     <button key={cat.id} className={`cat-btn  ${activeButton === cat.id ? "active" : ""}`} onClick={() => handleButtonClick(cat.id, cat.name)}>
       {cat.name}
      </button>
     ))}

@@ -15,10 +15,10 @@ const HomeNew = ({ posts, categories }) => {
   <div className="home-container">
    <BaseNew image="/images/homebanner.png" isBanner={true}>
     <div className="home-main">
-     <div className="home-inner">
+     <div className="home-inner xxs:mx-4">
       <CategoryNew categories={categories} />
       <div className="grid grid-cols-1 sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-2 gap-4 big-post">{sortPostByDate && sortPostByDate.length > 0 && sortPostByDate.slice(0, 2).map((post, i) => <BigCard post={post} key={i} />)}</div>
-      <div className="grid grid-cols-1 xs:gap-10 sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 small-post">{sortPostByDate && sortPostByDate.length > 0 && sortPostByDate.slice(2, 8).map((post, i) => <Card post={post} key={i} />)}</div>
+      <div className="grid grid-cols-1 xs:gap-10 sm:grid-cols-1 sm:flex sm:justify-center md:grid-cols-2 lg:grid-cols-3 gap-4 small-post">{sortPostByDate && sortPostByDate.length > 0 && sortPostByDate.slice(2, 8).map((post, i) => <Card post={post} key={i} />)}</div>
      </div>
     </div>
     <Pagination totalPages={Math.ceil(posts.length / showPosts)} currentPage={1} />

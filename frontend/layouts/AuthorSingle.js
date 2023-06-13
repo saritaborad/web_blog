@@ -2,7 +2,6 @@ import { markdownify } from "/lib/utils/textConverter";
 import shortcodes from "/layouts/shortcodes/all";
 import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
-import Base from "/layouts/Baseof";
 import Social from "/layouts/components/Social";
 import { useEffect, useState } from "react";
 import parseMDX from "@/lib/utils/mdxParser";

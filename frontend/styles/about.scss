@@ -4,14 +4,17 @@
     flex-direction: column;
     align-items: center;
     padding: 0px;
-    width: 1920px
+    max-width: 1920px;
+    width: 100%;
     
     // overflow-y: scroll;
   }
   
   .about-sec1 {
-    width: 1920px;
-    height: 959px;
+    max-width: 1920px;
+    width: 100%;
+    min-height: 959px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,14 +23,17 @@
   .sec1-main {
     display: flex;
     flex-direction: row;
-    width: 1425px;
-    height: 681.84px;
+    max-width: 1425px;
+    width: 100%;
+    max-height: 681.84px;
+    height: 100%;
     justify-content: space-between;
     align-items: center;
   }
   
   .sec1-sub {
-    width: 607px;
+    max-width: 607px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -46,13 +52,15 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-    width: 250px;
-    height: 35px;
+    max-width: 250px;
+    width: 100%;
+    max-height: 35px;
   }
   
   .sec1-content {
    display: flex;
-   flex-direction: column;gap: 15px;
+   flex-direction: column;
+   gap: 15px;
   }
   
   .sec1-subtitle {
@@ -88,13 +96,17 @@
   }
   
   .sec2-main {
-    width: 1302px;
-    height: 863px;
+    max-width: 1302px;
+    width: 100%;
+    max-height: 863px;
+    height: 100%;
   }
   
   .sec2-sub {
-    width: 1265px;
-    height: 405px;
+    max-width: 1265px;
+    width: 100%;
+    max-height: 405px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -103,8 +115,10 @@
   }
   
   .sec2-img {
-    width: 397px;
-    height: 394px;
+    max-width: 397px;
+    width: 100%;
+    max-height: 394px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,8 +126,10 @@
   }
   
   .sec2-content {
-    width: 729px;
-    height: 288px;
+    max-width: 729px;
+    width: 100%;
+    max-height: 288px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,8 +147,10 @@
   }
   
   .sec2-desc {
-    width: 729px;
-    height: 209px;
+    max-width: 729px;
+    width: 100%;
+    max-height: 209px;
+    height: 100%;
     font-family: 'Helvetica Now Display', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -143,8 +161,10 @@
   }
   
   .about-sec3 {
-    width: 1920px;
-    height: 655px;
+    max-width: 1920px;
+    width: 100%;
+    min-height: 655px;
+    height: 100%;
     position: relative;
   }
   
@@ -154,8 +174,10 @@
     align-items: flex-start;
     padding: 0px;
     position: absolute;
-    width: 1563px;
-    height: 374px;
+    max-width: 1563px;
+    width: 100%;
+    max-height: 374px;
+    height: 100%;
     left: calc(50% - 1563px/2 - 0.5px);
     top: calc(50% - 374px/2 + 0.5px);
   }
@@ -166,12 +188,15 @@
     align-items: flex-start;
     padding: 40px;
     gap: 26px;  
-    width: 521px;
-    height: 374px;
+    max-width: 521px;
+    width: 100%;
+    max-height: 374px;
+    height: 100%;
   }
   
   .sec3-num {
-    width: 21px;
+    max-width: 21px;
+    width: 100%;
     height: 29px;  
     font-family: 'Helvetica Now Display', sans-serif;
     font-style: normal;
@@ -182,14 +207,16 @@
   }
   
   .sec3-line {
-    width: 441px;
+    max-width: 441px;
+    width: 100%;
     height: 0px;
     border: 1px solid #5B596A;
   }
   
   .sec3-title {
-    width: 441px;
-    height: 43px;  
+    max-width: 441px;
+    width: 100%;
+    max-height: 43px;  
     font-family: 'Syne', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -199,8 +226,9 @@
   }
   
   .sec3-desc {
-    width: 441px;
-    height: 144px;
+    max-width: 441px;
+    width: 100%;
+    max-height: 144px;
     font-family: 'Helvetica Now Display', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -223,7 +251,7 @@
     background-clip: text;
     text-fill-color: transparent;
     // width: 500px;
-    height: 35px;
+    min-height: 35px;
   }
 
   

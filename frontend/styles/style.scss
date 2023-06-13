@@ -30,5 +30,7 @@
 .bg-image {
   background-image: url('/images/bg.png');
   object-fit: cover;
+  max-width: 1920px;
+  width: 100%;
 }
 

@@ -1,4 +1,4 @@
-import { humanize, markdownify } from "/lib/utils/textConverter";
+import { markdownify } from "/lib/utils/textConverter";
 import Link from "next/link";
 import { slugify } from "/lib/utils/textConverter";
 import axios from "axios";
@@ -10,9 +10,9 @@ const Categories = ({ categories }) => {
   <div className="home-container">
    <BaseNew image="/images/homebanner.png">
     <section className="">
-     {markdownify("Categories", "h2", "h2 py-12 lg:text-[40px] title-text text-center")}
+     {markdownify("Categories", "h2", "h2 py-12 lg:text-[40px] title-text text-center ")}
      <div className="container pt-12 text-center pb-12">
-      <div className="cat-tabs">
+      <div className="cat-tabs xxs:flex xxs:justify-center">
        {categories.map((cat, i) => (
         <Link key={i} href={`/categories/${cat.name.replace(" ", "-")}`} className={`cat-btn`}>
          {cat.name}

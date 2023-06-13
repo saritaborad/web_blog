@@ -1,10 +1,6 @@
-import Base from "/layouts/Baseof";
-import Sidebar from "/layouts/partials/Sidebar";
 import { slugify } from "/lib/utils/textConverter";
-import Post from "/layouts/partials/Post";
 import axios from "axios";
 import { GET_ALL_CATEGORY, GET_ALL_POST } from "/query/strapiQuery";
-import CategoryNew from "@/layouts/components/CategoryNew";
 import BaseNew from "@/layouts/components/BaseNew";
 import BigCard from "@/layouts/components/BigCard";
 import Card from "@/layouts/components/Card";
@@ -15,13 +11,14 @@ const Category = ({ postsByCategories, category, posts, categories }) => {
  let smallcard = postsByCategories.slice(2, 8)?.length > 0;
  return (
   <BaseNew image="/images/homebanner.png">
-   <div className="flex flex-col justify-center items-center mt-12">
+   <div className="flex flex-col justify-center items-center mt-12 xxs:mx-4">
     <h1 className="h2 text-white justify-start title-text">
      Showing posts from
-     <span className="section-title ml-1 inline-block capitalize text-white">{category.replace("-", " ")}</span>
+     <span className="section-title ml-1  capitalize text-white">{category.replace("-", " ")}</span>
     </h1>
-    {bigcard && <div className={`big-post ${smallcard ? "" : "mb-12"}`}>{postsByCategories && postsByCategories.length > 0 && postsByCategories.slice(0, 2).map((post, i) => <BigCard post={post} key={i} />)}</div>}
-    {smallcard && <div className={`small-post ${smallcard ? "mb-12" : ""}`}>{postsByCategories && postsByCategories.length > 0 && postsByCategories.slice(2, 8).map((post, i) => <Card post={post} key={i} />)}</div>}
+    {bigcard && <div className={`grid grid-cols-1 sm:grid-cols-1  md:grid-cols-2 lg:grid-cols-2 gap-4 big-post ${smallcard ? "" : "mb-10"}`}>{postsByCategories && postsByCategories.length > 0 && postsByCategories.slice(0, 2).map((post, i) => <BigCard post={post} key={i} />)}</div>}
+
+    {smallcard && <div className={`grid grid-cols-1 xs:gap-10 sm:grid-cols-1 ${postsByCategories.slice(2, 8)?.length === 2 ? "md:grid-cols-2" : "md:grid-cols-3"}  lg:grid-cols-3 gap-4 small-post ${smallcard ? "mb-10" : ""}`}>{postsByCategories && postsByCategories.length > 0 && postsByCategories.slice(2, 8).map((post, i) => <Card post={post} key={i} />)}</div>}
    </div>
   </BaseNew>
  );

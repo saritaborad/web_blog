@@ -23,7 +23,7 @@ const Card = ({ post }) => {
       {dateFormat(post.createdAt)} By {post.authors[0]?.name}
      </span>
      <div className="card-read-sec">
-      <Link href={`/posts/${post.slug}`} className="card-read-txt px-3">
+      <Link href={`/posts/${post.slug}`} className="card-read-txt pr-2">
        Read More
       </Link>
       <svg className="card-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
