@@ -6,14 +6,13 @@ import ImageFallback from "/layouts/components/ImageFallback";
 import Logo from "/layouts/components/Logo";
 import { markdownify } from "/lib/utils/textConverter";
 import Link from "next/link";
-import { fetchConfig } from "@/commonApi";
-import { useConfig } from "@/hooks/customHook";
+// import { fetchConfig } from "@/commonApi";
 
 const Footer = () => {
- const configData = useConfig();
- let menu = configData ? configData.menu : menu1;
- const { copyright = "", footer_content = "" } = configData ? configData.params : config.params;
- let social = configData ? configData.social : social1;
+ //  const configData = useConfig();
+ let menu = menu1;
+ const { copyright = "", footer_content = "" } =  config.params;
+ let social = social1;
 
  return (
   <footer className="section relative mt-12 pt-[70px] pb-[50px]">
@@ -21,7 +20,7 @@ const Footer = () => {
    <div className="container text-center">
     {/* logo goes here */}
     <div className="mb-6 inline-flex">
-     <Logo configData={configData} />
+     {/* <Logo configData={configData} /> */}
     </div>
     {markdownify(footer_content, "p", "max-w-[638px] mx-auto")}
 

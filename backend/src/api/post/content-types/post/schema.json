@@ -26,12 +26,6 @@
         "audios"
       ]
     },
-    "featured": {
-      "type": "boolean"
-    },
-    "draft": {
-      "type": "boolean"
-    },
     "content": {
       "type": "richtext"
     },
@@ -39,12 +33,6 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::category.category",
-      "mappedBy": "posts"
-    },
-    "authors": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::author.author",
       "mappedBy": "posts"
     },
     "slug": {
@@ -56,6 +44,12 @@
     },
     "meta_title": {
       "type": "string"
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::author.author",
+      "mappedBy": "posts"
     }
   }
 }

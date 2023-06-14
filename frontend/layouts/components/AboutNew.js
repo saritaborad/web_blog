@@ -3,9 +3,9 @@ import BaseNew from "./BaseNew";
 
 const AboutNew = () => {
  return (
-  <div className="about-container ">
+  <div className="about-container">
    <BaseNew image={"/images/aboutbanner.png"} isBanner={true}>
-    <div className="about-sec1   xxs:px-4 xxs:my-8 md:p-0">
+    <div className="about-sec1   xxs:px-4 xxs:my-8 md:px-4 ">
      <div className="sec1-main gap-2">
       <div className="sec1-sub gap-4">
        <p className="sec1-title">ABOUT US</p>

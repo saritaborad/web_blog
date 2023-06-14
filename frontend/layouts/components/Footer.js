@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Social from "./Social";
 import Link from "next/link";
 
 const FooterNew = () => {
+ const [email, setEmail] = useState();
  let social = { twitter: "https://www.twitter.com", facebook: "https://www.facebook.com", linkedin: "https://www.linkedin.com", instagram: "https://www.instagram.com" };
+
+ const handleSubmit = (e) => {
+  e.preventDefault();
+  console.log(email);
+ };
+
  return (
   //   <div className="mx-auto">
   <div className="footer grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 ">
@@ -49,9 +56,9 @@ const FooterNew = () => {
    <div className="footer-sec5">
     <p className="f-sec5-title">Supercharge your inbox</p>
     <p className="f-sec5-desc">Sign up for our developer newsletter:</p>
-    <form className="f-sec5-content">
-     <input placeholder="Enter Email" className="p-2 w-2/3 xs:p-0" />
-     <button className="f-sec5-btn w-1/3 xs:w-1/4">
+    <form className="f-sec5-content" onSubmit={(e) => handleSubmit(e)}>
+     <input placeholder="Enter Email" name="email" onChange={(e) => setEmail(e.target.value)} className="p-2 w-2/3 xs:p-0  xxs:placeholder:text-sm   md:placeholder:text-lg" />
+     <button className="f-sec5-btn w-1/3 xs:w-1/4" type="submit">
       <img src="/images/arrow.svg" />
      </button>
     </form>

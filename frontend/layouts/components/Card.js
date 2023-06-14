@@ -5,7 +5,9 @@ import React from "react";
 const Card = ({ post }) => {
  return (
   <div className="card rounded overflow-hidden shadow-lg">
-   <img className="card-img" src={"http://127.0.0.1:1337" + post.image.url} alt={post.title} />
+   <Link href={`/posts/${post.slug}`}>
+    <img className="card-img" src={"http://127.0.0.1:1337" + post.image.url} alt={post.title} />
+   </Link>
    <div className="card-content">
     <div className="card-tags">
      {post.categories?.length > 0 &&
@@ -19,9 +21,7 @@ const Card = ({ post }) => {
      {post.title}
     </Link>
     <div className="card-dt-section">
-     <span className="card-dt">
-      {dateFormat(post.createdAt)} By {post.authors[0]?.name}
-     </span>
+     <span className="card-dt">{/* {dateFormat(post.createdAt)} By {post.authors[0]?.name} */}</span>
      <div className="card-read-sec">
       <Link href={`/posts/${post.slug}`} className="card-read-txt pr-2">
        Read More

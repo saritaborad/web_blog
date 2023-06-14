@@ -5,7 +5,9 @@ import React from "react";
 const BigCard = ({ post }) => {
  return (
   <div className="bigcard rounded overflow-hidden shadow-lg">
-   <img className="bigcard-img" src={"http://127.0.0.1:1337" + post.image.url} alt={post.title} />
+   <Link href={`/posts/${post.slug}`}>
+    <img className="bigcard-img" src={"http://127.0.0.1:1337" + post.image.url} alt={post.title} />
+   </Link>
    <div className="bigcard-content">
     <div className="bigcard-tags">
      {post.categories?.length > 0 &&

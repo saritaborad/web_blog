@@ -15,16 +15,16 @@ export function useConfig() {
  return configData;
 }
 
-export function useThemeData() {
- const [themeData, setThemeData] = useState(null);
+// export function useThemeData() {
+//  const [themeData, setThemeData] = useState(null);
 
- useEffect(() => {
-  async function loadTheme() {
-   const res = await fetchTheme();
-   setThemeData(res?.data);
-  }
-  loadTheme();
- }, []);
+//  useEffect(() => {
+//   async function loadTheme() {
+//    const res = await fetchTheme();
+//    setThemeData(res?.data);
+//   }
+//   loadTheme();
+//  }, []);
 
- return themeData;
-}
+//  return themeData;
+// }

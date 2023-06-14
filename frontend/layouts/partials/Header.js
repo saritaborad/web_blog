@@ -8,12 +8,10 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { IoSearch } from "react-icons/io5";
-import { useConfig } from "@/hooks/customHook";
 
 const Header = () => {
- const configData = useConfig();
- const { main } = configData ? configData?.menu : menu;
- const social = configData ? configData?.social : socialLink;
+ const { main } = menu;
+ const social = socialLink;
 
  const [searchModal, setSearchModal] = useState(false);
  const [showMenu, setShowMenu] = useState(false);
@@ -35,7 +33,7 @@ const Header = () => {
    <nav className="navbar container px-1 sm:px-8">
     <div className="order-0">
      {/* put logo here */}
-     <Logo configData={configData} />
+     {/* <Logo configData={configData} /> */}
     </div>
     <div className="flex items-center space-x-4 xl:space-x-8">
      <div className={`collapse-menu ${!showMenu && "translate-x-full"} lg:flex lg:translate-x-0`}>

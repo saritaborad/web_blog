@@ -1,4 +1,3 @@
-import { useConfig } from "@/hooks/customHook";
 import config from "/config/config.json";
 import social1 from "/config/social.json";
 import ImageFallback from "/layouts/components/ImageFallback";
@@ -12,9 +11,7 @@ import { useState } from "react";
 import { FaRegCalendar } from "react-icons/fa";
 
 const Sidebar = ({ posts, categories, className }) => {
- const configData = useConfig();
-
- let social = configData ? configData?.social : social1;
+ let social = social1;
  const { about = "", featured_posts = [] } = configData ? configData.widgets : config.widgets;
 
  const sortPostByDate = sortByDate(posts);
@@ -29,7 +26,7 @@ const Sidebar = ({ posts, categories, className }) => {
     <div className="relative rounded border border-border p-6 text-center dark:border-darkmode-border">
      <ImageFallback className="-z-[1]" src="/images/map.svg" fill={true} alt="bg-map" />
      {/* put logo here */}
-     <Logo configData={configData} />
+     {/* <Logo configData={configData} /> */}
 
      {markdownify(about.content, "p", "mt-8")}
      <Social className="socials sidebar-socials mt-6 justify-center" source={social} />

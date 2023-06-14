@@ -4,14 +4,13 @@ import Footer from "/layouts/partials/Footer";
 import Header from "/layouts/partials/Header";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { useConfig } from "@/hooks/customHook";
 
 const Base = ({ title, meta_title, description, image, noindex, canonical, children }) => {
- const configData = useConfig();
+ //  const configData = useConfig();
  const router = useRouter();
 
- const { meta_image, meta_author, meta_description } = configData ? configData?.metadata : config.metadata;
- const { base_url } = configData ? configData?.site : config.site;
+ //  const { meta_image, meta_author, meta_description } = configData ? configData?.metadata : config.metadata;
+ //  const { base_url } = configData ? configData?.site : config.site;
 
  return (
   <div className="bg-image">

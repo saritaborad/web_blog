@@ -1,12 +1,9 @@
 import TwSizeIndicator from "/layouts/components/TwSizeIndicator";
 import config from "/config/config.json";
 import { Head, Html, Main, NextScript } from "next/document";
-import { useConfig } from "@/hooks/customHook";
 
 const Document = () => {
- const configData = useConfig();
-
- const { favicon } = configData ? configData.site : config.site;
+ const { favicon } = config.site;
  return (
   <Html lang="en">
    <Head>

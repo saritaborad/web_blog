@@ -8,22 +8,20 @@ import TagManager from "react-gtm-module";
 import "styles/style.scss";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useConfig, useThemeData } from "@/hooks/customHook";
+import { useConfig } from "@/hooks/customHook";
 
 const App = ({ Component, pageProps }) => {
- const configData = useConfig();
- const themeData = useThemeData();
+ //  const themeData = useThemeData();
 
- let theme = themeData ? themeData : theme1;
- const { default_theme } = configData ? configData.settings : config.settings;
+ let theme = theme1;
+ const { default_theme } = config.settings;
 
  // import google font css
  const pf = theme.fonts.font_family.primary;
  const sf = theme.fonts.font_family.secondary;
  const [fontcss, setFontcss] = useState();
  useEffect(() => {
-     fetch(`https://fonts.googleapis.com/css2?family=${pf}${sf ? "&family=" + sf : ""}&display=swap`).then((res) => res.text().then((css) => setFontcss(css)));
-     
+  fetch(`https://fonts.googleapis.com/css2?family=${pf}${sf ? "&family=" + sf : ""}&display=swap`).then((res) => res.text().then((css) => setFontcss(css)));
  }, [pf, sf]);
 
  // google tag manager (gtm)

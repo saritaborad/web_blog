@@ -8,7 +8,7 @@ import parseMDX from "@/lib/utils/mdxParser";
 import BaseNew from "./components/BaseNew";
 
 const AuthorSingle = ({ author }) => {
- const { description, social, name, about, image } = author[0];
+ const { description, social, name, about, image,posts } = author[0];
  const [mdxContent, setMdxContent] = useState();
 
  useEffect(() => {

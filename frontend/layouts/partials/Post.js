@@ -1,4 +1,3 @@
-import { useConfig } from "@/hooks/customHook";
 import config from "/config/config.json";
 import ImageFallback from "/layouts/components/ImageFallback";
 import dateFormat from "/lib/utils/dateFormat";
@@ -6,8 +5,7 @@ import Link from "next/link";
 import { FaRegCalendar, FaUserAlt } from "react-icons/fa";
 
 const Post = ({ post }) => {
- const configData = useConfig();
- const { summary_length } = configData ? configData.settings : config.settings;
+ const { summary_length } = config.settings;
 
  return (
   <div className="post">

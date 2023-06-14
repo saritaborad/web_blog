@@ -9,15 +9,13 @@ import shortcodes from "./shortcodes/all";
 import parseMDX from "/lib/utils/mdxParser";
 import { useEffect, useState } from "react";
 import { slugify } from "/lib/utils/textConverter";
-import { useConfig } from "@/hooks/customHook";
+
 import BaseNew from "./components/BaseNew";
 import Card from "./components/Card";
 
 const PostSingle = ({ post, slug, posts, allCategories, relatedPosts }) => {
- const configData = useConfig();
-
  let { title, createdAt, image, categories, authors, content } = post;
- let config = configData ? configData : config1;
+ let config = config1;
 
  const [mdxContent, setMdxContent] = useState("");
 

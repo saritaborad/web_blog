@@ -15,11 +15,11 @@
     "name": {
       "type": "string"
     },
-    "posts": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::post.post",
-      "inversedBy": "authors"
+    "social": {
+      "type": "json"
+    },
+    "about": {
+      "type": "richtext"
     },
     "image": {
       "type": "media",
@@ -32,14 +32,11 @@
         "audios"
       ]
     },
-    "description": {
-      "type": "text"
-    },
-    "social": {
-      "type": "json"
-    },
-    "about": {
-      "type": "richtext"
+    "posts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::post.post",
+      "inversedBy": "authors"
     }
   }
 }

@@ -8,10 +8,10 @@ import BaseNew from "@/layouts/components/BaseNew";
 const Categories = ({ categories }) => {
  return (
   <div className="home-container">
-   <BaseNew image="/images/homebanner.png">
+   <BaseNew image="/images/homebanner.png" isBanner={true}>
     <section className="">
      {markdownify("Categories", "h2", "h2 py-12 lg:text-[40px] title-text text-center ")}
-     <div className="container pt-12 text-center pb-12">
+     <div className="container pt-6 text-center pb-12">
       <div className="cat-tabs xxs:flex xxs:justify-center">
        {categories.map((cat, i) => (
         <Link key={i} href={`/categories/${cat.name.replace(" ", "-")}`} className={`cat-btn`}>
