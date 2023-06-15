@@ -1,10 +1,10 @@
 import React from "react";
-import BaseNew from "./BaseNew";
+import Base from "./Base";
 
-const AboutNew = () => {
+const About = () => {
  return (
   <div className="about-container">
-   <BaseNew image={"/images/aboutbanner.png"} isBanner={true}>
+   <Base image={"/images/aboutbanner.png"} isBanner={true}>
     <div className="about-sec1   xxs:px-4 xxs:my-8 md:px-4 ">
      <div className="sec1-main gap-2">
       <div className="sec1-sub gap-4">
@@ -84,9 +84,9 @@ const AboutNew = () => {
       </div>
      </div>
     </div>
-   </BaseNew>
+   </Base>
   </div>
  );
 };
 
-export default AboutNew;
+export default About;

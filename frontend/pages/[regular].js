@@ -3,12 +3,12 @@ import NotFound from "/layouts/404";
 import Default from "/layouts/Default";
 import { GET_ALL_SLUGS, GET_NOTFOUND_PAGE, GET_PRIVACY_PAGE } from "@/query/strapiQuery";
 import PrivacyPolicy from "@/layouts/PrivacyPolicy";
-import AboutNew from "@/layouts/components/AboutNew";
-import ContactNew from "@/layouts/components/ContactNew";
+import About from "@/layouts/components/About";
+import Contact from "@/layouts/components/Contact";
 
 // for all regular pages
 const RegularPages = ({ data, slug, notFound, privacy }) => {
- return <>{slug === "404" ? <NotFound data={notFound} /> : slug === "about" ? <AboutNew /> : slug === "contact" ? <ContactNew /> : slug === "privacy-policy" ? <PrivacyPolicy data={privacy} /> : <Default data={data} />}</>;
+ return <>{slug === "404" ? <NotFound data={notFound} /> : slug === "about" ? <About /> : slug === "contact" ? <Contact /> : slug === "privacy-policy" ? <PrivacyPolicy data={privacy} /> : <Default data={data} />}</>;
 };
 export default RegularPages;
 

@@ -3,7 +3,7 @@ import { markdownify } from "/lib/utils/textConverter";
 import React, { useEffect, useState } from "react";
 import { MDXRemote } from "next-mdx-remote";
 import shortcodes from "./shortcodes/all";
-import BaseNew from "./components/BaseNew";
+import Base from "./components/Base";
 
 const PrivacyPolicy = ({ data }) => {
  const [mdxContent, setMdxContent] = useState();
@@ -17,7 +17,7 @@ const PrivacyPolicy = ({ data }) => {
  }, []);
 
  return (
-  <BaseNew>
+  <Base>
    <section className="section flex justify-center">
     <div className="privacy xxs:mx-8">
      {markdownify(title, "h2", "h2 mb-8 lg:text-[40px] title-text text-center")}
@@ -28,7 +28,7 @@ const PrivacyPolicy = ({ data }) => {
      )}
     </div>
    </section>
-  </BaseNew>
+  </Base>
  );
 };
 

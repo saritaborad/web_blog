@@ -4,7 +4,7 @@ import Banner from "./Banner";
 import Request from "./Request";
 import FooterNew from "./Footer";
 
-const BaseNew = ({ image, isBanner, children }) => {
+const Base = ({ image, isBanner, children }) => {
  return (
   <div className="bg-image">
    <Navbar />
@@ -16,4 +16,4 @@ const BaseNew = ({ image, isBanner, children }) => {
  );
 };
 
-export default BaseNew;
+export default Base;

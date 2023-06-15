@@ -9,8 +9,7 @@ import shortcodes from "./shortcodes/all";
 import parseMDX from "/lib/utils/mdxParser";
 import { useEffect, useState } from "react";
 import { slugify } from "/lib/utils/textConverter";
-
-import BaseNew from "./components/BaseNew";
+import Base from "./components/Base";
 import Card from "./components/Card";
 
 const PostSingle = ({ post, slug, posts, allCategories, relatedPosts }) => {
@@ -27,7 +26,7 @@ const PostSingle = ({ post, slug, posts, allCategories, relatedPosts }) => {
  }, []);
 
  return (
-  <BaseNew isBanner={false} image={"/images/homebanner.png"}>
+  <Base isBanner={false} image={"/images/homebanner.png"}>
    <div className="spost-main">
     <div className="spost-container xxs:mx-8 2xl:mx-0">
      {markdownify(title, "h1", "lg:text-[42px] mt-4 post-title")}
@@ -86,7 +85,7 @@ const PostSingle = ({ post, slug, posts, allCategories, relatedPosts }) => {
      </div>
     </div>
    )}
-  </BaseNew>
+  </Base>
  );
 };
 

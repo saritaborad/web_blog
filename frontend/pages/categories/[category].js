@@ -1,7 +1,7 @@
 import { slugify } from "/lib/utils/textConverter";
 import axios from "axios";
 import { GET_ALL_CATEGORY, GET_ALL_POST } from "/query/strapiQuery";
-import BaseNew from "@/layouts/components/BaseNew";
+import Base from "@/layouts/components/Base";
 import BigCard from "@/layouts/components/BigCard";
 import Card from "@/layouts/components/Card";
 
@@ -10,7 +10,7 @@ const Category = ({ postsByCategories, category, posts, categories }) => {
  let bigcard = postsByCategories.slice(0, 2)?.length > 0;
  let smallcard = postsByCategories.slice(2, 8)?.length > 0;
  return (
-  <BaseNew image="/images/homebanner.png">
+  <Base image="/images/homebanner.png">
    <div className="flex flex-col justify-center items-center mt-12 xxs:mx-4">
     <h1 className="h2 text-white justify-start title-text">
      Showing posts from
@@ -20,7 +20,7 @@ const Category = ({ postsByCategories, category, posts, categories }) => {
 
     {smallcard && <div className={`grid grid-cols-1 xs:gap-10 sm:grid-cols-1 ${postsByCategories.slice(2, 8)?.length === 2 ? "md:grid-cols-2" : "md:grid-cols-3"}  lg:grid-cols-3 gap-4 small-post ${smallcard ? "mb-10" : ""}`}>{postsByCategories && postsByCategories.length > 0 && postsByCategories.slice(2, 8).map((post, i) => <Card post={post} key={i} />)}</div>}
    </div>
-  </BaseNew>
+  </Base>
  );
 };
 

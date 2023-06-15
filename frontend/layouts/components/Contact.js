@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import BaseNew from "./BaseNew";
+import Base from "./Base";
 import ContactInfo from "./ContactInfo";
 import Link from "next/link";
 import emailjs from "@emailjs/browser";
 
-const ContactNew = () => {
+const Contact = () => {
  const [contact, setContact] = useState({});
  let interest = ["Site from scratch", "App from scratch", "UX/UI design", "Blockchain", "Mobile development", "Web development", "Website", "Maintenance"];
 
@@ -36,7 +36,7 @@ const ContactNew = () => {
 
  return (
   <div className="contact-main">
-   <BaseNew image="/images/contactbanner.png" isBanner={true}>
+   <Base image="/images/contactbanner.png" isBanner={true}>
     <div className="contact-container">
      <div className="contact-inner grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xxs:mx-6 md:mx-8 md:gap-4">
       <div>
@@ -58,11 +58,11 @@ const ContactNew = () => {
           );
          })}
         </div>
-        <input className="contact-input" placeholder="Your Name" name="name" onChange={(e) => handleChange(e)} />
-        <input className="contact-input" placeholder="Your Email" name="email" onChange={(e) => handleChange(e)} />
-        <input className="contact-input" placeholder="Tell us about your project" name="project" onChange={(e) => handleChange(e)} />
-        <input className="contact-input" placeholder="Project Budget" name="budget" onChange={(e) => handleChange(e)} />
-        <input className="contact-input" placeholder="Message" name="message" onChange={(e) => handleChange(e)} />
+        <input className="contact-input focus:ring-0" type="text" autoComplete="off" placeholder="Your Name" name="name" onChange={(e) => handleChange(e)} />
+        <input className="contact-input focus:ring-0" type="email" autoComplete="off" placeholder="Your Email" name="email" onChange={(e) => handleChange(e)} />
+        <input className="contact-input focus:ring-0" type="text" autoComplete="off" placeholder="Tell us about your project" name="project" onChange={(e) => handleChange(e)} />
+        <input className="contact-input focus:ring-0" type="text" autoComplete="off" placeholder="Project Budget" name="budget" onChange={(e) => handleChange(e)} />
+        <input className="contact-input focus:ring-0" type="text" autoComplete="off" placeholder="Message" name="message" onChange={(e) => handleChange(e)} />
         <div className="flex items-center gap-4 mb-4">
          <label className="switch">
           <input type="checkbox" />
@@ -86,9 +86,9 @@ const ContactNew = () => {
       </div>
      </div>
     </div>
-   </BaseNew>
+   </Base>
   </div>
  );
 };
 
-export default ContactNew;
+export default Contact;

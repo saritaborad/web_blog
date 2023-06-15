@@ -1,13 +1,13 @@
 import axios from "axios";
 import NotFound from "/layouts/404";
 import { GET_NOTFOUND_PAGE } from "@/query/strapiQuery";
-import BaseNew from "@/layouts/components/BaseNew";
+import Base from "@/layouts/components/Base";
 
 const notFound = ({ data }) => {
  return (
-  <BaseNew>
+  <Base>
    <NotFound data={data} />
-  </BaseNew>
+  </Base>
  );
 };
 

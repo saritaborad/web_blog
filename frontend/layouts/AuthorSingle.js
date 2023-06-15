@@ -5,10 +5,10 @@ import Image from "next/image";
 import Social from "/layouts/components/Social";
 import { useEffect, useState } from "react";
 import parseMDX from "@/lib/utils/mdxParser";
-import BaseNew from "./components/BaseNew";
+import Base from "./components/Base";
 
 const AuthorSingle = ({ author }) => {
- const { description, social, name, about, image,posts } = author[0];
+ const { description, social, name, about, image, posts } = author[0];
  const [mdxContent, setMdxContent] = useState();
 
  useEffect(() => {
@@ -19,7 +19,7 @@ const AuthorSingle = ({ author }) => {
  }, []);
 
  return (
-  <BaseNew image={"/images/homebanner.png"} isBanner={false}>
+  <Base image={"/images/homebanner.png"} isBanner={false}>
    <section className="section">
     <div className="container">
      <div className="mb-4 text-center md:px-24">
@@ -38,7 +38,7 @@ const AuthorSingle = ({ author }) => {
      </div>
     </div>
    </section>
-  </BaseNew>
+  </Base>
  );
 };
 

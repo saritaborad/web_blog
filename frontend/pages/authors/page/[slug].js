@@ -4,7 +4,7 @@ import { GET_ALL_AUTHORS } from "/query/strapiQuery";
 import axios from "axios";
 import config from "/config/config.json";
 import { markdownify } from "/lib/utils/textConverter";
-import BaseNew from "@/layouts/components/BaseNew";
+import Base from "@/layouts/components/Base";
 
 const AuthorPagination = ({ authors, currentPage, pagination }) => {
  const indexOfLastAuthor = currentPage * pagination;
@@ -13,7 +13,7 @@ const AuthorPagination = ({ authors, currentPage, pagination }) => {
  const currentAuthors = authors.slice(indexOfFirstAuthor, indexOfLastAuthor);
 
  return (
-  <BaseNew>
+  <Base>
    <section className="section">
     <div className="container text-center ">
      {markdownify("authors", "h1", "h2 mb-16 title-text")}
@@ -21,7 +21,7 @@ const AuthorPagination = ({ authors, currentPage, pagination }) => {
      <Pagination section="authors" totalPages={totalPages} currentPage={currentPage} />
     </div>
    </section>
-  </BaseNew>
+  </Base>
  );
 };
 

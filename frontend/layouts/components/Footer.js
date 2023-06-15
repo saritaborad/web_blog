@@ -10,7 +10,7 @@ const FooterNew = () => {
  const handleSubmit = async (e) => {
   e.preventDefault();
   try {
-   const res = await axios.post("http://127.0.0.1:1337/api/email/", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(email) });
+   const res = await axios.post("http://127.0.0.1:1337/api/api/email/", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(email) });
   } catch (error) {
    console.log(error.message);
   }
@@ -62,7 +62,7 @@ const FooterNew = () => {
     <p className="f-sec5-title">Supercharge your inbox</p>
     <p className="f-sec5-desc">Sign up for our developer newsletter:</p>
     <form className="f-sec5-content" onSubmit={(e) => handleSubmit(e)}>
-     <input placeholder="Enter Email" name="email" onChange={(e) => setEmail(e.target.value)} className="p-2 w-2/3 xs:p-0  xxs:placeholder:text-sm   md:placeholder:text-lg" />
+     <input placeholder="Enter Email" type="email" name="email" onChange={(e) => setEmail(e.target.value)} className="p-2 w-2/3 xs:p-0  xxs:placeholder:text-sm  md:placeholder:text-lg focus:ring-0" autoComplete="off" />
      <button className="f-sec5-btn w-1/3 xs:w-1/4" type="submit">
       <img src="/images/arrow.svg" />
      </button>
