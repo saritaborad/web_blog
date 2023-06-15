@@ -11,15 +11,15 @@ const AboutNew = () => {
        <p className="sec1-title">ABOUT US</p>
        <div className="sec1-content">
         <p className="sec1-subtitle">How We Started?</p>
-        <p className="sec1-desc">Long story short, we were born as a digital house 12 years ago. Our foundational strength in digital could not have better prepared us as we evolved into a full-service marketing and branding agency.</p>
+        <p className="content-text">Long story short, we were born as a digital house 12 years ago. Our foundational strength in digital could not have better prepared us as we evolved into a full-service marketing and branding agency.</p>
        </div>
        <div className="sec1-content">
         <p className="sec1-subtitle">Where We Are Now?</p>
-        <p className="sec1-desc">We take pride in saying that we became the ideal agency to help you tell your story relating to your products and services. We believe in making your experience more memorable. This is what we consider an effective way to make a strong connection with your clients. We will helped many clients to create their custom solutions ranging from dynamic web styles/designs to cutting-edge marketing strategies and digital plans. We believe that our digital web designs and digital services will transcend future trends.</p>
+        <p className="content-text">We take pride in saying that we became the ideal agency to help you tell your story relating to your products and services. We believe in making your experience more memorable. This is what we consider an effective way to make a strong connection with your clients. We will helped many clients to create their custom solutions ranging from dynamic web styles/designs to cutting-edge marketing strategies and digital plans. We believe that our digital web designs and digital services will transcend future trends.</p>
        </div>
        <div className="sec1-content">
         <p className="sec1-subtitle">How We Can Help?</p>
-        <p className="sec1-desc">We will partner with Real Estate Agents, SMBs, start-ups, and people to unlock their real potential value via technology, creativity, and business-minded critical thinking. We take pride in ourselves as we deliver an innovative and unique digital experience that can make a huge impact.</p>
+        <p className="content-text">We will partner with Real Estate Agents, SMBs, start-ups, and people to unlock their real potential value via technology, creativity, and business-minded critical thinking. We take pride in ourselves as we deliver an innovative and unique digital experience that can make a huge impact.</p>
        </div>
       </div>
 

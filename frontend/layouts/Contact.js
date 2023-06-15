@@ -8,7 +8,7 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 
 const Contact = ({ data }) => {
- const { title, phone, mail, location, addresses } = data;
+ const { title, phone, mail, location } = data;
  const [contact, setContact] = useState({});
 
  const templateParams = {

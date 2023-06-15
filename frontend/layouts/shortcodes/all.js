@@ -35,6 +35,8 @@ const shortcodes = {
  h4: (props) => <Heading level={4} {...props} />,
  h5: (props) => <Heading level={5} {...props} />,
  h6: (props) => <Heading level={6} {...props} />,
+ ol: ({ children }) => <ol className="list-decimal">{children}</ol>,
+ li: ({ children }) => <li>{children}</li>,
 };
 
 export default shortcodes;

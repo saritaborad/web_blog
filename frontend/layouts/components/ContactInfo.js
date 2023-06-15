@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const ContactInfo = () => {
@@ -13,10 +14,11 @@ const ContactInfo = () => {
      <p className="info-c mb-2 xxs:text-xl lg:text-2xl">india</p>
      <p className="info-a xxs:text-base lg:text-lg">436, Mahek icon, Near- Sumul Dairy, Katargam road, Surat -Gujarat, INDIA</p>
     </div>
-    <button className="req-btn mt-10">
+
+    <Link className="req-btn mt-10" href="https://www.google.com/maps?q=Athh+Technologies+LLP%2C+436%2C+Mahek+Icon%2C+Sumul+Dairy+Rd%2C+Katargam%2C+Surat%2C+Gujarat+395003%2C+India" target="_blank">
      <p className="req-btn-txt">Get Direction</p>
      <img src="/images/arrow.svg" alt="img" />
-    </button>
+    </Link>
     <div className="info-icon mt-10">
      <div className="flex justify-between gap-4">
       <img src="/images/skype.png" />

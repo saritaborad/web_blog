@@ -6,20 +6,20 @@ import emailjs from "@emailjs/browser";
 
 const ContactNew = () => {
  const [contact, setContact] = useState({});
+ let interest = ["Site from scratch", "App from scratch", "UX/UI design", "Blockchain", "Mobile development", "Web development", "Website", "Maintenance"];
 
  const templateParams = {
   to_email: "dummuymail@gmail.com",
   to_name: "Athh Technology",
   from_name: contact.name,
   from_email: contact.email,
+  interested: contact.interested,
   message: contact.message,
   project: contact.project,
   budget: contact.budget,
  };
 
- const handleChange = (e) => {
-  setContact((prev) => ({ ...prev, [e.target.name]: e.target.value }));
- };
+ const handleChange = (e) => setContact((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
  const handleSubmit = (e) => {
   e.preventDefault();
@@ -50,14 +50,13 @@ const ContactNew = () => {
         </p>
         <p className="contact-smd mt-14">I'm interested in...</p>
         <div className="cont-tabs">
-         <span className={`cont-tab`}>Site from scratch</span>
-         <span className={`cont-tab`}>App from scratch</span>
-         <span className={`cont-tab`}>UX/UI design</span>
-         <span className={`cont-tab`}>Blockchain</span>
-         <span className={`cont-tab`}>Mobile development</span>
-         <span className={`cont-tab`}>Web development</span>
-         <span className={`cont-tab`}>Website</span>
-         <span className={`cont-tab`}>Maintenance</span>
+         {interest.map((item, i) => {
+          return (
+           <span key={i} className={`cont-tab`} onClick={(e) => setContact((prev) => ({ ...prev, interested: e.target.innerHTML }))}>
+            {item}
+           </span>
+          );
+         })}
         </div>
         <input className="contact-input" placeholder="Your Name" name="name" onChange={(e) => handleChange(e)} />
         <input className="contact-input" placeholder="Your Email" name="email" onChange={(e) => handleChange(e)} />
@@ -72,7 +71,7 @@ const ContactNew = () => {
          <p>
           I agree to the{" "}
           <Link href="/privacy-policy" className="border-b">
-           privacy agreement.
+           privacy agreement.list-decimal
           </Link>{" "}
          </p>
         </div>
@@ -82,7 +81,7 @@ const ContactNew = () => {
         </button>
        </form>
       </div>
-      <div className="xxs:mt-10 md:flex md:justify-end ">
+      <div className="xxs:mt-10 md:flex md:justify-end">
        <ContactInfo />
       </div>
      </div>

@@ -21,7 +21,9 @@ const Card = ({ post }) => {
      {post.title}
     </Link>
     <div className="card-dt-section">
-     <span className="card-dt">{/* {dateFormat(post.createdAt)} By {post.authors[0]?.name} */}</span>
+     <span className="card-dt">
+      {dateFormat(post.createdAt)} By {post.authors[0]?.name}
+     </span>
      <div className="card-read-sec">
       <Link href={`/posts/${post.slug}`} className="card-read-txt pr-2">
        Read More

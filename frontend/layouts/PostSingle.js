@@ -70,7 +70,6 @@ const PostSingle = ({ post, slug, posts, allCategories, relatedPosts }) => {
      {config.settings.InnerPaginationOptions.enableBottom && <InnerPagination posts={posts} date={createdAt} />}
     </div>
    </div>
-   {/* <Sidebar posts={posts.filter((post) => post.slug !== slug)} categories={allCategories} /> */}
 
    {/* Related posts */}
    {relatedPosts.length > 0 && (

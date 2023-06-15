@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const ThemeSwitcher = () => {
  //  const configData = useConfig();
- const { theme_switcher } =  config.settings;
+ const { theme_switcher } = config.settings;
  const [mounted, setMounted] = useState(false);
  const { theme, setTheme, resolvedTheme } = useTheme();
  useEffect(() => setMounted(true), []);

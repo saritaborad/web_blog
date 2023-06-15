@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import Social from "./Social";
 import Link from "next/link";
+import axios from "axios";
 
 const FooterNew = () => {
  const [email, setEmail] = useState();
  let social = { twitter: "https://www.twitter.com", facebook: "https://www.facebook.com", linkedin: "https://www.linkedin.com", instagram: "https://www.instagram.com" };
 
- const handleSubmit = (e) => {
+ const handleSubmit = async (e) => {
   e.preventDefault();
-  console.log(email);
+  try {
+   const res = await axios.post("http://127.0.0.1:1337/api/email/", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(email) });
+  } catch (error) {
+   console.log(error.message);
+  }
  };
 
  return (

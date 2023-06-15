@@ -14,7 +14,7 @@ const Navbar = () => {
  let [open, setOpen] = useState(false);
 
  return (
-  <div className="navbar  flex items-center shadow-md md:flex md:items-center md:justify-between md:w-full top-0 left-0 z-[2]">
+  <div className="navbar flex items-center shadow-md md:flex md:items-center md:justify-between md:w-full top-0 left-0 z-[2]">
    <div className="cursor-pointer flex items-center ">
     <Link href="/">
      <img src="/images/logo.svg" className="xxs:w-3/5 md:w-full" />

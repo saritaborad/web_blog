@@ -1,4 +1,3 @@
-import Logo from "/layouts/components/Logo";
 import menu from "/config/menu.json";
 import socialLink from "/config/social.json";
 import Social from "/layouts/components/Social";

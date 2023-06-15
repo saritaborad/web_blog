@@ -101,21 +101,6 @@ const Sidebar = ({ posts, categories, className }) => {
         ))}
     </div>
    )}
-
-   {/* newsletter */}
-   {/* {newsletter.enable && (
-    <div className="mt-6  rounded border border-border p-6 text-center dark:border-darkmode-border">
-     <h4 className="section-title">{newsletter.title}</h4>
-     <p className="mt-10 text-xs">{newsletter.content}</p>
-     <MailchimpSubscribe url={newsletter.malichip_url} render={({ subscribe, status, message }) => <CustomForm onSubmitted={(formData) => subscribe(formData)} status={status} message={message} />} />
-     <p className="text-xs">
-      By Singing Up, You Agree To
-      <Link href={newsletter.privacy_policy_page} className="ml-1 text-primary">
-       Privacy Policy
-      </Link>
-     </p>
-    </div>
-   )} */}
   </aside>
  );
 };
