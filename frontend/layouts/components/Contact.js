@@ -3,7 +3,9 @@ import Base from "./Base";
 import ContactInfo from "./ContactInfo";
 import Link from "next/link";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
+let arr = [];
 const Contact = () => {
  const [contact, setContact] = useState({});
  let interest = ["Site from scratch", "App from scratch", "UX/UI design", "Blockchain", "Mobile development", "Web development", "Website", "Maintenance"];
@@ -13,7 +15,7 @@ const Contact = () => {
   to_name: "Athh Technology",
   from_name: contact.name,
   from_email: contact.email,
-  interested: contact.interested,
+  interested: contact.interested?.map((item) => `${item},`).join(""),
   message: contact.message,
   project: contact.project,
   budget: contact.budget,
@@ -21,12 +23,24 @@ const Contact = () => {
 
  const handleChange = (e) => setContact((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
+ const handleInterest = (e, i) => {
+  document?.getElementById(`tab${i}`).classList.toggle("active");
+  if (arr.includes(e.target.innerHTML)) {
+   arr = arr.filter((item) => item !== e.target.innerHTML);
+  } else {
+   arr.push(e.target.innerHTML);
+  }
+
+  setContact((prev) => ({ ...prev, interested: arr }));
+ };
+
  const handleSubmit = (e) => {
   e.preventDefault();
 
   emailjs.send(process.env.NEXT_PUBLIC_SERVICEID, process.env.NEXT_PUBLIC_TEMPLATEID, templateParams, process.env.NEXT_PUBLIC_PUBLICKEY).then(
    (response) => {
     toast.success("Success!");
+    setContact({});
    },
    (err) => {
     console.log("Failed...", err);
@@ -52,7 +66,7 @@ const Contact = () => {
         <div className="cont-tabs">
          {interest.map((item, i) => {
           return (
-           <span key={i} className={`cont-tab`} onClick={(e) => setContact((prev) => ({ ...prev, interested: e.target.innerHTML }))}>
+           <span key={i} className={`cont-tab`} id={`tab${i}`} onClick={(e) => handleInterest(e, i)}>
             {item}
            </span>
           );

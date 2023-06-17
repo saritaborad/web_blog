@@ -19,8 +19,7 @@ const About = ({ data }) => {
   fetchMdx();
  }, []);
 
-    return (
-     
+ return (
   <div className="about-container">
    <Base image={"http://127.0.0.1:1337" + bannerImg?.url || "/images/aboutbanner.png"} isBanner={true} meta_img={bannerImg?.url} meta_title={"About us"} description={sec1?.description1.slice(0, 120)}>
     <div className="about-sec1   xxs:px-4 xxs:my-8 md:px-4 ">
@@ -94,6 +93,3 @@ const About = ({ data }) => {
 };
 
 export default About;
-
-
-

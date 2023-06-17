@@ -75,7 +75,7 @@ const PostSingle = ({ post, slug, posts, allCategories, relatedPosts }) => {
     <div className="rel-main mb-10">
      <div className="related xs:flex xs:justify-center">
       <div className="mt-20">
-       <h2 className="section-title title-text xs:ml-4 ">Related Posts</h2>
+       <h2 className="section-title title-text xs:ml-4">Related Posts</h2>
        <div className="mt-10 xxs:mx-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {relatedPosts.slice(0, 3).map((post, index) => (
          <Card post={post} key={index} />

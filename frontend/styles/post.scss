@@ -63,6 +63,7 @@
   line-height: 19px;
   color: #FFFFFF;
   font-family: 'Syne',sans-serif;
+  cursor: pointer;
 }
   
 .cat-btn:hover {
@@ -89,6 +90,7 @@
   height: 100%;
   border: 1px solid transparent; /* Initial border */
   transition: border-color 0.3s ease; /* Transition for smooth effect */
+  
 
 }
 
@@ -97,6 +99,7 @@
   width: 100%;
   min-height: 246px;
   height: 100%;
+  cursor: pointer;
 }
 
 .card-content {
@@ -132,6 +135,7 @@
   font-size: 12px;
   font-weight: 700;
   font-family: 'Syne', sans-serif;
+  cursor: pointer;
 }
 
 .card-txt {
@@ -142,6 +146,7 @@
   line-height: 35px;
   color: #FFFFFF;
   max-height: 70px;
+  cursor: pointer;
 }
 
 .card-dt-section {
@@ -176,6 +181,7 @@
   position: relative;
   max-height: 55px;
   height: 100%;
+  cursor: pointer;
 }
 
 .card-read-txt {
@@ -187,6 +193,7 @@
   line-height: 24px;
   text-transform: capitalize; 
   color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
 }
   
 .card-arrow {
@@ -231,6 +238,7 @@
   width: 100%;
   max-height: 370px;
   height: 100%;
+  cursor: pointer;
 }
 
 .bigcard-content {
@@ -265,6 +273,7 @@
   color: #FFFFFF;
   line-height: 14px;
   font-size: 12px;
+  cursor: pointer;
 }
 
 .bigcard-txt {
@@ -277,6 +286,7 @@
   white-space: normal;
   max-height: 70px;
   height: 100%;
+  cursor: pointer;
 }
 
 .bigcard-desc {
@@ -341,6 +351,7 @@
   top: 40%;
   bottom: 0%;
   display: none;
+  cursor: pointer;
 }
 
 .bigcard:hover {
