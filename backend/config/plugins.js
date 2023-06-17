@@ -32,6 +32,7 @@ module.exports = ({ env }) => ({
           "api::notfound.notfound": true,
           "api::config.config": true,
           "api::theme.theme": true,
+          "api::request.request": true,
         },
       },
       plugins: {

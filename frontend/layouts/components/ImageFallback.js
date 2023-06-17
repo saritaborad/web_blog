@@ -11,7 +11,7 @@ const ImageFallback = (props) => {
  }, [src]);
 
  return (
-  <Image
+  <img
    {...rest}
    src={imgSrc}
    onError={() => {

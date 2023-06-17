@@ -10,7 +10,7 @@ const Category = ({ postsByCategories, category, posts, categories }) => {
  let bigcard = postsByCategories.slice(0, 2)?.length > 0;
  let smallcard = postsByCategories.slice(2, 8)?.length > 0;
  return (
-  <Base image="/images/homebanner.png">
+  <Base image="/images/homebanner.png" isBanner={false} meta_title={posts[0]?.title} description={posts[0]?.meta_description}>
    <div className="flex flex-col justify-center items-center mt-12 xxs:mx-4">
     <h1 className="h2 text-white justify-start title-text">
      Showing posts from

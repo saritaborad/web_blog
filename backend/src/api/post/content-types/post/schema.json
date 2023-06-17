@@ -39,7 +39,7 @@
       "type": "uid",
       "targetField": "title"
     },
-    "description": {
+    "meta_description": {
       "type": "text"
     },
     "meta_title": {

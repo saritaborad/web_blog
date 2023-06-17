@@ -13,7 +13,7 @@ const AuthorPagination = ({ authors, currentPage, pagination }) => {
  const currentAuthors = authors.slice(indexOfFirstAuthor, indexOfLastAuthor);
 
  return (
-  <Base>
+  <Base image={""} isBanner={false} meta_title={"Author"} description={"Author"}>
    <section className="section">
     <div className="container text-center ">
      {markdownify("authors", "h1", "h2 mb-16 title-text")}

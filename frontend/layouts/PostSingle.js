@@ -13,7 +13,7 @@ import Base from "./components/Base";
 import Card from "./components/Card";
 
 const PostSingle = ({ post, slug, posts, allCategories, relatedPosts }) => {
- let { title, createdAt, image, categories, authors, content } = post;
+ let { title, createdAt, image, categories, authors, content, meta_title, meta_description } = post;
  let config = config1;
 
  const [mdxContent, setMdxContent] = useState("");
@@ -26,7 +26,7 @@ const PostSingle = ({ post, slug, posts, allCategories, relatedPosts }) => {
  }, []);
 
  return (
-  <Base isBanner={false} image={"/images/homebanner.png"}>
+  <Base image={"/images/homebanner.png"} isBanner={false} meta_img={"http://127.0.0.1:1337" + image.url} meta_title={meta_title} description={meta_description}>
    <div className="spost-main">
     <div className="spost-container xxs:mx-8 2xl:mx-0">
      {markdownify(title, "h1", "lg:text-[42px] mt-4 post-title")}

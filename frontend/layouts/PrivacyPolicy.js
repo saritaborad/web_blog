@@ -17,7 +17,7 @@ const PrivacyPolicy = ({ data }) => {
  }, []);
 
  return (
-  <Base>
+  <Base image={""} isBanner={false} meta_title={title} description={content.slice(0, 120)}>
    <section className="section flex justify-center">
     <div className="privacy xxs:mx-8">
      {markdownify(title, "h2", "h2 mb-8 lg:text-[40px] title-text text-center")}

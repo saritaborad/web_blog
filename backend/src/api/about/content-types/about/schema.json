@@ -1,0 +1,47 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "about",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "section1": {
+      "type": "dynamiczone",
+      "components": [
+        "json.content1"
+      ]
+    },
+    "section2": {
+      "type": "dynamiczone",
+      "components": [
+        "json.content4"
+      ]
+    },
+    "section3": {
+      "type": "dynamiczone",
+      "components": [
+        "json.content5"
+      ]
+    },
+    "bannerImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "text"
+    }
+  }
+}

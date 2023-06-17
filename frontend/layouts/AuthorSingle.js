@@ -8,7 +8,7 @@ import parseMDX from "@/lib/utils/mdxParser";
 import Base from "./components/Base";
 
 const AuthorSingle = ({ author }) => {
- const { description, social, name, about, image, posts } = author[0];
+ const { meta_title, meta_description, social, name, about, image } = author[0];
  const [mdxContent, setMdxContent] = useState();
 
  useEffect(() => {
@@ -19,13 +19,13 @@ const AuthorSingle = ({ author }) => {
  }, []);
 
  return (
-  <Base image={"/images/homebanner.png"} isBanner={false}>
+  <Base image={"/images/homebanner.png"} isBanner={false} meta_img={"http://127.0.0.1:1337" + image.url} meta_title={meta_title} description={meta_description}>
    <section className="section">
     <div className="container">
      <div className="mb-4 text-center md:px-24">
       {image && (
        <div className="mb-8">
-        <Image src={"http:127.0.0.1:1337" + image.url} className="mx-auto rounded-lg" height="150" width="150" alt={name} />
+        <img src={"http:127.0.0.1:1337" + image.url} className="mx-auto rounded-lg" height="150" width="150" alt={name} />
        </div>
       )}
       {markdownify(name, "h1", "h2 mb-8 text-white")}

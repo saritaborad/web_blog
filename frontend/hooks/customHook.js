@@ -1,4 +1,4 @@
-const { fetchConfig, fetchTheme } = require("@/commonApi");
+const { fetchConfig, fetchTheme, fetchReqData, getContactInfo } = require("@/commonApi");
 const { useEffect, useState } = require("react");
 
 export function useConfig() {
@@ -15,16 +15,32 @@ export function useConfig() {
  return configData;
 }
 
-// export function useThemeData() {
-//  const [themeData, setThemeData] = useState(null);
+export const useReqData = () => {
+ const [reqData, setReqData] = useState(null);
 
-//  useEffect(() => {
-//   async function loadTheme() {
-//    const res = await fetchTheme();
-//    setThemeData(res?.data);
-//   }
-//   loadTheme();
-//  }, []);
+ useEffect(() => {
+  async function getReqData() {
+   const res = await fetchReqData();
+   setReqData(res?.data);
+  }
 
-//  return themeData;
-// }
+  getReqData();
+ }, []);
+
+ return reqData;
+};
+
+export const useContactInfo = () => {
+ const [contact, setContact] = useState();
+
+ useEffect(() => {
+  async function ContactInfo() {
+   const res = await getContactInfo();
+   setContact(res?.data);
+  }
+
+  ContactInfo();
+ }, []);
+
+ return contact;
+};

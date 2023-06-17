@@ -37,6 +37,12 @@
       "relation": "manyToMany",
       "target": "api::post.post",
       "inversedBy": "authors"
+    },
+    "meta_title": {
+      "type": "text"
+    },
+    "meta_description": {
+      "type": "text"
     }
   }
 }

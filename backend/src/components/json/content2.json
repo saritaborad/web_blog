@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_json_content2s",
+  "info": {
+    "displayName": "content2"
+  },
+  "options": {},
+  "attributes": {
+    "title2": {
+      "type": "text"
+    },
+    "description2": {
+      "type": "richtext"
+    }
+  }
+}

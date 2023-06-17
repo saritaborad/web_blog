@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_json_content1s",
+  "info": {
+    "displayName": "content1",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title1": {
+      "type": "text"
+    },
+    "description1": {
+      "type": "richtext"
+    },
+    "title2": {
+      "type": "text"
+    },
+    "description2": {
+      "type": "richtext"
+    },
+    "title3": {
+      "type": "text"
+    },
+    "description3": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

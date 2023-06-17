@@ -19,7 +19,7 @@ const BlogPagination = ({ posts, currentPage, pagination, categories }) => {
 
  return (
   <div className="home-container">
-   <Base image="/images/homebanner.png" isBanner={true}>
+   <Base image="/images/homebanner.png" isBanner={true} meta_img={"/images/homebanner.png"} meta_title={orderedPosts[0]?.title} description={orderedPosts[0]?.meta_description}>
     <div className="home-main">
      <div className="home-inner xxs:mx-4">
       <Category categories={categories} />

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_json_content3s",
+  "info": {
+    "displayName": "content3"
+  },
+  "options": {},
+  "attributes": {
+    "title3": {
+      "type": "text"
+    },
+    "description3": {
+      "type": "richtext"
+    }
+  }
+}

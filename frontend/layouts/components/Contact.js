@@ -36,7 +36,7 @@ const Contact = () => {
 
  return (
   <div className="contact-main">
-   <Base image="/images/contactbanner.png" isBanner={true}>
+   <Base image="/images/contactbanner.png" isBanner={true} meta_img={"/images/contactbanner.png"} meta_title={"Contact us"} meta_description={"contact"}>
     <div className="contact-container">
      <div className="contact-inner grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xxs:mx-6 md:mx-8 md:gap-4">
       <div>
@@ -71,7 +71,7 @@ const Contact = () => {
          <p>
           I agree to the{" "}
           <Link href="/privacy-policy" className="border-b">
-           privacy agreement.list-decimal
+           privacy agreement
           </Link>{" "}
          </p>
         </div>

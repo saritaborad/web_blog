@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_json_content4s",
+  "info": {
+    "displayName": "content4"
+  },
+  "options": {},
+  "attributes": {
+    "title1": {
+      "type": "text"
+    },
+    "description1": {
+      "type": "richtext"
+    },
+    "image1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title2": {
+      "type": "text"
+    },
+    "description2": {
+      "type": "richtext"
+    },
+    "image2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

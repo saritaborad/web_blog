@@ -5,7 +5,7 @@ import Base from "@/layouts/components/Base";
 
 const notFound = ({ data }) => {
  return (
-  <Base>
+  <Base image={""} isBanner={false} meta_title={"page not found"} description={"page not found"}>
    <NotFound data={data} />
   </Base>
  );

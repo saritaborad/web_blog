@@ -1,14 +1,14 @@
 import axios from "axios";
 import NotFound from "/layouts/404";
 import Default from "/layouts/Default";
-import { GET_ALL_SLUGS, GET_NOTFOUND_PAGE, GET_PRIVACY_PAGE } from "@/query/strapiQuery";
+import { GET_ABOUT_PAGE, GET_ALL_SLUGS, GET_NOTFOUND_PAGE, GET_PRIVACY_PAGE } from "@/query/strapiQuery";
 import PrivacyPolicy from "@/layouts/PrivacyPolicy";
 import About from "@/layouts/components/About";
 import Contact from "@/layouts/components/Contact";
 
 // for all regular pages
-const RegularPages = ({ data, slug, notFound, privacy }) => {
- return <>{slug === "404" ? <NotFound data={notFound} /> : slug === "about" ? <About /> : slug === "contact" ? <Contact /> : slug === "privacy-policy" ? <PrivacyPolicy data={privacy} /> : <Default data={data} />}</>;
+const RegularPages = ({ slug, notFound, privacy, about }) => {
+ return <>{slug === "404" ? <NotFound data={notFound} /> : slug === "about" ? <About data={about} /> : slug === "contact" ? <Contact /> : slug === "privacy-policy" ? <PrivacyPolicy data={privacy} /> : <Default />}</>;
 };
 export default RegularPages;
 
@@ -39,6 +39,7 @@ export const getStaticProps = async ({ params }) => {
  const allPages = await axios.get(process.env.NEXT_STRAPI_API + `api/posts?filters[slug][$eq]=${regular}`);
  const notFound = await axios.get(process.env.NEXT_STRAPI_API + GET_NOTFOUND_PAGE);
  const privacy = await axios.get(process.env.NEXT_STRAPI_API + GET_PRIVACY_PAGE);
+ const about = await axios.get(process.env.NEXT_STRAPI_API + GET_ABOUT_PAGE);
 
  return {
   props: {
@@ -46,6 +47,7 @@ export const getStaticProps = async ({ params }) => {
    data: allPages.data.data,
    notFound: notFound.data.data,
    privacy: privacy.data.data,
+   about: about.data.data,
   },
  };
 };

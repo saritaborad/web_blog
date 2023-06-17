@@ -10,7 +10,7 @@ const FooterNew = () => {
  const handleSubmit = async (e) => {
   e.preventDefault();
   try {
-   const res = await axios.post("http://127.0.0.1:1337/api/api/email/", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(email) });
+   const res = await axios.post("http://127.0.0.1:1337/api/email/", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(email) });
   } catch (error) {
    console.log(error.message);
   }

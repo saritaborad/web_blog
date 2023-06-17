@@ -25,7 +25,7 @@ const SearchPage = () => {
   [];
 
  return (
-  <Base title={`Search results for ${query.key}`}>
+  <Base image={""} isBanner={false} meta_title={`Search results for ${query.key}`} description={""}>
    <div className="section">
     <div className="container">
      <h1 className="h2 mb-8 text-center">

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_json_section1s",
+  "info": {
+    "displayName": "section1"
+  },
+  "options": {},
+  "attributes": {
+    "section1": {
+      "type": "json"
+    }
+  }
+}
