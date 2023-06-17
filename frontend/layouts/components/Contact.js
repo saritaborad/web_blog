@@ -90,7 +90,7 @@ const Contact = () => {
          </p>
         </div>
 
-        <button className="contact-btn" type="submit">
+        <button className="contact-btn dark:bg-darkmode-primary dark:text-light" type="submit">
          Send Request
         </button>
        </form>

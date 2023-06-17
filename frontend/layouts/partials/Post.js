@@ -14,7 +14,7 @@ const Post = ({ post }) => {
     <ul className="absolute top-3 left-2 flex flex-wrap items-center">
      {post.categories?.length > 0 &&
       post.categories.map((tag, index) => (
-       <li className="mx-2 mb-2 inline-flex h-7 rounded-[35px] bg-primary px-3 text-white cursor-pointer" key={"tag-" + index}>
+       <li className="mx-2 mb-2 inline-flex h-7 rounded-[35px] bg-primary px-3 text-white" key={"tag-" + index}>
         <Link className="capitalize" href={`/categories/${tag.name.replace(" ", "-")}`}>
          {tag.name}
         </Link>
@@ -23,13 +23,13 @@ const Post = ({ post }) => {
     </ul>
    </div>
    <h3 className="h5 mb-2 mt-4">
-    <Link href={`/posts/${post.slug}`} className="block hover:text-primary cursor-pointer">
+    <Link href={`/posts/${post.slug}`} className="block hover:text-primary">
      {post.title}
     </Link>
    </h3>
    <ul className="flex items-center space-x-4">
     <li>
-     <Link className="inline-flex items-center font-secondary text-xs leading-3 cursor-pointer" href="/about">
+     <Link className="inline-flex items-center font-secondary text-xs leading-3" href="/about">
       <FaUserAlt className="mr-1.5" />
       {post.authors.map((item, i) => (
        <span key={i} className="cursor-pointer">
@@ -44,7 +44,7 @@ const Post = ({ post }) => {
     </li>
    </ul>
    <p>{post.content.slice(0, Number(summary_length))}</p>
-   <Link className="btn btn-outline-primary mt-4 cursor-pointer" href={`/posts/${post.slug}`}>
+   <Link className="btn btn-outline-primary mt-4" href={`/posts/${post.slug}`}>
     Read More
    </Link>
   </div>

@@ -38,6 +38,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+    cursor: default;
 }
 
 .contact-desc {
@@ -50,7 +51,7 @@
     color: #FFFFFF;
     display: flex;
     align-content: center;
-    
+    cursor: default;    
 }
 
 .contact-smd {
@@ -75,6 +76,7 @@
     flex-wrap: wrap;
     max-width: 841px;
     width: 100%;
+    cursor: default;
 }
 
 .cont-tab {
@@ -184,6 +186,7 @@
     line-height: 43px;
     text-transform: uppercase;
     color: #FFFFFF;
+    cursor: default;
 }
 
 .info-content {
@@ -200,6 +203,7 @@
     line-height: 29px;
     text-transform: uppercase;
     color: #FFFFFF;
+    cursor: default;
 }
 
 .info-d {
@@ -210,6 +214,7 @@
     line-height: 29px;
     text-transform: uppercase;
     color: #5B596A;
+    cursor: default;
 }
 
 .info-c {
@@ -220,6 +225,7 @@
     line-height: 29px;
     text-transform: uppercase;  
     color: #FFFFFF;
+    cursor: default;
 }
 
 .info-a {
@@ -230,6 +236,7 @@
     line-height: 29px;
     text-transform: capitalize;
     color: #5B596A;
+    cursor: default;
 }
 
 .info-icon {

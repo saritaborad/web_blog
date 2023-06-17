@@ -5,7 +5,7 @@ import { Head, Html, Main, NextScript } from "next/document";
 const Document = () => {
  const { favicon } = config.site;
  return (
-  <Html lang="en">
+  <Html lang="en" className="dark">
    <Head>
     {/* favicon */}
     <link rel="shortcut icon" href={favicon} />
@@ -17,7 +17,7 @@ const Document = () => {
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script noModule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
    </Head>
-   <body>
+   <body className="dark:bg-gray-800">
     <Main />
     <TwSizeIndicator />
     <NextScript />

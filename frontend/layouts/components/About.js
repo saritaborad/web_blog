@@ -27,24 +27,23 @@ const About = ({ data }) => {
       <div className="sec1-sub gap-4">
        <p className="sec1-title">{title || "ABOUT US"}</p>
        <div className="sec1-content">
-        <p className="sec1-subtitle">{sec1?.title1 || "How We Started?"}</p>
+        <p className="sec1-subtitle dark:text-darkmode-dark">{sec1?.title1 || "How We Started?"}</p>
         {mdxContent && <MDXRemote {...mdxContent?.des1} components={shortcodes} />}
        </div>
        <div className="sec1-content">
-        <p className="sec1-subtitle">{sec1?.title2 || "Where We Are Now?"}</p>
+        <p className="sec1-subtitle dark:text-darkmode-dark">{sec1?.title2 || "Where We Are Now?"}</p>
         {mdxContent && <MDXRemote {...mdxContent?.des2} components={shortcodes} />}
        </div>
        <div className="sec1-content">
-        <p className="sec1-subtitle">{sec1?.title3 || "How We Can Help?"}</p>
+        <p className="sec1-subtitle dark:text-darkmode-dark">{sec1?.title3 || "How We Can Help?"}</p>
         {mdxContent && <MDXRemote {...mdxContent?.des3} components={shortcodes} />}
        </div>
       </div>
-
       <img className="about-img  xxs:hidden xs:hidden sm:hidden md:block md:w-3/6 lg:w-3/5 xl:w-3/5 2xl:w-4/5 3xl:w-full" src={"http://127.0.0.1:1337" + sec1?.image?.url || "/images/group25.png"} />
      </div>
     </div>
     <div className="about-sec2  sm:min-h-[850px]">
-     <div className="sec2-main xxs:mx-4  ">
+     <div className="sec2-main xxs:mx-4">
       <div className="sec2-sub xxs:flex xxs:gap-4">
        <div className="sec2-content ">
         <p className="sec2-txt xxs:text-2xl md:text-3xl">{sec2?.title1 || "OUR VISION"}</p>
@@ -68,21 +67,21 @@ const About = ({ data }) => {
     <div className="about-sec3 flex justify-center items-center">
      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 ">
       <div className="sec3-sub">
-       <p className="sec3-num">01</p>
+       <p className="sec3-num dark:text-darkmode-dark">01</p>
        <span className="sec3-line"></span>
-       <p className="sec3-title">{sec3?.title1 || "Design"}</p>
+       <p className="sec3-title dark:text-darkmode-dark">{sec3?.title1 || "Design"}</p>
        {mdxContent && <MDXRemote {...mdxContent?.des6} components={shortcodes} />}
       </div>
       <div className="sec3-sub">
-       <p className="sec3-num">02</p>
+       <p className="sec3-num dark:text-darkmode-dark">02</p>
        <span className="sec3-line"></span>
-       <p className="sec3-title">{sec3?.title2 || "Development"}</p>
+       <p className="sec3-title dark:text-darkmode-dark">{sec3?.title2 || "Development"}</p>
        {mdxContent && <MDXRemote {...mdxContent?.des7} components={shortcodes} />}
       </div>
       <div className="sec3-sub">
-       <p className="sec3-num">03</p>
+       <p className="sec3-num dark:text-darkmode-dark">03</p>
        <span className="sec3-line"></span>
-       <p className="sec3-title">{sec3?.title3 || "Full service"}</p>
+       <p className="sec3-title dark:text-darkmode-dark">{sec3?.title3 || "Full service"}</p>
        {mdxContent && <MDXRemote {...mdxContent?.des8} components={shortcodes} />}
       </div>
      </div>

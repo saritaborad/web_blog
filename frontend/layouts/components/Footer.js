@@ -24,46 +24,46 @@ const FooterNew = () => {
      <img src="/images/logo.svg" />
     </Link>
     <div className="">
-     <Social source={social} className="footer-social" />
+     <Social source={social} className="footer-social dark:text-darkmode-dark" />
     </div>
     <span className="footer-copy xs:hidden md:block">Copyright © Verselix LLP 2023</span>
    </div>
-   <div className="footer-sec2">
-    <Link href="/about" className="f-sec2">
+   <div className="footer-sec2 ">
+    <Link href="/about" className="f-sec2 dark:text-darkmode-dark">
      About
     </Link>
-    <Link href="/" className="f-sec2">
+    <Link href="/" className="f-sec2 dark:text-darkmode-dark">
      Services
     </Link>
-    <Link href="/" className="f-sec2">
+    <Link href="/" className="f-sec2 dark:text-darkmode-dark">
      Industries
     </Link>
    </div>
    <div className="footer-sec3">
-    <Link href="/" className="f-sec3">
+    <Link href="/" className="f-sec3 dark:text-darkmode-dark">
      Portfolio
     </Link>
-    <Link href="/" className="f-sec3">
+    <Link href="/" className="f-sec3 dark:text-darkmode-dark">
      Blogs
     </Link>
-    <Link href="/" className="f-sec3">
+    <Link href="/" className="f-sec3 dark:text-darkmode-dark">
      Career
     </Link>
    </div>
    <div className="footer-sec4">
-    <Link href="/privacy-policy" className="f-sec4">
+    <Link href="/privacy-policy" className="f-sec4 dark:text-darkmode-dark">
      Privacy Policy
     </Link>
-    <Link href="/" className="f-sec4">
+    <Link href="/" className="f-sec4 dark:text-darkmode-dark">
      Terms & Conditions
     </Link>
    </div>
    <div className="footer-sec5">
     <p className="f-sec5-title">Supercharge your inbox</p>
-    <p className="f-sec5-desc">Sign up for our developer newsletter:</p>
-    <form className="f-sec5-content" onSubmit={(e) => handleSubmit(e)}>
-     <input placeholder="Enter Email" type="email" name="email" onChange={(e) => setEmail(e.target.value)} className="p-2 w-2/3 xs:p-0  xxs:placeholder:text-sm  md:placeholder:text-lg focus:ring-0" autoComplete="off" />
-     <button className="f-sec5-btn w-1/3 xs:w-1/4" type="submit">
+    <p className="f-sec5-desc dark:text-darkmode-dark">Sign up for our developer newsletter:</p>
+    <form className="f-sec5-content dark:bg-darkmode-light " onSubmit={(e) => handleSubmit(e)}>
+     <input placeholder="Enter Email" type="email" name="email" onChange={(e) => setEmail(e.target.value)} className="p-2 w-2/3  xs:p-0  xxs:placeholder:text-sm  md:placeholder:text-lg focus:ring-0" autoComplete="off" />
+     <button className="f-sec5-btn w-1/3 xs:w-1/4 dark:bg-darkmode-primary" type="submit">
       <img src="/images/arrow.svg" />
      </button>
     </form>

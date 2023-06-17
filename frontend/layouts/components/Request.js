@@ -6,13 +6,13 @@ const Request = () => {
  const req = useReqData();
 
  return (
-  <div className="req">
-   <div className="req-content">
-    <p className="req-title">{req?.title || "LET'S WORK TOGETHER"}</p>
-    <p className="req-txt">{req?.description || "Want to kick start your project right now?"}</p>
+  <div className="req dark:bg-darkmode-theme-light ">
+   <div className="req-content ">
+    <p className="req-title ">{req?.title || "LET'S WORK TOGETHER"}</p>
+    <p className="req-txt dark:text-darkmode-theme-dark">{req?.description || "Want to kick start your project right now?"}</p>
 
-    <Link href="/contact" className="req-btn">
-     <p className="req-btn-txt">{req?.btnText || "Request A Proposal"}</p>
+    <Link href="/contact" className="req-btn dark:bg-darkmode-primary">
+     <p className="req-btn-txt ">{req?.btnText || "Request A Proposal"}</p>
      <img src="/images/bigarrow.svg" alt="img" />
     </Link>
    </div>

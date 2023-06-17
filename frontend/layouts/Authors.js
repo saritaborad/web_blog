@@ -13,7 +13,7 @@ const Authors = ({ authors }) => {
         <img src={"http://127.0.0.1:1337" + author?.image?.url} alt={author?.name} height={150} width={150} className="rounded-lg mx-auto" />
        </div>
       )}
-      <h3 className="h4 mb-2 cursor-pointer">
+      <h3 className="h4 mb-2 ">
        <Link href={`/authors/${slugify(author?.name)}`} className="block text-white hover:text-blue">
         {author?.name}
        </Link>

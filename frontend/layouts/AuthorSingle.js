@@ -22,11 +22,9 @@ const AuthorSingle = ({ author }) => {
    <section className="section">
     <div className="container">
      <div className="mb-4 text-center md:px-24">
-      {image && (
-       <div className="mb-8">
-        <img src={"http:127.0.0.1:1337" + image.url} className="mx-auto rounded-lg" height="150" width="150" alt={name} />
-       </div>
-      )}
+      <div className="mb-8">
+       <img src={"http://127.0.0.1:1337" + image.url} className="mx-auto rounded-lg cursor-default" height="150" width="150" alt={name} />
+      </div>
       {markdownify(name, "h1", "h2 mb-8 text-white")}
       <Social source={social} className="social-icons-simple text-white" />
       {mdxContent && (

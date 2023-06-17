@@ -8,13 +8,13 @@ import Video from "./Video";
 import Youtube from "./Youtube";
 
 const Paragraph = ({ children }) => {
- return <p className="content-text">{children}</p>;
+ return <p className="content-text dark:text-darkmode-dark">{children}</p>;
 };
 
 // Custom component for headings
 const Heading = ({ children, level }) => {
  const HeadingTag = `h${level}`;
- const headingClasses = `content-title`;
+ const headingClasses = `content-title dark:text-darkmode-dark`;
 
  return <HeadingTag className={headingClasses}>{children}</HeadingTag>;
 };

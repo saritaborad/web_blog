@@ -37,11 +37,11 @@ const Pagination = ({ section, currentPage, totalPages }) => {
      {pageList.map((pagination, i) => (
       <React.Fragment key={`page-${i}`}>
        {pagination === currentPage ? (
-        <span aria-current="page" className={`inline-flex h-[38px] w-[38px] items-center justify-center rounded-full page-circle px-4 py-1 font-secondary text-lg font-bold leading-none text-dark text-white `}>
+        <span aria-current="page" className={`inline-flex h-[38px] w-[38px] items-center justify-center rounded-full page-circle px-4 py-1 font-secondary text-lg font-bold leading-none text-dark text-white dark:text-darkmode-dark `}>
          {pagination}
         </span>
        ) : (
-        <Link href={i === 0 ? `${section ? "/" + section : "/"}` : `${section ? "/" + section : ""}/page/${pagination}`} passHref aria-current="page" className={`inline-flex h-[38px] w-[38px] items-center justify-center rounded-full px-4 py-1 font-secondary text-lg font-bold leading-none text-white`}>
+        <Link href={i === 0 ? `${section ? "/" + section : "/"}` : `${section ? "/" + section : ""}/page/${pagination}`} passHref aria-current="page" className={`inline-flex h-[38px] w-[38px] items-center justify-center rounded-full px-4 py-1 font-secondary text-lg font-bold leading-none text-white dark:text-darkmode-dark`}>
          {pagination}
         </Link>
        )}

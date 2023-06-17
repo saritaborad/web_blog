@@ -33,7 +33,7 @@
  "widgets": {
   "about": {
    "enable": true,
-   "content": "we are athh technolgy we work on app development and web development we are reputed service provider in app development sector"
+   "content": "we are Athh technolgy. we work on app development and web development. we are reputed service provider in app development sector"
   },
   "featured_posts": {
    "enable": true,
@@ -47,14 +47,14 @@
   "newsletter": {
    "enable": true,
    "title": "Newsletter",
-   "content": "Join thousands of users and get ddaily blog on new topic!",
+   "content": "Join thousands of users and get daily blog on new topic!",
    "privacy_policy_page": "/privacy-policy",
    "malichipm_url": "http://localhost:3000/"
   }
  },
  "disqus": {
   "enable": true,
-  "shortname": "themefisher-template",
+  "shortname": "",
   "settings": {}
  }
 }

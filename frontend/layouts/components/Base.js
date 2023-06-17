@@ -7,14 +7,17 @@ import config from "/config/config.json";
 import { plainify } from "@/lib/utils/textConverter";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import { useTheme } from "next-themes";
 
 const Base = ({ image, isBanner, meta_img, meta_title, description, children }) => {
  const { meta_image, meta_author, meta_description } = config.metadata;
  const { base_url } = config.site;
  const router = useRouter();
+ const { theme } = useTheme();
+ console.log(theme);
 
  return (
-  <div className="bg-image">
+  <div className={`${theme === "light" ? "bg-image" : "dark:bg-darkmode-theme-light"}`}>
    <Head>
     <title>{plainify(meta_title ? meta_title : config.site.title)}</title>
     <meta name="description" content={plainify(description ? description : meta_description)} />

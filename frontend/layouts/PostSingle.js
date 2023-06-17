@@ -29,7 +29,7 @@ const PostSingle = ({ post, slug, posts, allCategories, relatedPosts }) => {
   <Base image={"/images/homebanner.png"} isBanner={false} meta_img={"http://127.0.0.1:1337" + image.url} meta_title={meta_title} description={meta_description}>
    <div className="spost-main">
     <div className="spost-container xxs:mx-8 2xl:mx-0">
-     {markdownify(title, "h1", "lg:text-[42px] mt-4 post-title")}
+     {markdownify(title, "h1", "lg:text-[42px] mt-4 post-title cursor-default")}
      <div className="text-center">{image && <img src={"http://127.0.0.1:1337" + image.url} height="500" style={{ maxWidth: "100%" }} alt={title} className="rounded-lg" />}</div>
      {config.settings.InnerPaginationOptions.enableTop && (
       <div className="mt-4">
@@ -56,7 +56,7 @@ const PostSingle = ({ post, slug, posts, allCategories, relatedPosts }) => {
      </ul>
      <div className="cat-tabs">
       {categories.map((cat) => (
-       <Link key={cat.id} className="cat-btn" href={`/categories/${cat.name.replace(" ", "-")}`}>
+       <Link key={cat.id} className="cat-btn dark:bg-darkmode-primary " href={`/categories/${cat.name.replace(" ", "-")}`}>
         {cat.name}
        </Link>
       ))}
@@ -75,7 +75,7 @@ const PostSingle = ({ post, slug, posts, allCategories, relatedPosts }) => {
     <div className="rel-main mb-10">
      <div className="related xs:flex xs:justify-center">
       <div className="mt-20">
-       <h2 className="section-title title-text xs:ml-4">Related Posts</h2>
+       <h2 className="section-title title-text xs:ml-4 cursor-default">Related Posts</h2>
        <div className="mt-10 xxs:mx-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {relatedPosts.slice(0, 3).map((post, index) => (
          <Card post={post} key={index} />
