@@ -28,7 +28,7 @@ const GET_ALL_CATEGORY = `api/categories?[fields][0]=name`;
 
 const GET_PRIVACY_PAGE = `api/privacypolicy`;
 
-const GET_CONTACT_PAGE = `api/contact`;
+const GET_CONTACT_PAGE = `api/contact?populate[bannerImg][fields][0]=url`;
 
 const GET_HOME_PAGE = `api/home`;
 

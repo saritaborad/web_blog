@@ -22,7 +22,7 @@ const PrivacyPolicy = ({ data }) => {
     <div className="privacy xxs:mx-8">
      {markdownify(title, "h2", "h2 mb-8 lg:text-[40px] title-text text-center cursor-default")}
      {mdxContent && (
-      <div className="flex flex-col gap-5 text-white">
+      <div className="flex flex-col gap-5 ">
        <MDXRemote {...mdxContent} components={shortcodes} />
       </div>
      )}

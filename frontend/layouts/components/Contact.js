@@ -4,10 +4,13 @@ import ContactInfo from "./ContactInfo";
 import Link from "next/link";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import { useContactInfo } from "@/hooks/customHook";
 
 let arr = [];
 const Contact = () => {
  const [contact, setContact] = useState({});
+ const info = useContactInfo();
+
  let interest = ["Site from scratch", "App from scratch", "UX/UI design", "Blockchain", "Mobile development", "Web development", "Website", "Maintenance"];
 
  const templateParams = {
@@ -50,37 +53,37 @@ const Contact = () => {
 
  return (
   <div className="contact-main">
-   <Base image="/images/contactbanner.png" isBanner={true} meta_img={"/images/contactbanner.png"} meta_title={"Contact us"} meta_description={"contact"}>
+   <Base image={"http://127.0.0.1:1337" + info?.bannerImg?.url || "/images/contactbanner.png"} isBanner={true} meta_img={"/images/contactbanner.png"} meta_title={"Contact us"} meta_description={"contact"}>
     <div className="contact-container">
      <div className="contact-inner grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xxs:mx-6 md:mx-8 md:gap-4">
       <div>
        <form className="contact-form" onSubmit={(e) => handleSubmit(e)}>
         <p className="contact-title">CONTACT</p>
-        <p className="contact-desc">
+        <p className="contact-desc dark:text-darkmode-dark">
          Hey! Tell us all <img src="/images/hello.png" />
         </p>
-        <p className="contact-desc" style={{ lineHeight: "6px" }}>
+        <p className="contact-desc dark:text-darkmode-dark" style={{ lineHeight: "6px" }}>
          the things
         </p>
-        <p className="contact-smd mt-14">I'm interested in...</p>
+        <p className="contact-smd mt-14 dark:text-darkmode-dark">I'm interested in...</p>
         <div className="cont-tabs">
          {interest.map((item, i) => {
           return (
-           <span key={i} className={`cont-tab`} id={`tab${i}`} onClick={(e) => handleInterest(e, i)}>
+           <span key={i} className={`cont-tab dark:bg-darkmode-tab dark:hover:bg-tab_hover`} id={`tab${i}`} onClick={(e) => handleInterest(e, i)}>
             {item}
            </span>
           );
          })}
         </div>
-        <input className="contact-input focus:ring-0" type="text" autoComplete="off" placeholder="Your Name" name="name" onChange={(e) => handleChange(e)} />
-        <input className="contact-input focus:ring-0" type="email" autoComplete="off" placeholder="Your Email" name="email" onChange={(e) => handleChange(e)} />
-        <input className="contact-input focus:ring-0" type="text" autoComplete="off" placeholder="Tell us about your project" name="project" onChange={(e) => handleChange(e)} />
-        <input className="contact-input focus:ring-0" type="text" autoComplete="off" placeholder="Project Budget" name="budget" onChange={(e) => handleChange(e)} />
-        <input className="contact-input focus:ring-0" type="text" autoComplete="off" placeholder="Message" name="message" onChange={(e) => handleChange(e)} />
+        <input className="contact-input dark:border-border dark:placeholder:text-darkmode-dark focus:ring-0" type="text" autoComplete="off" placeholder="Your Name" name="name" onChange={(e) => handleChange(e)} />
+        <input className="contact-input dark:border-border dark:placeholder:text-darkmode-dark focus:ring-0" type="email" autoComplete="off" placeholder="Your Email" name="email" onChange={(e) => handleChange(e)} />
+        <input className="contact-input dark:border-border dark:placeholder:text-darkmode-dark focus:ring-0" type="text" autoComplete="off" placeholder="Tell us about your project" name="project" onChange={(e) => handleChange(e)} />
+        <input className="contact-input dark:border-border dark:placeholder:text-darkmode-dark focus:ring-0" type="text" autoComplete="off" placeholder="Project Budget" name="budget" onChange={(e) => handleChange(e)} />
+        <input className="contact-input dark:border-border dark:placeholder:text-darkmode-dark focus:ring-0" type="text" autoComplete="off" placeholder="Message" name="message" onChange={(e) => handleChange(e)} />
         <div className="flex items-center gap-4 mb-4">
-         <label className="switch">
+         <label className="switch ">
           <input type="checkbox" />
-          <span className="slider"></span>
+          <span className="slider dark:bg-darkmode-primary"></span>
          </label>
          <p>
           I agree to the{" "}
@@ -90,13 +93,13 @@ const Contact = () => {
          </p>
         </div>
 
-        <button className="contact-btn dark:bg-darkmode-primary dark:text-light" type="submit">
+        <button className="contact-btn dark:bg-darkmode-button dark:hover:bg-darkmode-btn_hover dark:text-light" type="submit">
          Send Request
         </button>
        </form>
       </div>
       <div className="xxs:mt-10 md:flex md:justify-end">
-       <ContactInfo />
+       <ContactInfo info={info} />
       </div>
      </div>
     </div>

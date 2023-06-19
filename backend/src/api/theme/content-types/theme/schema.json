@@ -4,7 +4,8 @@
   "info": {
     "singularName": "theme",
     "pluralName": "themes",
-    "displayName": "theme"
+    "displayName": "theme",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,38 @@
     },
     "fonts": {
       "type": "json"
+    },
+    "homeBanner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "bgImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "logoImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

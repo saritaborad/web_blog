@@ -70,12 +70,10 @@
   
 .cat-btn:hover {
   background: #1F6BFF;
-  border: 1px solid #1F6BFF;
 }
 
 .cat-btn.active {
   background: #1F6BFF;
-  border: 1px solid #1F6BFF;
 }
     
   // card section css
@@ -264,7 +262,7 @@
 }
 
 .bigcard-tag {
-  background-color: #292837;
+  // background-color: #292837;
   display: flex;
   justify-content: center;
   align-items: center;

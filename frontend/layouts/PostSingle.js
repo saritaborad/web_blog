@@ -56,7 +56,7 @@ const PostSingle = ({ post, slug, posts, allCategories, relatedPosts }) => {
      </ul>
      <div className="cat-tabs">
       {categories.map((cat) => (
-       <Link key={cat.id} className="cat-btn dark:bg-darkmode-primary " href={`/categories/${cat.name.replace(" ", "-")}`}>
+       <Link key={cat.id} className="cat-btn dark:bg-darkmode-catBtn dark:hover:bg-darkmode-catBtn_hover " href={`/categories/${cat.name.replace(" ", "-")}`}>
         {cat.name}
        </Link>
       ))}

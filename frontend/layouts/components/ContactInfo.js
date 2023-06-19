@@ -1,12 +1,9 @@
-import { useContactInfo } from "@/hooks/customHook";
 import Link from "next/link";
 import React from "react";
 
-const ContactInfo = () => {
- const info = useContactInfo();
-
+const ContactInfo = ({ info }) => {
  return (
-  <div className="info dark:bg-darkmode-primary">
+  <div className="info dark:bg-light dark:border">
    <div className="info-main xxs:ml-4 sm:ml-10">
     <p className="info-title xxs:text-3xl lg:text-4xl xxs:mb-10 sm:mb-8 dark:text-darkmode-dark">{info?.title || "Let's keep in touch."}</p>
     <div className="info-content">
@@ -18,8 +15,8 @@ const ContactInfo = () => {
      <p className="info-a xxs:text-base lg:text-lg dark:text-darkmode-dark">{info?.address || "436, Mahek icon, Near- Sumul Dairy, Katargam road, Surat -Gujarat, INDIA"}</p>
     </div>
 
-    <Link className="req-btn mt-10 dark:bg-light" href="https://www.google.com/maps?q=Athh+Technologies+LLP%2C+436%2C+Mahek+Icon%2C+Sumul+Dairy+Rd%2C+Katargam%2C+Surat%2C+Gujarat+395003%2C+India" target="_blank">
-     <p className="req-btn-txt dark:text-darkmode-dark">{info?.btnText || "Get Direction"}</p>
+    <Link className="req-btn mt-10 dark:bg-darkmode-button" href="https://www.google.com/maps?q=Athh+Technologies+LLP%2C+436%2C+Mahek+Icon%2C+Sumul+Dairy+Rd%2C+Katargam%2C+Surat%2C+Gujarat+395003%2C+India" target="_blank">
+     <p className="req-btn-txt dark:text-light">{info?.btnText || "Get Direction"}</p>
      <img src="/images/arrow.svg" alt="img" />
     </Link>
     <div className="info-icon mt-10">

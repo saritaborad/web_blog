@@ -1,3 +1,4 @@
+import { useThemeInfo } from "@/hooks/customHook";
 import Base from "@/layouts/components/Base";
 import BigCard from "@/layouts/components/BigCard";
 import Card from "@/layouts/components/Card";
@@ -9,11 +10,12 @@ import axios from "axios";
 
 const HomeNew = ({ posts, categories }) => {
  const sortPostByDate = sortByDate(posts);
+ const themeInfo = useThemeInfo();
  const showPosts = 8;
 
  return (
   <div className="home-container">
-   <Base image="/images/homebanner.png" isBanner={true} meta_img={"/images/homebanner.png"} meta_title={"home"} description={"home description"}>
+   <Base image={"http://127.0.0.1:1337" + themeInfo?.homeBanner?.url || "/images/homebanner.png"} isBanner={true} meta_img={"/images/homebanner.png"} meta_title={"home"} description={"home description"}>
     <div className="home-main">
      <div className="home-inner xxs:mx-4">
       <Category categories={categories} />

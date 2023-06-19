@@ -1,4 +1,4 @@
-const { fetchConfig, fetchTheme, fetchReqData, getContactInfo } = require("@/commonApi");
+const { fetchConfig, fetchReqData, getContactInfo, getTheme } = require("@/commonApi");
 const { useEffect, useState } = require("react");
 
 export function useConfig() {
@@ -43,4 +43,19 @@ export const useContactInfo = () => {
  }, []);
 
  return contact;
+};
+
+export const useThemeInfo = () => {
+ const [themeInfo, setThemeInfo] = useState();
+
+ useEffect(() => {
+  async function getThemeInfo() {
+   const res = await getTheme();
+   setThemeInfo(res?.data);
+  }
+
+  getThemeInfo();
+ }, []);
+
+ return themeInfo;
 };

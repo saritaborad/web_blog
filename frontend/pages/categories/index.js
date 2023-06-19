@@ -14,7 +14,7 @@ const Categories = ({ categories }) => {
      <div className="container pt-6 text-center pb-12">
       <div className="cat-tabs xxs:flex xxs:justify-center">
        {categories.map((cat, i) => (
-        <Link key={i} href={`/categories/${cat.name.replace(" ", "-")}`} className={`cat-btn`}>
+        <Link key={i} href={`/categories/${cat.name.replace(" ", "-")}`} className={`cat-btn dark:bg-darkmode-catBtn dark:hover:bg-darkmode-catBtn_hover`}>
          {cat.name}
         </Link>
        ))}

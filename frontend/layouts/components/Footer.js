@@ -61,9 +61,9 @@ const FooterNew = () => {
    <div className="footer-sec5">
     <p className="f-sec5-title">Supercharge your inbox</p>
     <p className="f-sec5-desc dark:text-darkmode-dark">Sign up for our developer newsletter:</p>
-    <form className="f-sec5-content dark:bg-darkmode-light " onSubmit={(e) => handleSubmit(e)}>
+    <form className="f-sec5-content dark:bg-dark " onSubmit={(e) => handleSubmit(e)}>
      <input placeholder="Enter Email" type="email" name="email" onChange={(e) => setEmail(e.target.value)} className="p-2 w-2/3  xs:p-0  xxs:placeholder:text-sm  md:placeholder:text-lg focus:ring-0" autoComplete="off" />
-     <button className="f-sec5-btn w-1/3 xs:w-1/4 dark:bg-darkmode-primary" type="submit">
+     <button className="f-sec5-btn w-1/3 xs:w-1/4 dark:bg-darkmode-button dark:hover:bg-darkmode-btn_hover" type="submit">
       <img src="/images/arrow.svg" />
      </button>
     </form>

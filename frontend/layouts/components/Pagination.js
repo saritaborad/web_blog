@@ -20,15 +20,15 @@ const Pagination = ({ section, currentPage, totalPages }) => {
      {hasPrevPage ? (
       <Link href={indexPageLink ? `${section ? "/" + section : "/"}` : `${section ? "/" + section : ""}/page/${currentPage - 1}`} className="flex items-center rounded-full px-2 py-1 text-3xl font-bold leading-none text-white">
        <>
-        <BsArrowLeftShort />
-        <span className="ml-3 text-lg post-title">Previous</span>
+        <BsArrowLeftShort className="dark:text-darkmode-dark" />
+        <span className="ml-3 text-lg post-title dark:text-dark">Previous</span>
        </>
       </Link>
      ) : (
       <span className="flex items-center rounded-full px-2 py-1 text-3xl font-bold text-white">
        <>
-        <BsArrowLeftShort />
-        <span className="ml-3 text-lg post-title">Previous</span>
+        <BsArrowLeftShort className="dark:text-darkmode-dark" />
+        <span className="ml-3 text-lg post-title dark:text-dark">Previous</span>
        </>
       </span>
      )}
@@ -53,14 +53,14 @@ const Pagination = ({ section, currentPage, totalPages }) => {
       <Link href={`${section ? "/" + section : ""}/page/${currentPage + 1}`} className="ml-4 flex items-center rounded-full px-2 py-1 text-3xl font-bold leading-none text-white">
        <>
         <span className="mr-3 text-lg post-title">Next</span>
-        <BsArrowRightShort />
+        <BsArrowRightShort className="dark:text-darkmode-dark" />
        </>
       </Link>
      ) : (
       <span className="ml-4 flex items-center rounded-full px-2 py-1 text-3xl font-bold text-white">
        <>
         <span className="mr-3 text-lg post-title">Next</span>
-        <BsArrowRightShort />
+        <BsArrowRightShort className="dark:text-darkmode-dark" />
        </>
       </span>
      )}

@@ -16,7 +16,7 @@ const Category = ({ categories }) => {
    <p className="cat-sub xxs:mb-4 md:mb-8 dark:text-darkmode-dark">Browse the blog</p>
    <div className="cat-tabs xxs:hidden md:block md:flex">
     {categories.map((cat) => (
-     <button key={cat.id} className={`cat-btn dark:bg-darkmode-primary ${activeButton === cat.id ? "active" : ""}`} onClick={() => handleButtonClick(cat.id, cat.name)}>
+     <button key={cat.id} className={`cat-btn dark:bg-darkmode-catBtn dark:hover:bg-catBtn_hover ${activeButton === cat.id ? "dark:hover:bg-catBtn_hover" : ""}`} onClick={() => handleButtonClick(cat.id, cat.name)}>
       {cat.name}
      </button>
     ))}

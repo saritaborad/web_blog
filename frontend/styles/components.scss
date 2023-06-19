@@ -57,6 +57,7 @@
   @apply prose-li:marker:dark:text-darkmode-light;
   
 
+
   // img + em {
   //   @apply -mt-4 block text-center text-gray-500;
   // }
@@ -76,9 +77,11 @@
         @apply bottom-0 right-0 rotate-180;
       }
     }
-  }
+  } 
 
 }
+
+
 
 
 //banner
@@ -311,6 +314,7 @@ footer .socials {
 .banner {
   max-width: 1920px;
   width: 100%;
+  max-height: 569px;
   height: auto;
   // position: relative;
   display: flex;
@@ -321,6 +325,7 @@ footer .socials {
 .banner-img {
   max-width: 1920px;
   width: 100%;
+  max-height: 569px;
   height: auto;
   // position: absolute;
   top: 0;

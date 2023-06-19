@@ -7,8 +7,10 @@ import Base from "@/layouts/components/Base";
 import BigCard from "@/layouts/components/BigCard";
 import Card from "@/layouts/components/Card";
 import Category from "@/layouts/components/Category";
+import { useThemeInfo } from "@/hooks/customHook";
 
 const BlogPagination = ({ posts, currentPage, pagination, categories }) => {
+ const themeInfo = useThemeInfo();
  const indexOfLastPost = currentPage * pagination;
  const indexOfFirstPost = indexOfLastPost - pagination;
  const orderedPosts = sortByDate(posts);
@@ -19,7 +21,7 @@ const BlogPagination = ({ posts, currentPage, pagination, categories }) => {
 
  return (
   <div className="home-container">
-   <Base image="/images/homebanner.png" isBanner={true} meta_img={"/images/homebanner.png"} meta_title={orderedPosts[0]?.title} description={orderedPosts[0]?.meta_description}>
+   <Base image={"http://127.0.0.1:1337" + themeInfo?.homeBanner?.url || "/images/homebanner.png"} isBanner={true} meta_img={"/images/homebanner.png"} meta_title={orderedPosts[0]?.title} description={orderedPosts[0]?.meta_description}>
     <div className="home-main">
      <div className="home-inner xxs:mx-4">
       <Category categories={categories} />

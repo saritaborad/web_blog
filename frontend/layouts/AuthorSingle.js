@@ -25,8 +25,8 @@ const AuthorSingle = ({ author }) => {
       <div className="mb-8">
        <img src={"http://127.0.0.1:1337" + image.url} className="mx-auto rounded-lg cursor-default" height="150" width="150" alt={name} />
       </div>
-      {markdownify(name, "h1", "h2 mb-8 text-white")}
-      <Social source={social} className="social-icons-simple text-white" />
+      {markdownify(name, "h1", "h2 mb-8 text-white dark:text-darkmode-dark")}
+      <Social source={social} className="social-icons-simple text-white dark:text-darkmode-dark" />
       {mdxContent && (
        <div className="content">
         <MDXRemote {...mdxContent} components={shortcodes} />

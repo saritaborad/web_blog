@@ -4,7 +4,7 @@ import React from "react";
 
 const BigCard = ({ post }) => {
  return (
-  <div className="bigcard rounded overflow-hidden shadow-lg dark:bg-darkmode-theme-light">
+  <div className="bigcard rounded overflow-hidden shadow-lg dark:bg-darkmode-theme-light dark:hover:bg-darkmode-primary">
    <Link href={`/posts/${post.slug}`}>
     <img className="bigcard-img" src={"http://127.0.0.1:1337" + post.image.url} alt={post.title} />
    </Link>
@@ -12,9 +12,9 @@ const BigCard = ({ post }) => {
     <div className="bigcard-tags">
      {post.categories?.length > 0 &&
       post.categories.map((tag, i) => (
-       <Link key={i} className="capitalize bigcard-tag dark:bg-darkmode-light dark:bg-darkmode-primary dark:hover:bg-dark" href={`/categories/${tag.name.replace(" ", "-")}`}>
+       <Link key={i} className="capitalize bigcard-tag  dark:bg-darkmode-tab dark:hover:bg-tab_hover" href={`/categories/${tag.name.replace(" ", "-")}`}>
         {tag.name}
-       </Link>
+       </Link>  
       ))}
     </div>
     <Link className="bigcard-txt dark:text-darkmode-dark" href={`/posts/${post.slug}`}>
@@ -27,7 +27,7 @@ const BigCard = ({ post }) => {
      </span>
      <div className="bigcard-read-sec">
       <Link href={`/posts/${post.slug}`}>
-       <img className="bigcard-arrow" src="/images/bigarrow.svg" alt="img" />
+       <img className="bigcard-arrow " src="/images/bigarrow.svg" alt="img" />
       </Link>
      </div>
     </div>

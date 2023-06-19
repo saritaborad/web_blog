@@ -1,6 +1,6 @@
 const { fetchTheme, startThemeUpdateCheck } = require("./commonApi");
-fetchTheme();
-startThemeUpdateCheck();
+// fetchTheme();
+// startThemeUpdateCheck();
 
 const theme = require("./config/theme.json");
 
@@ -42,8 +42,17 @@ module.exports = {
    padding: "2rem",
   },
   extend: {
+   //    backgroundImage: { "custom-image": `url(${theme.backgroundImage.url})` },
    colors: {
     linkColor: "#1F6BFF",
+    button: theme.colors.default.theme_color.button,
+    bigTitle: theme.colors.default.theme_color.bigTitle,
+    smTitle: theme.colors.default.theme_color.smTitle,
+    btn_hover: theme.colors.default.theme_color.btn_hover,
+    catBtn: theme.colors.default.theme_color.catBtn,
+    catBtn_hover: theme.colors.default.theme_color.catBtn_hover,
+    tab: theme.colors.default.theme_color.tab,
+    tab_hover: theme.colors.default.theme_color.tab_hover,
     text: theme.colors.default.text_color.default,
     dark: theme.colors.default.text_color.dark,
     primary: theme.colors.default.theme_color.primary,
@@ -52,7 +61,16 @@ module.exports = {
     light: theme.colors.default.text_color.light,
     "theme-light": theme.colors.default.theme_color.theme_light,
     "theme-dark": theme.colors.default.theme_color.theme_dark,
+
     darkmode: {
+     button: theme.colors.darkmode.theme_color.button,
+     bigTitle: theme.colors.darkmode.theme_color.bigTitle,
+     smTitle: theme.colors.darkmode.theme_color.smTitle,
+     btn_hover: theme.colors.darkmode.theme_color.btn_hover,
+     catBtn: theme.colors.darkmode.theme_color.catBtn,
+     catBtn_hover: theme.colors.darkmode.theme_color.catBtn_hover,
+     tab: theme.colors.darkmode.theme_color.tab,
+     tab_hover: theme.colors.darkmode.theme_color.tab_hover,
      text: theme.colors.darkmode.text_color.default,
      light: theme.colors.darkmode.text_color.light,
      dark: theme.colors.darkmode.text_color.dark,
