@@ -1,3 +1,7 @@
+const { fetchTheme, startThemeUpdateCheck } = require("./commonApi");
+fetchTheme();
+startThemeUpdateCheck();
+
 const theme = require("./config/theme.json");
 
 let font_base = Number(theme.fonts.font_size.base.replace("px", ""));

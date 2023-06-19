@@ -14,7 +14,6 @@ const Base = ({ image, isBanner, meta_img, meta_title, description, children }) 
  const { base_url } = config.site;
  const router = useRouter();
  const { theme } = useTheme();
- console.log(theme);
 
  return (
   <div className={`${theme === "light" ? "bg-image" : "dark:bg-darkmode-theme-light"}`}>

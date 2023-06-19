@@ -39,8 +39,8 @@ const PostSingle = ({ post, slug, posts, allCategories, relatedPosts }) => {
 
      <ul className="flex items-center space-x-4">
       <li className="">
-       <span className="items-center flex justify-center font-description text-white leading-3">
-        <FaUserAlt className="mr-1.5" />
+       <span className="items-center flex justify-center font-description text-white leading-3 dark:text-darkmode-dark">
+        <FaUserAlt className="mr-1.5 " />
         {authors &&
          authors.map((item, i) => (
           <Link href={`/authors/${slugify(item.name)}`} key={`author-${i}`}>
@@ -49,7 +49,7 @@ const PostSingle = ({ post, slug, posts, allCategories, relatedPosts }) => {
          ))}
        </span>
       </li>
-      <li className="items-center flex justify-center font-description text-white leading-3">
+      <li className="items-center flex justify-center font-description text-white leading-3 dark:text-darkmode-dark">
        <FaRegCalendar className="mr-1.5" />
        {dateFormat(createdAt)}
       </li>
