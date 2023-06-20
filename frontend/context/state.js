@@ -22,3 +22,5 @@ export const JsonContext = ({ children }) => {
 export const useSearchContext = () => {
  return useContext(SearchContext);
 };
+
+

@@ -66,6 +66,7 @@
   color: #FFFFFF;
   font-family: 'Syne',sans-serif;
   cursor: pointer;
+  
 }
   
 .cat-btn:hover {
@@ -179,8 +180,6 @@
   align-items: center;
   gap: 20px;
   position: relative;
-  max-height: 55px;
-  height: 100%;
   cursor: pointer;
 }
 
@@ -200,7 +199,7 @@
   position: absolute;
   left: 100%;
   right: 0%;
-  top: 24%;
+  top: 26%;
   bottom: 0%;
   background-color:transparent;
 }

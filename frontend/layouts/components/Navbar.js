@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { useThemeInfo } from "@/hooks/customHook";
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
  const router = useRouter();
  const themeInfo = useThemeInfo();
+ const { theme } = useTheme();
+ const [mounted, setMounted] = useState(false);
 
  let Links = [
   { name: "About", link: "/about" },
@@ -14,14 +17,20 @@ const Navbar = () => {
   { name: "Privacy Policy", link: "/privacy-policy" },
   { name: "Categories", link: "/categories" },
  ];
+
  let [open, setOpen] = useState(false);
+ useEffect(() => {
+  setMounted(true);
+ }, []);
 
  return (
   <div className="navbar flex items-center shadow-md md:flex md:items-center md:justify-between md:w-full top-0 left-0 z-[2] dark:bg-light">
    <div className="cursor-pointer flex items-center">
-    <Link href="/">
-     <img src={"http://127.0.0.1:1337" + themeInfo?.logoImg?.url || "/images/logo.svg"} className="xxs:w-3/5 md:w-full dark:bg-darkmode-light" />
-    </Link>
+    {mounted && (
+     <Link href="/">
+      <img src={theme === "dark" ? `/images/logoLight.svg` : `${"http://127.0.0.1:1337" + themeInfo?.logoImg?.url || "/images/logo.svg"}`} className="xxs:w-3/5 md:w-full " />
+     </Link>
+    )}
    </div>
 
    <div onClick={() => setOpen(!open)} className="text-3xl absolute right-4  cursor-pointer md:hidden">

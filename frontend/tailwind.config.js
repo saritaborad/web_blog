@@ -1,6 +1,6 @@
 const { fetchTheme, startThemeUpdateCheck } = require("./commonApi");
-// fetchTheme();
-// startThemeUpdateCheck();
+fetchTheme();
+startThemeUpdateCheck();
 
 const theme = require("./config/theme.json");
 

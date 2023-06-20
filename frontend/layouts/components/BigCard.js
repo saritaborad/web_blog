@@ -14,7 +14,7 @@ const BigCard = ({ post }) => {
       post.categories.map((tag, i) => (
        <Link key={i} className="capitalize bigcard-tag  dark:bg-darkmode-tab dark:hover:bg-tab_hover" href={`/categories/${tag.name.replace(" ", "-")}`}>
         {tag.name}
-       </Link>  
+       </Link>
       ))}
     </div>
     <Link className="bigcard-txt dark:text-darkmode-dark" href={`/posts/${post.slug}`}>

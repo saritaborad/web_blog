@@ -37,14 +37,12 @@ export function startThemeUpdateCheck() {
   } catch (error) {
    console.log("Failed to update theme:", error);
   }
- }, 60000000000000);
+ }, 60000000);
 }
 
 export function stopThemeUpdateCheck() {
  clearInterval(intervalId);
 }
-
-stopThemeUpdateCheck();
 
 export async function fetchReqData() {
  const res = await axios.get("http://127.0.0.1:1337/" + GET_REQUEST_DATA);

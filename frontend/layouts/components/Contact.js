@@ -27,11 +27,15 @@ const Contact = () => {
  const handleChange = (e) => setContact((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
  const handleInterest = (e, i) => {
-  document?.getElementById(`tab${i}`).classList.toggle("active");
-  if (arr.includes(e.target.innerHTML)) {
-   arr = arr.filter((item) => item !== e.target.innerHTML);
-  } else {
-   arr.push(e.target.innerHTML);
+  if (document.getElementById(`tab${i}`)) {
+   document?.getElementById(`tab${i}`).classList.toggle("active");
+   if (arr.includes(e.target.innerHTML)) {
+    arr = arr.filter((item) => item !== e.target.innerHTML);
+    document?.getElementById(`tab${i}`).classList.remove("dark:bg-tab_hover");
+   } else {
+    document?.getElementById(`tab${i}`).classList.add("dark:bg-tab_hover");
+    arr.push(e.target.innerHTML);
+   }
   }
 
   setContact((prev) => ({ ...prev, interested: arr }));
