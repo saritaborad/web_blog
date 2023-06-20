@@ -27,16 +27,14 @@ const FooterNew = () => {
  }, []);
 
  return (
-  //   <div className="mx-auto">
   <div className="footer grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 ">
    <div className="footer-sec1 p-6 xs:px-0 xxs:px-0">
-    <Link href="/">
-     {mounted && (
-      <Link href="/">
-       <img src={theme === "dark" ? `/images/logoLight.svg` : `${"http://127.0.0.1:1337" + themeInfo?.logoImg?.url || "/images/logo.svg"}`} />
-      </Link>
-     )}
-    </Link>
+    {mounted && (
+     <Link href="/">
+      <img src={theme === "dark" ? `/images/logoLight.svg` : `${"http://127.0.0.1:1337" + themeInfo?.logoImg?.url || "/images/logo.svg"}`} />
+     </Link>
+    )}
+
     <div className="">
      <Social source={social} className="footer-social dark:text-darkmode-dark pl-4" />
     </div>
@@ -84,7 +82,6 @@ const FooterNew = () => {
    </div>
    <span className="footer-copy sm:block xxs:py-6 md:hidden">Copyright © Verselix LLP 2023</span>
   </div>
-  //   </div>
  );
 };
 

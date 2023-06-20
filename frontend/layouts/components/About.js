@@ -22,7 +22,7 @@ const About = ({ data }) => {
  return (
   <div className="about-container">
    <Base image={"http://127.0.0.1:1337" + bannerImg?.url || "/images/aboutbanner.png"} isBanner={true} meta_img={bannerImg?.url} meta_title={"About us"} description={sec1?.description1.slice(0, 120)}>
-    <div className="about-sec1   xxs:px-4 xxs:my-8 md:px-4 ">
+    <div className="about-sec1 xxs:px-4 xxs:my-8 md:px-4 ">
      <div className="sec1-main gap-2">
       <div className="sec1-sub gap-4">
        <p className="sec1-title">{title || "ABOUT US"}</p>
@@ -42,7 +42,7 @@ const About = ({ data }) => {
       <img className="about-img  xxs:hidden xs:hidden sm:hidden md:block md:w-3/6 lg:w-3/5 xl:w-3/5 2xl:w-4/5 3xl:w-full" src={"http://127.0.0.1:1337" + sec1?.image?.url || "/images/group25.png"} />
      </div>
     </div>
-    <div className="about-sec2  sm:min-h-[850px]">
+    <div className="about-sec2 sm:min-h-[850px]">
      <div className="sec2-main xxs:mx-4">
       <div className="sec2-sub xxs:flex xxs:gap-4">
        <div className="sec2-content ">

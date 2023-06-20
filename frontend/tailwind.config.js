@@ -46,8 +46,6 @@ module.exports = {
    colors: {
     linkColor: "#1F6BFF",
     button: theme.colors.default.theme_color.button,
-    bigTitle: theme.colors.default.theme_color.bigTitle,
-    smTitle: theme.colors.default.theme_color.smTitle,
     btn_hover: theme.colors.default.theme_color.btn_hover,
     catBtn: theme.colors.default.theme_color.catBtn,
     catBtn_hover: theme.colors.default.theme_color.catBtn_hover,
@@ -64,8 +62,6 @@ module.exports = {
 
     darkmode: {
      button: theme.colors.darkmode.theme_color.button,
-     bigTitle: theme.colors.darkmode.theme_color.bigTitle,
-     smTitle: theme.colors.darkmode.theme_color.smTitle,
      btn_hover: theme.colors.darkmode.theme_color.btn_hover,
      catBtn: theme.colors.darkmode.theme_color.catBtn,
      catBtn_hover: theme.colors.darkmode.theme_color.catBtn_hover,

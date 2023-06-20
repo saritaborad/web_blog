@@ -1,11 +1,7 @@
 import React from "react";
 
 const Banner = ({ image }) => {
- return (
-  <div className="banner">
-   <img className="banner-img h-auto max-w-full" src={image} />
-  </div>
- );
+ return <div className="banner-img-wrapper">{image ? <img className="banner-img" src={image} alt="Banner" /> : <div className="banner-img-placeholder"></div>}</div>;
 };
 
 export default Banner;

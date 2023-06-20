@@ -1,5 +1,4 @@
 import config from "/config/config.json";
-import ImageFallback from "/layouts/components/ImageFallback";
 import dateFormat from "/lib/utils/dateFormat";
 import Link from "next/link";
 import { FaRegCalendar, FaUserAlt } from "react-icons/fa";
@@ -10,7 +9,7 @@ const Post = ({ post }) => {
  return (
   <div className="post">
    <div className="relative">
-    {post.image && <ImageFallback className="rounded" src={"http://127.0.0.1:1337" + post.image.url} alt={post.title} width={405} height={208} />}
+    {post.image && <img className="rounded" src={"http://127.0.0.1:1337" + post.image.url} alt={post.title} width={405} height={208} />}
     <ul className="absolute top-3 left-2 flex flex-wrap items-center">
      {post.categories?.length > 0 &&
       post.categories.map((tag, index) => (
