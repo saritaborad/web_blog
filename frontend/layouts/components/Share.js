@@ -3,9 +3,7 @@ import config1 from "@config/config.json";
 import { IoLogoFacebook, IoLogoLinkedin, IoLogoPinterest, IoLogoTwitter } from "react-icons/io5";
 
 const Share = ({ title, description, slug, className }) => {
- //  const configData = useConfig();
-
- const { base_url } =   config1.site;
+ const { base_url } = config1.site;
 
  return (
   <ul className={`${className}`}>

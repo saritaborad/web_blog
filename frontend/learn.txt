@@ -1,2 +1,216 @@
 https://www.figma.com/file/5HsZCAjNcEJQKD8eWqyHvA/Verselix-website-(24-02-2023)?type=design&node-id=144-3515&t=uwHuUAEK6hTPbyGX-0
 => html, css, tailwind css
+
+What is React.js?
+=> React.js is an open-source JavaScript library
+
+What is JSX?
+=> JSX is a syntax extension for JavaScript that allows you to write HTML-like code within your JavaScript code in React
+
+Explain the concept of Virtual DOM in React
+=> The Virtual DOM is a lightweight copy of the actual DOM in memory.
+=> When there are changes in the component's state or props, React creates a new Virtual DOM,
+ compares it with the previous one,
+ and efficiently updates only the necessary parts of the actual DOM.
+
+What are React components?
+React components are the building blocks of React applications.
+They are reusable and independent pieces of UI which makes combined UI
+Components can be class-based or function-based
+
+What is the significance of keys in React lists?
+They help React identify which items have changed, been added, or been removed in a list
+
+What are React hooks?
+React hooks are functions that allow developers to use state and other React features in function components without writing a class
+Hooks provide a way to reuse stateful logic,
+ such as managing component state, using lifecycle methods, and performing side effects, in a more concise and readable manner
+
+ Explain the concept of React context
+ React context provides a way to share data between components without having to pass props through every level of the component tree.
+ It allows you to create a context provider to provide data and a context consumer to access that data from any descendant component, regardless of their position in the component tree.
+
+ What are the differences between functional components and class components in React?
+ Functional components are simpler and easier to read and test.
+ They are functions that accept props as parameters and return JSX.
+ Class components are JavaScript classes that extend the React.Component class and have additional features like lifecycle methods and local state.
+
+ What is the significance of the render() method in a class component?
+ it is responsible for returning the JSX 
+ render() method is called whenever there are updates to the component's state or props
+
+ What is the purpose of the setState() method in React?
+ setState() method is used to update the state of a component.
+ when called, React re-renders the component with the updated state, and any child components will also be re-rendered
+
+ Explain the concept of prop drilling and how it can be mitigated.
+ Prop drilling refers to the process of passing props from a high-level component to a deeply nested component
+ Prop drilling can be mitigated by using React context / Redux 
+
+What is the purpose of React Router and how does it work
+It provides a way to define different routes and their corresponding components, allowing the application to render different components based on the current URL
+BrowserRouter, Route, and Link to handle routing functionality.
+
+What is the purpose of React Fragments? 
+are used to group multiple elements together without creating an additional DOM element (unnecessary parent element)
+
+useMemo hook 
+allows you to memoize the result of a function or computation,
+ preventing unnecessary re-execution of that function or computation when certain dependencies have not changed
+
+const result = useMemo(() => {
+    // Expensive computation
+    console.log('Performing computation...');
+    return a + b;
+  }, [a, b]); 
+=> React will reuse the previously computed result, avoiding unnecessary computation 
+=> only when a or b changes computation will be performed
+
+useCallback hook 
+=> used in react to memoize callback func, preventing unnecessary re-creation of function render 
+=> it is useful when passing callbacks as dependencies  to child component, as it optimize performance by avoiding unnecessary re-renders.
+=> it takes => 
+ => the callback function,
+ => an array of dependencies
+
+  const handleClick = useCallback(() => {
+    // Callback logic
+    console.log('Button clicked!');
+  }, []);
+
+
+  HOOKS 
+
+  useState: Manages state in functional components.
+  useEffect: Performs side effects in functional components (e.g., data fetching, subscriptions, DOM manipulation) after rendering.
+  useContext: Accesses the value of a context provider within a functional component.
+  useReducer: Alternative to useState for managing more complex state logic using reducers.
+  useRef: Creates a mutable ref object that can hold a value across renders.
+  useMemo: Memoizes a value to prevent unnecessary re-computations.
+  useCallback: Memoizes a function to prevent unnecessary re-creations.
+
+  => NodeJs use single thread to handle all incoming requests 
+  => JavaScript execution in NodeJs is single threaded
+  => NodeJs employs concept of event loop and non blocking i/o to handle multiple request 
+  
+  => event loop=> NodeJs use event driven architecture with event loop 
+      => the event loop checks for new events in queue and execute them one by one in loop. 
+      => this allow nodejs to handle multiple request
+  
+  => Non-Blocking I/O => NodeJs relies on non-blocking i/o 
+      => when request i/o operation such as reading from file or making request
+      => nodejs initiate the operation and continue execute without waiting for other i/o
+      => when i/o operation finish callback function triggerd to handle result.
+      => this allow nodejs blocking execution while waiting for i/o operation 
+
+=> single-thread and multi-thread 
+=> refers to handling concurrent tasks and executing code 
+=> single threaded 
+   => only one thread of execution
+   => program sequentially executes instructions one after the other in a single flow
+   => task or operation is processed in a sequential manner
+   => the program can only work on one task at a time
+   => If a task takes a long time to complete, it can block the execution of subsequent tasks
+   => leading to a delay in the overall execution of the program
+
+=> Multi-threaded: 
+   => there are multiple threads of execution. 
+   => Each thread represents a separate flow of control within the program.
+   => The program can perform multiple tasks simultaneously by executing different threads concurrently. 
+   => Each thread can work on a specific task independently, 
+   => allowing for parallel execution of tasks. 
+   => Threads can communicate with each other and share data, 
+   => enabling coordination and synchronization between different parts of the program.
+
+      
+  ===========================
+  fs:
+  => it provides methods for working with file system
+  => reading, writing files, creating directories, managing file
+
+  http and https:
+  => it enables creating http and https server and making http request
+  =>  http: for creating HTTP servers and clients.
+
+  path:
+  => it provides utility to work with directories and file paths 
+  => it helps to extract file extension
+  => resolving relative paths 
+  => joining path segement 
+
+  os:
+  => provides info related to operating system
+
+  stream: 
+  => to handle data streaming
+  => enables large amount of data processing by working with chunk instead of entire data 
+
+  querystring:
+  => provides method of parsing and formatting URL query string 
+
+  crypto: 
+  => provides cryptographic functionality 
+  => generating hash, encrypting and decrypting data and working with signature
+
+
+
+  import Link from "next/link";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
+import ThemeSwitcher from "./ThemeSwitcher";
+import { useMounted, useThemeInfo } from "@/hooks/customHook";
+import { useTheme } from "next-themes";
+
+const Navbar = () => {
+ const router = useRouter();
+ const themeInfo = useThemeInfo();
+ const { theme } = useTheme();
+ const mounted = useMounted();
+
+ let Links = [
+  { name: "About", link: "/about" },
+  { name: "Contact", link: "/contact" },
+  { name: "Privacy Policy", link: "/privacy-policy" },
+  { name: "Categories", link: "/categories" },
+ ];
+
+ let [open, setOpen] = useState(false);
+
+ return (
+  <div className="navbar sticky flex items-center shadow-md md:flex md:items-center md:justify-between md:w-full top-0 left-0 z-[2] dark:bg-light">
+   <div className="cursor-pointer flex items-center">
+    {mounted && (
+     <Link href="/">
+      <img src={theme === "dark" ? `/images/logoLight.svg` : `${"http://127.0.0.1:1337" + themeInfo?.logoImg?.url || "/images/logo.svg"}`} className="xxs:w-3/5 md:w-full" />
+     </Link>
+    )}
+   </div>
+
+   <div className="flex ">
+    <ThemeSwitcher className="xxs:block md:hidden" />
+    <ion-icon name={open ? "close-outline" : "menu-outline"} onClick={() => setOpen(!open)} className="text-3xl absolute right-4  cursor-pointer md:hidden"></ion-icon>
+   </div>
+
+   <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[2] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? "nav-open mt-0 dark:bg-darkmode-light " : "top-[-490px] bg-transparent"} `}>
+    {Links.map((link) => (
+     <li key={link.name} className={`${link.name === "Categories" ? "xxs:block md:hidden md:ml-8 text-xl md:my-0 my-7 " : "md:ml-8 text-xl md:my-0 my-7 "}`}>
+      <Link href={link.link} className={router?.asPath === `${link.link}` ? `nav-item active dark:border dark:bg-darkmode-light md:py-11 md:px-5 dark:text-darkmode-dark` : `nav-item dark:text-darkmode-dark`}>
+       {link.name}
+      </Link>
+     </li>
+    ))}
+    <Link href="/contact" className="nav-btn text-white px-6 py-4 rounded md:ml-8 md:flex md:hidden dark:bg-darkmode-button dark:hover:bg-darkmode-btn_hover">
+     Get In Touch
+    </Link>
+   </ul>
+   <div className="flex justify-center items-center">
+    <ThemeSwitcher className="xxs:hidden md:block" />
+    <Link href="/contact" className="nav-btn text-white px-6 rounded md:ml-8 md:flex hidden dark:bg-darkmode-button dark:hover:bg-darkmode-btn_hover">
+     Get In Touch
+    </Link>
+   </div>
+  </div>
+ );
+};
+
+export default Navbar;

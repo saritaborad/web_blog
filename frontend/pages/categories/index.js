@@ -8,7 +8,7 @@ import Base from "@/layouts/components/Base";
 const Categories = ({ categories }) => {
  return (
   <div className="home-container">
-   <Base image="/images/homebanner.png" isBanner={true} meta_img={"/images/homebanner.png"} meta_title={"Category"} description={"Category"}>
+   <Base image="/images/homebanner.png" isBanner={false} meta_img={"/images/homebanner.png"} meta_title={"Category"} description={"Category"}>
     <section className="">
      {markdownify("Categories", "h2", "h2 py-12 lg:text-[40px] title-text text-center ")}
      <div className="container pt-6 text-center pb-12">

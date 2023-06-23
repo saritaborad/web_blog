@@ -71,10 +71,12 @@
   
 .cat-btn:hover {
   background: #1F6BFF;
+  border: none;
 }
 
 .cat-btn.active {
   background: #1F6BFF;
+  border: none;
 }
     
   // card section css
@@ -91,8 +93,6 @@
   height: 100%;
   border: 1px solid transparent; /* Initial border */
   transition: border-color 0.3s ease; /* Transition for smooth effect */
-  
-
 }
 
 .card-img {
@@ -102,6 +102,7 @@
   height: 100%;
   cursor: pointer;
 }
+
 
 .card-content {
   display: flex;
@@ -217,6 +218,11 @@
   fill: #1F6BFF;
 }
   
+.card:hover .card-img {
+  transform: scale(1.03);
+  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms linear;  
+}
   // big card section
   
 .bigcard {
@@ -240,6 +246,7 @@
   cursor: pointer;
 }
 
+
 .bigcard-content {
   display: flex;
   flex-direction: column;
@@ -261,7 +268,7 @@
 }
 
 .bigcard-tag {
-  // background-color: #292837;
+  background-color: #292837;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -365,6 +372,12 @@
   background-color: #FFFFFF;
   color: #1D1C28;
   font-weight: bold;
+}
+
+.bigcard:hover .bigcard-img {
+  transform: scale(1.03);
+  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms linear;  
 }
   
 .rel-main {

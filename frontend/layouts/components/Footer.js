@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Social from "./Social";
 import Link from "next/link";
 import axios from "axios";
-import { useThemeInfo } from "@/hooks/customHook";
+import { useMounted, useThemeInfo } from "@/hooks/customHook";
 import { useTheme } from "next-themes";
 
 const FooterNew = () => {
  const [email, setEmail] = useState();
  const themeInfo = useThemeInfo();
  const { theme } = useTheme();
- const [mounted, setMounted] = useState(false);
+ const mounted = useMounted();
 
  let social = { twitter: "https://www.twitter.com", facebook: "https://www.facebook.com", linkedin: "https://www.linkedin.com", instagram: "https://www.instagram.com" };
 
@@ -21,10 +21,6 @@ const FooterNew = () => {
    console.log(error.message);
   }
  };
-
- useEffect(() => {
-  setMounted(true);
- }, []);
 
  return (
   <div className="footer grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 ">

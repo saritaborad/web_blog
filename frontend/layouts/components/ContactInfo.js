@@ -14,8 +14,7 @@ const ContactInfo = ({ info }) => {
      <p className="info-c mb-2 xxs:text-xl lg:text-2xl dark:text-darkmode-dark">{info?.country || "india"}</p>
      <p className="info-a xxs:text-base lg:text-lg dark:text-darkmode-dark">{info?.address || "436, Mahek icon, Near- Sumul Dairy, Katargam road, Surat -Gujarat, INDIA"}</p>
     </div>
-
-    <Link className="req-btn mt-10 dark:bg-darkmode-button" href="https://www.google.com/maps?q=Athh+Technologies+LLP%2C+436%2C+Mahek+Icon%2C+Sumul+Dairy+Rd%2C+Katargam%2C+Surat%2C+Gujarat+395003%2C+India" target="_blank">
+    <Link className="req-btn mt-10 dark:bg-darkmode-button dark:hover:bg-darkmode-btn_hover" href="https://www.google.com/maps?q=Athh+Technologies+LLP%2C+436%2C+Mahek+Icon%2C+Sumul+Dairy+Rd%2C+Katargam%2C+Surat%2C+Gujarat+395003%2C+India" target="_blank">
      <p className="req-btn-txt dark:text-light">{info?.btnText || "Get Direction"}</p>
      <img src="/images/arrow.svg" alt="img" />
     </Link>

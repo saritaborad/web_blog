@@ -8,11 +8,8 @@ import TagManager from "react-gtm-module";
 import "styles/style.scss";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useConfig } from "@/hooks/customHook";
 
 const App = ({ Component, pageProps }) => {
- //  const themeData = useThemeData();
-
  let theme = theme1;
  const { default_theme } = config.settings;
 
@@ -32,7 +29,6 @@ const App = ({ Component, pageProps }) => {
   setTimeout(() => {
    process.env.NODE_ENV === "production" && config.params.tag_manager_id && TagManager.initialize(tagManagerArgs);
   }, 5000);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
  }, []);
 
  return (

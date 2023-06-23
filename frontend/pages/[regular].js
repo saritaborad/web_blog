@@ -5,10 +5,11 @@ import { GET_ABOUT_PAGE, GET_ALL_SLUGS, GET_NOTFOUND_PAGE, GET_PRIVACY_PAGE } fr
 import PrivacyPolicy from "@/layouts/PrivacyPolicy";
 import About from "@/layouts/components/About";
 import Contact from "@/layouts/components/Contact";
+import { Career } from "@/layouts/components/Career";
 
 // for all regular pages
 const RegularPages = ({ slug, notFound, privacy, about }) => {
- return <>{slug === "404" ? <NotFound data={notFound} /> : slug === "about" ? <About data={about} /> : slug === "contact" ? <Contact /> : slug === "privacy-policy" ? <PrivacyPolicy data={privacy} /> : <Default />}</>;
+ return <>{slug === "404" ? <NotFound data={notFound} /> : slug === "about" ? <About data={about} /> : slug === "contact" ? <Contact /> : slug === "career" ? <Career /> : slug === "privacy-policy" ? <PrivacyPolicy data={privacy} /> : <Default />}</>;
 };
 export default RegularPages;
 
@@ -26,6 +27,7 @@ export const getStaticPaths = async () => {
  paths.push({ params: { regular: "contact" } });
  paths.push({ params: { regular: "privacy-policy" } });
  paths.push({ params: { regular: "404" } });
+ paths.push({ params: { regular: "career" } });
 
  return {
   paths,

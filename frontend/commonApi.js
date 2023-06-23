@@ -28,11 +28,11 @@ export function startThemeUpdateCheck() {
    const res = await axios.get("http://127.0.0.1:1337/" + "api/theme");
    const updatedTheme = res.data.data;
    const themeFile = path.resolve(__dirname, "config", "theme.json");
-   const currentTheme = cachedTheme || JSON.parse(fs.readFileSync(themeFile));
+   const currentTheme = JSON.parse(fs.readFileSync(themeFile));
 
    if (JSON.stringify(updatedTheme) !== JSON.stringify(currentTheme)) {
     fs.writeFileSync(themeFile, JSON.stringify(updatedTheme));
-    cachedTheme = updatedTheme;
+    // cachedTheme = updatedTheme;
    }
   } catch (error) {
    console.log("Failed to update theme:", error);

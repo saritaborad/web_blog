@@ -12,12 +12,12 @@ const Card = ({ post }) => {
     <div className="card-tags ">
      {post.categories?.length > 0 &&
       post.categories.map((tag, i) => (
-       <Link key={i} className="capitalize card-tag dark:bg-darkmode-tab dark:hover:bg-tab_hover" href={`/categories/${tag.name.replace(" ", "-")}`}>
+       <Link key={i} className="capitalize card-tag dark:bg-darkmode-catBtn dark:hover:bg-darkmode-catBtn_hover" href={`/categories/${tag.name.replace(" ", "-")}`}>
         {tag.name}
        </Link>
       ))}
     </div>
-    <Link href={`/posts/${post.slug}`} className="card-txt dark:text-darkmode-dark">
+    <Link href={`/posts/${post.slug}`} className="card-txt dark:text-darkmode-dark xxs:text-xl sm:text-2xl">
      {post.title}
     </Link>
     <div className="card-dt-section ">

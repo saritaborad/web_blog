@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import { useEffect, useState } from "react";
 
 const ImageFallback = (props) => {

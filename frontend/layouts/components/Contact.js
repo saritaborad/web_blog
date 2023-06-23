@@ -57,7 +57,7 @@ const Contact = () => {
 
  return (
   <div className="contact-main">
-   <Base image={"http://127.0.0.1:1337" + info?.bannerImg?.url || "/images/contactbanner.png"} isBanner={true} meta_img={"/images/contactbanner.png"} meta_title={"Contact us"} meta_description={"contact"}>
+   <Base image={info?.bannerImg?.url ? "http://127.0.0.1:1337" + info?.bannerImg?.url : "/images/contactbanner.png"} isBanner={true} meta_img={"/images/contactbanner.png"} meta_title={"Contact us"} meta_description={"contact"}>
     <div className="contact-container">
      <div className="contact-inner grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xxs:mx-6 md:mx-8 md:gap-4">
       <div>
@@ -73,7 +73,7 @@ const Contact = () => {
         <div className="cont-tabs">
          {interest.map((item, i) => {
           return (
-           <span key={i} className={`cont-tab dark:bg-darkmode-tab dark:hover:bg-tab_hover`} id={`tab${i}`} onClick={(e) => handleInterest(e, i)}>
+           <span key={i} className={`cont-tab dark:bg-darkmode-catBtn dark:hover:bg-darkmode-catBtn_hover`} id={`tab${i}`} onClick={(e) => handleInterest(e, i)}>
             {item}
            </span>
           );
@@ -87,7 +87,7 @@ const Contact = () => {
         <div className="flex items-center gap-4 mb-4">
          <label className="switch ">
           <input type="checkbox" />
-          <span className="slider dark:bg-darkmode-primary"></span>
+          <span className="slider dark:bg-darkmode-button"></span>
          </label>
          <p>
           I agree to the{" "}

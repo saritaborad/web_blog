@@ -6,6 +6,7 @@
 @tailwind post;
 @tailwind home;
 @tailwind contact;
+@tailwind career;
 
 
 @layer base {
@@ -21,6 +22,7 @@
   @import "post";
   @import "home";
   @import "contact";
+  @import "career";
 }
 
 @layer utilities {

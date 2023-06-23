@@ -6,17 +6,17 @@ function Tabs({ children }) {
 
   //change tab item on click
   const handleChangTab = (event, index) => {
-    const tabLinks = [...event.currentTarget.parentElement.children];
+    const tabLinks = [...event.currentTarget.parentElement.children]; // refers to current targets parent elements children
     const items = [...tabItemsRef.current.children];
-    const activeItem = items.find((item) => !item.classList.contains("hidden"));
+    const activeItem = items.find((item) => !item.classList.contains("hidden")); 
     const activeTabLink = tabLinks.find((item) =>
-      item.classList.contains("active-tab")
+      item.classList.contains("active-tab") // it will check active-tab
     );
-    if (activeItem === items[index]) return;
-    activeTabLink.classList.remove("active-tab");
-    event.currentTarget.classList.add("active-tab");
-    activeItem.classList.add("hidden");
-    items[index].classList.remove("hidden");
+    if (activeItem === items[index]) return; //  if the same tab is selected then it will do nothing
+    activeTabLink.classList.remove("active-tab"); // it not same tab it will remove 'active-tab' class
+    event.currentTarget.classList.add("active-tab"); //in current tab it will add active-atb class
+    activeItem.classList.add("hidden"); // in active tab it will add hidden  
+    items[index].classList.remove("hidden"); // in clicked tab 
   };
 
   //show first tab-item

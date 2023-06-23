@@ -15,7 +15,7 @@ const HomeNew = ({ posts, categories }) => {
 
  return (
   <div className="home-container">
-   <Base image={"http://127.0.0.1:1337" + themeInfo?.homeBanner?.url || "/images/homebanner.png"} isBanner={true} meta_img={"/images/homebanner.png"} meta_title={"home"} description={"home description"}>
+   <Base image={themeInfo?.homeBanner?.url ? "http://127.0.0.1:1337" + themeInfo?.homeBanner?.url : "/images/homebanner.png"} isBanner={true} meta_img={"/images/homebanner.png"} meta_title={"home"} description={"home description"}>
     <div className="home-main">
      <div className="home-inner xxs:mx-4">
       <Category categories={categories} />
