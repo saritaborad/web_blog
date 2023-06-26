@@ -30,18 +30,6 @@ export const markdownify = (content, tag, className) => {
  );
 };
 
-// humanize
-export const humanize = (content) => {
- if (!content) return null;
-
- return content
-  .replace(/^[\s_]+|[\s_]+$/g, "")
-  .replace(/[_\s]+/g, " ")
-  .replace(/^[a-z]/, function (m) {
-   return m.toUpperCase();
-  });
-};
-
 // plainify
 export const plainify = (content) => {
  if (!content) return null;

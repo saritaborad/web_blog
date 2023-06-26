@@ -13,8 +13,9 @@ const Categories = ({ categories }) => {
      {markdownify("Categories", "h2", "h2 py-12 lg:text-[40px] title-text text-center ")}
      <div className="container pt-6 text-center pb-12">
       <div className="cat-tabs xxs:flex xxs:justify-center">
+       0{" "}
        {categories.map((cat, i) => (
-        <Link key={i} href={`/categories/${cat.name.replace(" ", "-")}`} className={`cat-btn dark:bg-darkmode-catBtn dark:hover:bg-darkmode-catBtn_hover`}>
+        <Link key={i} href={`/categories/${cat.name.replace(" ", "-")}`} className={`cat-btn hover:bg-btn_hover dark:bg-darkmode-catBtn dark:hover:bg-darkmode-catBtn_hover`}>
          {cat.name}
         </Link>
        ))}
@@ -42,5 +43,6 @@ export const getStaticProps = async () => {
   props: {
    categories: categoriesWithPostsCount,
   },
+  revalidate: 20,
  };
 };

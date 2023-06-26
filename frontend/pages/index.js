@@ -50,5 +50,6 @@ export const getStaticProps = async () => {
    posts: posts.data.data,
    categories: categoriesWithPostsCount,
   },
+  revalidate: 20,
  };
 };

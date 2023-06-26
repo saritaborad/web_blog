@@ -27,7 +27,6 @@ export const Career = () => {
         ))}
        </div>
       </div>
-
       <div className="group-12 mt-10">
        <div className="strips">
         <div className="strip">
@@ -64,20 +63,16 @@ export const Career = () => {
           </div>
           <div className="senior-node-js-developer">Senior Node.js developer</div>
          </div>
-
          <div className="right">
           <div className="frame-16">
            <div className="frame-20">
             <svg className="geo-alt-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M8 16C8 16 14 10.3137 14 6C14 2.68629 11.3137 0 8 0C4.68629 0 2 2.68629 2 6C2 10.3137 8 16 8 16ZM8 9C6.34315 9 5 7.65685 5 6C5 4.34315 6.34315 3 8 3C9.65685 3 11 4.34315 11 6C11 7.65685 9.65685 9 8 9Z" fill="#1F6BFF" />
             </svg>
-
             <div className="location">Location</div>
            </div>
-
            <div className="surat">Surat</div>
           </div>
-
           <div className="frame-17">
            <div className="frame-20">
             <svg className="bar-chart-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,13 +80,10 @@ export const Career = () => {
              <path d="M6 7C6 6.44772 6.44772 6 7 6H9C9.55228 6 10 6.44772 10 7V14C10 14.5523 9.55228 15 9 15H7C6.44772 15 6 14.5523 6 14V7Z" fill="#1F6BFF" />
              <path d="M11 2C11 1.44772 11.4477 1 12 1H14C14.5523 1 15 1.44772 15 2V14C15 14.5523 14.5523 15 14 15H12C11.4477 15 11 14.5523 11 14V2Z" fill="#1F6BFF" />
             </svg>
-
             <div className="level">Level</div>
            </div>
-
            <div className="senior">Senior</div>
           </div>
-
           <div className="frame-18">
            <div className="frame-20">
             <svg className="clock-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,136 +116,6 @@ export const Career = () => {
           </div>
          </div>
         </div>
-        {/* 
-        <div className="strip2">
-         <div className="frame-184">
-          <div className="left">
-           <div className="">
-            <svg className="" width="76" height="46" viewBox="0 0 76 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path d="M37.5705 45.9337C37.323 45.9337 37.0772 45.8688 36.8601 45.7438L34.599 44.4051C34.2612 44.2163 34.426 44.1495 34.5374 44.111C34.9877 43.9533 35.0791 43.9177 35.5598 43.6447C35.6103 43.6159 35.6764 43.6261 35.7281 43.6566L37.4652 44.6874C37.528 44.7213 37.617 44.7213 37.6751 44.6874L44.4483 40.7778C44.511 40.7422 44.5517 40.6693 44.5517 40.5947V32.7789C44.5517 32.7009 44.511 32.6314 44.4469 32.5924L37.6765 28.6861C37.6137 28.6488 37.5307 28.6488 37.4679 28.6861L30.6989 32.5924C30.6332 32.6297 30.5915 32.7026 30.5915 32.7772V40.593C30.5915 40.6676 30.6322 40.7388 30.6966 40.7744L32.5514 41.8459C33.5585 42.3494 34.1739 41.7561 34.1739 41.1593V33.4452C34.1739 33.335 34.2604 33.2502 34.3706 33.2502H35.2285C35.3353 33.2502 35.4234 33.335 35.4234 33.4452V41.1627C35.4234 42.5054 34.691 43.2768 33.4178 43.2768C33.0261 43.2768 32.7176 43.2768 31.8563 42.853L30.0795 41.829C29.6404 41.5746 29.3691 41.0999 29.3691 40.593V32.7772C29.3691 32.2685 29.6404 31.7938 30.0795 31.5429L36.8595 27.6316C37.2884 27.3892 37.8581 27.3892 38.2836 27.6316L45.0551 31.5446C45.4925 31.7972 45.7654 32.2702 45.7654 32.7789V40.5947C45.7654 41.1016 45.4925 41.5746 45.0551 41.829L38.2836 45.7403C38.0666 45.8657 37.8208 45.9302 37.5698 45.9302" fill="#689F63" />
-             <path d="M39.6611 40.5481C36.6975 40.5481 36.0762 39.1877 36.0762 38.0467C36.0762 37.9382 36.1637 37.8517 36.2723 37.8517H37.1472C37.2438 37.8517 37.3252 37.9221 37.3404 38.0175C37.4727 38.909 37.866 39.3586 39.6581 39.3586C41.0856 39.3586 41.6926 39.0361 41.6926 38.2791C41.6926 37.8434 41.5196 37.5196 39.302 37.3026C37.4473 37.1195 36.3012 36.7109 36.3012 35.2274C36.3012 33.8609 37.454 33.0471 39.3851 33.0471C41.5535 33.0471 42.6284 33.7998 42.7641 35.4173C42.7691 35.4732 42.7488 35.5275 42.7115 35.5682C42.6742 35.6072 42.6216 35.6309 42.5674 35.6309H41.6875C41.5959 35.6309 41.5162 35.5665 41.4976 35.4783C41.2857 34.5407 40.7736 34.2407 39.3817 34.2407C37.8236 34.2407 37.6422 34.7832 37.6422 35.1901C37.6422 35.6834 37.8558 35.8276 39.9582 36.1056C42.0401 36.382 43.0285 36.7719 43.0285 38.235C43.0285 39.71 41.7977 40.5561 39.6513 40.5561L39.6611 40.5481ZM47.9011 32.2672H48.1283C48.3148 32.2672 48.3504 32.1367 48.3504 32.0604C48.3504 31.8603 48.2131 31.8603 48.1368 31.8603H47.9028L47.9011 32.2672ZM47.6248 31.6263H48.1283C48.3013 31.6263 48.6403 31.6263 48.6403 32.0129C48.6403 32.2825 48.4674 32.3384 48.364 32.3723C48.5657 32.3859 48.5793 32.5181 48.6064 32.7046C48.62 32.8216 48.642 33.0233 48.6827 33.0912H48.3725C48.364 33.0233 48.3165 32.6504 48.3165 32.63C48.2962 32.5469 48.2674 32.5063 48.1639 32.5063H47.9079V33.0929H47.6248V31.6263ZM47.0195 32.3554C47.0195 32.9623 47.5095 33.454 48.1114 33.454C48.7183 33.454 49.2083 32.9521 49.2083 32.3554C49.2083 31.7467 48.7115 31.2635 48.1097 31.2635C47.5163 31.2635 47.0178 31.7399 47.0178 32.3537L47.0195 32.3554ZM49.4185 32.3587C49.4185 33.0776 48.8302 33.6642 48.1131 33.6642C47.401 33.6642 46.8076 33.0844 46.8076 32.3587C46.8076 31.6195 47.4146 31.0533 48.1131 31.0533C48.8167 31.0533 49.4168 31.6212 49.4168 32.3587" fill="#689F63" />
-             <path fillRule="evenodd" clipRule="evenodd" d="M16.5955 15.3519C16.5955 15.0399 16.4311 14.7534 16.1619 14.5982L8.98078 10.4665C8.85955 10.3953 8.72375 10.358 8.58609 10.3529H8.51183C8.37416 10.358 8.23836 10.3953 8.1151 10.4665L0.934364 14.5982C0.666828 14.7542 0.5 15.0407 0.5 15.3527L0.515767 26.4814C0.515767 26.6357 0.595452 26.7798 0.731084 26.8561C0.863326 26.9374 1.02948 26.9374 1.16172 26.8561L5.43076 24.4113C5.70033 24.2509 5.86478 23.9674 5.86478 23.6585V18.4595C5.86478 18.1493 6.02924 17.8628 6.29796 17.7085L8.11544 16.6617C8.25039 16.5837 8.39857 16.5451 8.54946 16.5451C8.69798 16.5451 8.84955 16.5834 8.98078 16.6616L10.7974 17.708C11.0663 17.8622 11.2314 18.1488 11.2314 18.459V23.6577C11.2314 23.9662 11.3981 24.2511 11.6663 24.4104L15.9326 26.8535C16.0666 26.9332 16.2332 26.9332 16.3667 26.8535C16.4982 26.7772 16.5816 26.6331 16.5816 26.4788L16.5955 15.3519ZM50.4813 21.1461C50.4813 21.2236 50.4401 21.2953 50.3728 21.3336L47.9064 22.7554C47.8394 22.7939 47.7566 22.7939 47.6899 22.7554L45.223 21.3336C45.1552 21.2951 45.1145 21.2234 45.1145 21.1461V18.2985C45.1145 18.2208 45.1552 18.1493 45.2213 18.1103L47.6865 16.6861C47.7543 16.6471 47.8374 16.6471 47.9052 16.6861L50.372 18.1103C50.4398 18.1493 50.4805 18.2208 50.4805 18.2985L50.4813 21.1461ZM51.1476 0.0548946C51.013 -0.0200425 50.8492 -0.018008 50.7163 0.0594722C50.5841 0.137461 50.5024 0.279875 50.5024 0.434158V11.4543C50.5024 11.5628 50.4447 11.6628 50.3508 11.7171C50.2575 11.7713 50.1414 11.7713 50.0473 11.7171L48.2485 10.681C47.9806 10.526 47.6507 10.526 47.3818 10.681L40.1983 14.8268C39.93 14.9811 39.7643 15.2676 39.7643 15.5762V23.8701C39.7643 24.1804 39.93 24.4652 40.1983 24.6212L47.3818 28.7698C47.65 28.9241 47.9803 28.9241 48.2493 28.7698L55.4328 24.6195C55.7007 24.4635 55.8668 24.1787 55.8668 23.8684V3.19802C55.8668 2.88335 55.6956 2.59394 55.4209 2.44017L51.1476 0.0548946ZM75.0687 18.2235C75.3355 18.0686 75.4998 17.7824 75.4998 17.4738V15.4638C75.4998 15.1545 75.3354 14.8692 75.068 14.7135L67.9303 10.57C67.6608 10.414 67.3301 10.414 67.0606 10.57L59.8788 14.7152C59.6093 14.8712 59.4448 15.156 59.4448 15.4663V23.7568C59.4448 24.0688 59.6126 24.357 59.8822 24.5113L67.0182 28.5786C67.281 28.7295 67.6031 28.7312 67.8693 28.5837L72.1858 26.1847C72.3214 26.1084 72.4079 25.9643 72.4079 25.8083C72.4079 25.6523 72.3248 25.5065 72.1892 25.4302L64.9634 21.2832C64.8277 21.207 64.7447 21.0628 64.7447 20.9086V18.3078C64.7447 18.1525 64.826 18.0094 64.9617 17.9321L67.2098 16.6351C67.3437 16.5571 67.5082 16.5571 67.6421 16.6351L69.8919 17.9321C70.0259 18.0084 70.1089 18.1525 70.1089 18.3068V20.3514C70.1089 20.5057 70.192 20.6498 70.3259 20.7278C70.4599 20.8041 70.626 20.8041 70.76 20.7261L75.0687 18.2235Z" fill="white" />
-             <path fillRule="evenodd" clipRule="evenodd" d="M67.39 17.8357C67.4409 17.8057 67.5046 17.8057 67.5562 17.8357L68.9345 18.6308C68.9861 18.6607 69.0176 18.7156 69.0176 18.7749V20.3669C69.0176 20.4263 68.9861 20.4812 68.9345 20.511L67.5562 21.3062C67.5046 21.3362 67.4409 21.3362 67.39 21.3062L66.0125 20.511C65.9599 20.4812 65.9277 20.4263 65.9277 20.3669V18.7749C65.9277 18.7156 65.9583 18.6607 66.0108 18.6308L67.39 17.8357Z" fill="#689F63" />
-             <path d="M43.404 14.0341L23.277 4.16852L12.957 25.2211L33.0836 35.0872L43.404 14.0341Z" fill="url(#paint0_linear_106_1958)" />
-             <path d="M11.6504 16.9521L25.8622 36.187L44.6575 22.3006L30.4448 3.06616L11.6504 16.9521Z" fill="url(#paint1_linear_106_1958)" />
-             <path d="M20.627 10.4976V28.7114H36.171V10.4976H20.627Z" fill="url(#paint2_linear_106_1958)" />
-             <defs>
-              <linearGradient id="paint0_linear_106_1958" x1="33.3345" y1="9.0858" x2="23.0152" y2="30.137" gradientUnits="userSpaceOnUse">
-               <stop offset="0.3" stopColor="#3E863D" />
-               <stop offset="0.5" stopColor="#55934F" />
-               <stop offset="0.8" stopColor="#5AAD45" />
-              </linearGradient>
-              <linearGradient id="paint1_linear_106_1958" x1="18.8414" y1="26.6798" x2="37.6375" y2="12.7917" gradientUnits="userSpaceOnUse">
-               <stop offset="0.57" stopColor="#3E863D" />
-               <stop offset="0.72" stopColor="#619857" />
-               <stop offset="1" stopColor="#76AC64" />
-              </linearGradient>
-              <linearGradient id="paint2_linear_106_1958" x1="20.6322" y1="19.605" x2="36.1739" y2="19.605" gradientUnits="userSpaceOnUse">
-               <stop offset="0.16" stopColor="#6BBF47" />
-               <stop offset="0.38" stopColor="#79B461" />
-               <stop offset="0.47" stopColor="#75AC64" />
-               <stop offset="0.7" stopColor="#659E5A" />
-               <stop offset="0.9" stopColor="#3E863D" />
-              </linearGradient>
-             </defs>
-            </svg>
-           </div>
-           <div className="senior-node-js-developer">Senior Node.js developer</div>
-          </div>
-
-          <div className="right">
-           <div className="frame-16">
-            <div className="frame-20">
-             <svg className="geo-alt-fill2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 16C8 16 14 10.3137 14 6C14 2.68629 11.3137 0 8 0C4.68629 0 2 2.68629 2 6C2 10.3137 8 16 8 16ZM8 9C6.34315 9 5 7.65685 5 6C5 4.34315 6.34315 3 8 3C9.65685 3 11 4.34315 11 6C11 7.65685 9.65685 9 8 9Z" fill="white" />
-             </svg>
-
-             <div className="location">Location</div>
-            </div>
-
-            <div className="surat">Surat</div>
-           </div>
-
-           <div className="frame-17">
-            <div className="frame-20">
-             <svg className="bar-chart-fill2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 11C1 10.4477 1.44772 10 2 10H4C4.55228 10 5 10.4477 5 11V14C5 14.5523 4.55228 15 4 15H2C1.44772 15 1 14.5523 1 14V11Z" fill="white" />
-              <path d="M6 7C6 6.44772 6.44772 6 7 6H9C9.55228 6 10 6.44772 10 7V14C10 14.5523 9.55228 15 9 15H7C6.44772 15 6 14.5523 6 14V7Z" fill="white" />
-              <path d="M11 2C11 1.44772 11.4477 1 12 1H14C14.5523 1 15 1.44772 15 2V14C15 14.5523 14.5523 15 14 15H12C11.4477 15 11 14.5523 11 14V2Z" fill="white" />
-             </svg>
-
-             <div className="level">Level</div>
-            </div>
-
-            <div className="senior">Senior</div>
-           </div>
-
-           <div className="frame-18">
-            <div className="frame-20">
-             <svg className="clock-fill3" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8 3.5C8 3.22386 7.77614 3 7.5 3C7.22386 3 7 3.22386 7 3.5V9C7 9.17943 7.09614 9.3451 7.25193 9.43412L10.7519 11.4341C10.9917 11.5711 11.2971 11.4878 11.4341 11.2481C11.5711 11.0083 11.4878 10.7029 11.2481 10.5659L8 8.70984V3.5Z" fill="white" />
-             </svg>
-
-             <div className="type">Type</div>
-            </div>
-
-            <div className="full-time">Full-time</div>
-           </div>
-
-           <div className="frame-19">
-            <div className="frame-20">
-             <svg className="briefcase-fill2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6.5 1C5.67173 1 5 1.67117 5 2.49976V3H1.5C0.671573 3 0 3.67157 0 4.5V5.88414L7.61351 7.91441C7.86674 7.98194 8.13326 7.98194 8.38649 7.91441L16 5.88414V4.5C16 3.67157 15.3284 3 14.5 3H11V2.49976C11 1.67117 10.3283 1 9.5 1H6.5ZM6.5 2H9.5C9.7763 2 10 2.22463 10 2.50061V3H6V2.49976C6 2.22377 6.2237 2 6.5 2Z" fill="white" />
-              <path d="M0 12.5C0 13.3284 0.671573 14 1.5 14H14.5C15.3284 14 16 13.3284 16 12.5V6.84919L8.12883 8.94817C8.04442 8.97068 7.95558 8.97068 7.87117 8.94817L0 6.84919V12.5Z" fill="white" />
-             </svg>
-
-             <div className="department">Department</div>
-            </div>
-
-            <div className="back-end">Back-end</div>
-           </div>
-
-           <div className="frame-152">
-            <svg className="minus-sm" width="16" height="4" viewBox="0 0 16 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path d="M0 2.00002C0 1.11637 0.716344 0.400024 1.6 0.400024H14.4C15.2837 0.400024 16 1.11637 16 2.00002C16 2.88368 15.2837 3.60002 14.4 3.60002H1.6C0.716344 3.60002 0 2.88368 0 2.00002Z" fill="white" />
-            </svg>
-           </div>
-          </div>
-         </div>
-
-         <div className="content2">
-          <div className="en-dhnn-estamos-en-constante-expansi-n-y-es-por-eso-que-estamos-sumando-a-nuestro-equipo-un-ux-researcher-trabajamos-de-manera-remota-por-lo-que-los-candidatos-pueden-vivir-en-cualquier-ciudad-del-pa-s">En DHNN estamos en constante expansión y es por eso que estamos sumando a nuestro equipo un UX Researcher. Trabajamos de manera remota por lo que los candidatos pueden vivir en cualquier ciudad del país.</div>
-
-          <div className="requirements">Requirements</div>
-
-          <div className="colaborar-con-los-dise-adores-y-stakeholders-para-comprender-las-necesidades-de-investigaci-n-definir-preguntas-de-investigaci-n-y-m-todos-apropiados-para-la-recopilaci-n-de-datos-armar-y-ejecutar-planes-de-investigaci-n-ajustados-a-las-diferentes-necesidades-de-los-proyectos-recolectar-datos-de-los-usuarios-industria-y-negocio-a-partir-de-la-investigaci-n-cuantitativa-y-cualitativa-aplicar-herramientas-como-benckmark-cardsoting-mapas-de-experiencias-entre-otras-sintetizar-hallazgos-y-realizar-presentaciones-para-el-equipo-y-stakeholders-observar-oportunidades-de-mejora-en-los-productos">
-           Colaborar con los diseñadores y stakeholders para comprender las necesidades de investigación.
-           <br />
-           Definir preguntas de investigación y métodos apropiados para la recopilación de datos.
-           <br />
-           Armar y ejecutar planes de investigación ajustados a las diferentes necesidades de los proyectos.
-           <br />
-           Recolectar datos de los usuarios, industria y negocio a partir de la investigación cuantitativa y cualitativa.
-           <br />
-           Aplicar herramientas como benckmark, cardsoting, mapas de experiencias, entre otras.
-           <br />
-           Sintetizar hallazgos y realizar presentaciones para el equipo y stakeholders.
-           <br />
-           Observar oportunidades de mejora en los productos.
-          </div>
-
-          <div className="btn">
-           <div className="apply-now">Apply Now</div>
-
-           <div className="arrow-right">
-            <svg className="arrow" width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path fillRule="evenodd" clipRule="evenodd" d="M0.5 4.5C0.5 4.22386 0.723858 4 1 4L12.7929 4L9.64645 0.853554C9.45118 0.658292 9.45118 0.341708 9.64645 0.146446C9.84171 -0.0488167 10.1583 -0.0488167 10.3536 0.146446L14.3536 4.14645C14.5488 4.34171 14.5488 4.65829 14.3536 4.85355L10.3536 8.85355C10.1583 9.04882 9.84171 9.04882 9.64645 8.85355C9.45118 8.65829 9.45118 8.34171 9.64645 8.14645L12.7929 5L1 5C0.723858 5 0.5 4.77614 0.5 4.5Z" fill="white" />
-            </svg>
-           </div>
-          </div>
-         </div>
-        </div> */}
-
         <div className="strip">
          <div className="left">
           <div className="">
@@ -288,20 +150,16 @@ export const Career = () => {
           </div>
           <div className="senior-node-js-developer">Senior Node.js developer</div>
          </div>
-
          <div className="right">
           <div className="frame-16">
            <div className="frame-20">
             <svg className="geo-alt-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M8 16C8 16 14 10.3137 14 6C14 2.68629 11.3137 0 8 0C4.68629 0 2 2.68629 2 6C2 10.3137 8 16 8 16ZM8 9C6.34315 9 5 7.65685 5 6C5 4.34315 6.34315 3 8 3C9.65685 3 11 4.34315 11 6C11 7.65685 9.65685 9 8 9Z" fill="#1F6BFF" />
             </svg>
-
             <div className="location">Location</div>
            </div>
-
            <div className="surat">Surat</div>
           </div>
-
           <div className="frame-17">
            <div className="frame-20">
             <svg className="bar-chart-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -309,38 +167,29 @@ export const Career = () => {
              <path d="M6 7C6 6.44772 6.44772 6 7 6H9C9.55228 6 10 6.44772 10 7V14C10 14.5523 9.55228 15 9 15H7C6.44772 15 6 14.5523 6 14V7Z" fill="#1F6BFF" />
              <path d="M11 2C11 1.44772 11.4477 1 12 1H14C14.5523 1 15 1.44772 15 2V14C15 14.5523 14.5523 15 14 15H12C11.4477 15 11 14.5523 11 14V2Z" fill="#1F6BFF" />
             </svg>
-
             <div className="level">Level</div>
            </div>
-
            <div className="senior">Senior</div>
           </div>
-
           <div className="frame-18">
            <div className="frame-20">
             <svg className="clock-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8 3.5C8 3.22386 7.77614 3 7.5 3C7.22386 3 7 3.22386 7 3.5V9C7 9.17943 7.09614 9.3451 7.25193 9.43412L10.7519 11.4341C10.9917 11.5711 11.2971 11.4878 11.4341 11.2481C11.5711 11.0083 11.4878 10.7029 11.2481 10.5659L8 8.70984V3.5Z" fill="#1F6BFF" />
             </svg>
-
             <div className="type">Type</div>
            </div>
-
            <div className="full-time">Full-time</div>
           </div>
-
           <div className="frame-19">
            <div className="frame-20">
             <svg className="briefcase-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M6.5 1C5.67173 1 5 1.67117 5 2.49976V3H1.5C0.671573 3 0 3.67157 0 4.5V5.88414L7.61351 7.91441C7.86674 7.98194 8.13326 7.98194 8.38649 7.91441L16 5.88414V4.5C16 3.67157 15.3284 3 14.5 3H11V2.49976C11 1.67117 10.3283 1 9.5 1H6.5ZM6.5 2H9.5C9.7763 2 10 2.22463 10 2.50061V3H6V2.49976C6 2.22377 6.2237 2 6.5 2Z" fill="#1F6BFF" />
              <path d="M0 12.5C0 13.3284 0.671573 14 1.5 14H14.5C15.3284 14 16 13.3284 16 12.5V6.84919L8.12883 8.94817C8.04442 8.97068 7.95558 8.97068 7.87117 8.94817L0 6.84919V12.5Z" fill="#1F6BFF" />
             </svg>
-
             <div className="department">Department</div>
            </div>
-
            <div className="back-end">Back-end</div>
           </div>
-
           <div className="frame-152">
            <svg className="plus-lg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M8 2C8.27614 2 8.5 2.22386 8.5 2.5V7.5H13.5C13.7761 7.5 14 7.72386 14 8C14 8.27614 13.7761 8.5 13.5 8.5H8.5V13.5C8.5 13.7761 8.27614 14 8 14C7.72386 14 7.5 13.7761 7.5 13.5V8.5H2.5C2.22386 8.5 2 8.27614 2 8C2 7.72386 2.22386 7.5 2.5 7.5H7.5V2.5C7.5 2.22386 7.72386 2 8 2Z" fill="white" />
@@ -348,7 +197,6 @@ export const Career = () => {
           </div>
          </div>
         </div>
-
         <div className="strip">
          <div className="left">
           <div className="">
@@ -383,20 +231,16 @@ export const Career = () => {
           </div>
           <div className="senior-node-js-developer">Senior Node.js developer</div>
          </div>
-
          <div className="right">
           <div className="frame-16">
            <div className="frame-20">
             <svg className="geo-alt-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M8 16C8 16 14 10.3137 14 6C14 2.68629 11.3137 0 8 0C4.68629 0 2 2.68629 2 6C2 10.3137 8 16 8 16ZM8 9C6.34315 9 5 7.65685 5 6C5 4.34315 6.34315 3 8 3C9.65685 3 11 4.34315 11 6C11 7.65685 9.65685 9 8 9Z" fill="#1F6BFF" />
             </svg>
-
             <div className="location">Location</div>
            </div>
-
            <div className="surat">Surat</div>
           </div>
-
           <div className="frame-17">
            <div className="frame-20">
             <svg className="bar-chart-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -404,38 +248,29 @@ export const Career = () => {
              <path d="M6 7C6 6.44772 6.44772 6 7 6H9C9.55228 6 10 6.44772 10 7V14C10 14.5523 9.55228 15 9 15H7C6.44772 15 6 14.5523 6 14V7Z" fill="#1F6BFF" />
              <path d="M11 2C11 1.44772 11.4477 1 12 1H14C14.5523 1 15 1.44772 15 2V14C15 14.5523 14.5523 15 14 15H12C11.4477 15 11 14.5523 11 14V2Z" fill="#1F6BFF" />
             </svg>
-
             <div className="level">Level</div>
            </div>
-
            <div className="senior">Senior</div>
           </div>
-
           <div className="frame-18">
            <div className="frame-20">
             <svg className="clock-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8 3.5C8 3.22386 7.77614 3 7.5 3C7.22386 3 7 3.22386 7 3.5V9C7 9.17943 7.09614 9.3451 7.25193 9.43412L10.7519 11.4341C10.9917 11.5711 11.2971 11.4878 11.4341 11.2481C11.5711 11.0083 11.4878 10.7029 11.2481 10.5659L8 8.70984V3.5Z" fill="#1F6BFF" />
             </svg>
-
             <div className="type">Type</div>
            </div>
-
            <div className="full-time">Full-time</div>
           </div>
-
           <div className="frame-19">
            <div className="frame-20">
             <svg className="briefcase-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M6.5 1C5.67173 1 5 1.67117 5 2.49976V3H1.5C0.671573 3 0 3.67157 0 4.5V5.88414L7.61351 7.91441C7.86674 7.98194 8.13326 7.98194 8.38649 7.91441L16 5.88414V4.5C16 3.67157 15.3284 3 14.5 3H11V2.49976C11 1.67117 10.3283 1 9.5 1H6.5ZM6.5 2H9.5C9.7763 2 10 2.22463 10 2.50061V3H6V2.49976C6 2.22377 6.2237 2 6.5 2Z" fill="#1F6BFF" />
              <path d="M0 12.5C0 13.3284 0.671573 14 1.5 14H14.5C15.3284 14 16 13.3284 16 12.5V6.84919L8.12883 8.94817C8.04442 8.97068 7.95558 8.97068 7.87117 8.94817L0 6.84919V12.5Z" fill="#1F6BFF" />
             </svg>
-
             <div className="department">Department</div>
            </div>
-
            <div className="back-end">Back-end</div>
           </div>
-
           <div className="frame-152">
            <svg className="plus-lg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M8 2C8.27614 2 8.5 2.22386 8.5 2.5V7.5H13.5C13.7761 7.5 14 7.72386 14 8C14 8.27614 13.7761 8.5 13.5 8.5H8.5V13.5C8.5 13.7761 8.27614 14 8 14C7.72386 14 7.5 13.7761 7.5 13.5V8.5H2.5C2.22386 8.5 2 8.27614 2 8C2 7.72386 2.22386 7.5 2.5 7.5H7.5V2.5C7.5 2.22386 7.72386 2 8 2Z" fill="white" />
@@ -443,7 +278,6 @@ export const Career = () => {
           </div>
          </div>
         </div>
-
         <div className="strip">
          <div className="left">
           <div className="">
@@ -478,20 +312,16 @@ export const Career = () => {
           </div>
           <div className="senior-node-js-developer">Senior Node.js developer</div>
          </div>
-
          <div className="right">
           <div className="frame-16">
            <div className="frame-20">
             <svg className="geo-alt-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M8 16C8 16 14 10.3137 14 6C14 2.68629 11.3137 0 8 0C4.68629 0 2 2.68629 2 6C2 10.3137 8 16 8 16ZM8 9C6.34315 9 5 7.65685 5 6C5 4.34315 6.34315 3 8 3C9.65685 3 11 4.34315 11 6C11 7.65685 9.65685 9 8 9Z" fill="#1F6BFF" />
             </svg>
-
             <div className="location">Location</div>
            </div>
-
            <div className="surat">Surat</div>
           </div>
-
           <div className="frame-17">
            <div className="frame-20">
             <svg className="bar-chart-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -499,38 +329,29 @@ export const Career = () => {
              <path d="M6 7C6 6.44772 6.44772 6 7 6H9C9.55228 6 10 6.44772 10 7V14C10 14.5523 9.55228 15 9 15H7C6.44772 15 6 14.5523 6 14V7Z" fill="#1F6BFF" />
              <path d="M11 2C11 1.44772 11.4477 1 12 1H14C14.5523 1 15 1.44772 15 2V14C15 14.5523 14.5523 15 14 15H12C11.4477 15 11 14.5523 11 14V2Z" fill="#1F6BFF" />
             </svg>
-
             <div className="level">Level</div>
            </div>
-
            <div className="senior">Senior</div>
           </div>
-
           <div className="frame-18">
            <div className="frame-20">
             <svg className="clock-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8 3.5C8 3.22386 7.77614 3 7.5 3C7.22386 3 7 3.22386 7 3.5V9C7 9.17943 7.09614 9.3451 7.25193 9.43412L10.7519 11.4341C10.9917 11.5711 11.2971 11.4878 11.4341 11.2481C11.5711 11.0083 11.4878 10.7029 11.2481 10.5659L8 8.70984V3.5Z" fill="#1F6BFF" />
             </svg>
-
             <div className="type">Type</div>
            </div>
-
            <div className="full-time">Full-time</div>
           </div>
-
           <div className="frame-19">
            <div className="frame-20">
             <svg className="briefcase-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M6.5 1C5.67173 1 5 1.67117 5 2.49976V3H1.5C0.671573 3 0 3.67157 0 4.5V5.88414L7.61351 7.91441C7.86674 7.98194 8.13326 7.98194 8.38649 7.91441L16 5.88414V4.5C16 3.67157 15.3284 3 14.5 3H11V2.49976C11 1.67117 10.3283 1 9.5 1H6.5ZM6.5 2H9.5C9.7763 2 10 2.22463 10 2.50061V3H6V2.49976C6 2.22377 6.2237 2 6.5 2Z" fill="#1F6BFF" />
              <path d="M0 12.5C0 13.3284 0.671573 14 1.5 14H14.5C15.3284 14 16 13.3284 16 12.5V6.84919L8.12883 8.94817C8.04442 8.97068 7.95558 8.97068 7.87117 8.94817L0 6.84919V12.5Z" fill="#1F6BFF" />
             </svg>
-
             <div className="department">Department</div>
            </div>
-
            <div className="back-end">Back-end</div>
           </div>
-
           <div className="frame-152">
            <svg className="plus-lg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M8 2C8.27614 2 8.5 2.22386 8.5 2.5V7.5H13.5C13.7761 7.5 14 7.72386 14 8C14 8.27614 13.7761 8.5 13.5 8.5H8.5V13.5C8.5 13.7761 8.27614 14 8 14C7.72386 14 7.5 13.7761 7.5 13.5V8.5H2.5C2.22386 8.5 2 8.27614 2 8C2 7.72386 2.22386 7.5 2.5 7.5H7.5V2.5C7.5 2.22386 7.72386 2 8 2Z" fill="white" />
@@ -538,7 +359,6 @@ export const Career = () => {
           </div>
          </div>
         </div>
-
         <div className="strip">
          <div className="left">
           <div className="">
@@ -573,20 +393,16 @@ export const Career = () => {
           </div>
           <div className="senior-node-js-developer">Senior Node.js developer</div>
          </div>
-
          <div className="right">
           <div className="frame-16">
            <div className="frame-20">
             <svg className="geo-alt-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M8 16C8 16 14 10.3137 14 6C14 2.68629 11.3137 0 8 0C4.68629 0 2 2.68629 2 6C2 10.3137 8 16 8 16ZM8 9C6.34315 9 5 7.65685 5 6C5 4.34315 6.34315 3 8 3C9.65685 3 11 4.34315 11 6C11 7.65685 9.65685 9 8 9Z" fill="#1F6BFF" />
             </svg>
-
             <div className="location">Location</div>
            </div>
-
            <div className="surat">Surat</div>
           </div>
-
           <div className="frame-17">
            <div className="frame-20">
             <svg className="bar-chart-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -594,38 +410,29 @@ export const Career = () => {
              <path d="M6 7C6 6.44772 6.44772 6 7 6H9C9.55228 6 10 6.44772 10 7V14C10 14.5523 9.55228 15 9 15H7C6.44772 15 6 14.5523 6 14V7Z" fill="#1F6BFF" />
              <path d="M11 2C11 1.44772 11.4477 1 12 1H14C14.5523 1 15 1.44772 15 2V14C15 14.5523 14.5523 15 14 15H12C11.4477 15 11 14.5523 11 14V2Z" fill="#1F6BFF" />
             </svg>
-
             <div className="level">Level</div>
            </div>
-
            <div className="senior">Senior</div>
           </div>
-
           <div className="frame-18">
            <div className="frame-20">
             <svg className="clock-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8 3.5C8 3.22386 7.77614 3 7.5 3C7.22386 3 7 3.22386 7 3.5V9C7 9.17943 7.09614 9.3451 7.25193 9.43412L10.7519 11.4341C10.9917 11.5711 11.2971 11.4878 11.4341 11.2481C11.5711 11.0083 11.4878 10.7029 11.2481 10.5659L8 8.70984V3.5Z" fill="#1F6BFF" />
             </svg>
-
             <div className="type">Type</div>
            </div>
-
            <div className="full-time">Full-time</div>
           </div>
-
           <div className="frame-19">
            <div className="frame-20">
             <svg className="briefcase-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M6.5 1C5.67173 1 5 1.67117 5 2.49976V3H1.5C0.671573 3 0 3.67157 0 4.5V5.88414L7.61351 7.91441C7.86674 7.98194 8.13326 7.98194 8.38649 7.91441L16 5.88414V4.5C16 3.67157 15.3284 3 14.5 3H11V2.49976C11 1.67117 10.3283 1 9.5 1H6.5ZM6.5 2H9.5C9.7763 2 10 2.22463 10 2.50061V3H6V2.49976C6 2.22377 6.2237 2 6.5 2Z" fill="#1F6BFF" />
              <path d="M0 12.5C0 13.3284 0.671573 14 1.5 14H14.5C15.3284 14 16 13.3284 16 12.5V6.84919L8.12883 8.94817C8.04442 8.97068 7.95558 8.97068 7.87117 8.94817L0 6.84919V12.5Z" fill="#1F6BFF" />
             </svg>
-
             <div className="department">Department</div>
            </div>
-
            <div className="back-end">Back-end</div>
           </div>
-
           <div className="frame-152">
            <svg className="plus-lg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M8 2C8.27614 2 8.5 2.22386 8.5 2.5V7.5H13.5C13.7761 7.5 14 7.72386 14 8C14 8.27614 13.7761 8.5 13.5 8.5H8.5V13.5C8.5 13.7761 8.27614 14 8 14C7.72386 14 7.5 13.7761 7.5 13.5V8.5H2.5C2.22386 8.5 2 8.27614 2 8C2 7.72386 2.22386 7.5 2.5 7.5H7.5V2.5C7.5 2.22386 7.72386 2 8 2Z" fill="white" />
@@ -633,7 +440,6 @@ export const Career = () => {
           </div>
          </div>
         </div>
-
         <div className="strip">
          <div className="left">
           <div className="">
@@ -668,20 +474,16 @@ export const Career = () => {
           </div>
           <div className="senior-node-js-developer">Senior Node.js developer</div>
          </div>
-
          <div className="right">
           <div className="frame-16">
            <div className="frame-20">
             <svg className="geo-alt-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M8 16C8 16 14 10.3137 14 6C14 2.68629 11.3137 0 8 0C4.68629 0 2 2.68629 2 6C2 10.3137 8 16 8 16ZM8 9C6.34315 9 5 7.65685 5 6C5 4.34315 6.34315 3 8 3C9.65685 3 11 4.34315 11 6C11 7.65685 9.65685 9 8 9Z" fill="#1F6BFF" />
             </svg>
-
             <div className="location">Location</div>
            </div>
-
            <div className="surat">Surat</div>
           </div>
-
           <div className="frame-17">
            <div className="frame-20">
             <svg className="bar-chart-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -689,38 +491,29 @@ export const Career = () => {
              <path d="M6 7C6 6.44772 6.44772 6 7 6H9C9.55228 6 10 6.44772 10 7V14C10 14.5523 9.55228 15 9 15H7C6.44772 15 6 14.5523 6 14V7Z" fill="#1F6BFF" />
              <path d="M11 2C11 1.44772 11.4477 1 12 1H14C14.5523 1 15 1.44772 15 2V14C15 14.5523 14.5523 15 14 15H12C11.4477 15 11 14.5523 11 14V2Z" fill="#1F6BFF" />
             </svg>
-
             <div className="level">Level</div>
            </div>
-
            <div className="senior">Senior</div>
           </div>
-
           <div className="frame-18">
            <div className="frame-20">
             <svg className="clock-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM8 3.5C8 3.22386 7.77614 3 7.5 3C7.22386 3 7 3.22386 7 3.5V9C7 9.17943 7.09614 9.3451 7.25193 9.43412L10.7519 11.4341C10.9917 11.5711 11.2971 11.4878 11.4341 11.2481C11.5711 11.0083 11.4878 10.7029 11.2481 10.5659L8 8.70984V3.5Z" fill="#1F6BFF" />
             </svg>
-
             <div className="type">Type</div>
            </div>
-
            <div className="full-time">Full-time</div>
           </div>
-
           <div className="frame-19">
            <div className="frame-20">
             <svg className="briefcase-fill" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path d="M6.5 1C5.67173 1 5 1.67117 5 2.49976V3H1.5C0.671573 3 0 3.67157 0 4.5V5.88414L7.61351 7.91441C7.86674 7.98194 8.13326 7.98194 8.38649 7.91441L16 5.88414V4.5C16 3.67157 15.3284 3 14.5 3H11V2.49976C11 1.67117 10.3283 1 9.5 1H6.5ZM6.5 2H9.5C9.7763 2 10 2.22463 10 2.50061V3H6V2.49976C6 2.22377 6.2237 2 6.5 2Z" fill="#1F6BFF" />
              <path d="M0 12.5C0 13.3284 0.671573 14 1.5 14H14.5C15.3284 14 16 13.3284 16 12.5V6.84919L8.12883 8.94817C8.04442 8.97068 7.95558 8.97068 7.87117 8.94817L0 6.84919V12.5Z" fill="#1F6BFF" />
             </svg>
-
             <div className="department">Department</div>
            </div>
-
            <div className="back-end">Back-end</div>
           </div>
-
           <div className="frame-152">
            <svg className="plus-lg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M8 2C8.27614 2 8.5 2.22386 8.5 2.5V7.5H13.5C13.7761 7.5 14 7.72386 14 8C14 8.27614 13.7761 8.5 13.5 8.5H8.5V13.5C8.5 13.7761 8.27614 14 8 14C7.72386 14 7.5 13.7761 7.5 13.5V8.5H2.5C2.22386 8.5 2 8.27614 2 8C2 7.72386 2.22386 7.5 2.5 7.5H7.5V2.5C7.5 2.22386 7.72386 2 8 2Z" fill="white" />

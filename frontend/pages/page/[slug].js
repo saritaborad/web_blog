@@ -54,7 +54,7 @@ export const getStaticPaths = async () => {
 
  return {
   paths,
-  fallback: false,
+  fallback: "blocking",
  };
 };
 
@@ -71,5 +71,6 @@ export const getStaticProps = async ({ params }) => {
    currentPage: currentPage,
    categories: categories.data.data,
   },
+  revalidate: 20,
  };
 };

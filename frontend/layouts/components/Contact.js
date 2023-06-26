@@ -31,9 +31,9 @@ const Contact = () => {
    document?.getElementById(`tab${i}`).classList.toggle("active");
    if (arr.includes(e.target.innerHTML)) {
     arr = arr.filter((item) => item !== e.target.innerHTML);
-    document?.getElementById(`tab${i}`).classList.remove("dark:bg-tab_hover");
+    document?.getElementById(`tab${i}`).classList.remove("dark:bg-darkmode-tab_hover");
    } else {
-    document?.getElementById(`tab${i}`).classList.add("dark:bg-tab_hover");
+    document?.getElementById(`tab${i}`).classList.add("dark:bg-darkmode-tab_hover");
     arr.push(e.target.innerHTML);
    }
   }
@@ -63,27 +63,27 @@ const Contact = () => {
       <div>
        <form className="contact-form" onSubmit={(e) => handleSubmit(e)}>
         <p className="contact-title">CONTACT</p>
-        <p className="contact-desc dark:text-darkmode-dark">
+        <p className="contact-desc text-light dark:text-darkmode-dark">
          Hey! Tell us all <img src="/images/hello.png" />
         </p>
-        <p className="contact-desc dark:text-darkmode-dark" style={{ lineHeight: "6px" }}>
+        <p className="contact-desc text-light dark:text-darkmode-dark" style={{ lineHeight: "6px" }}>
          the things
         </p>
-        <p className="contact-smd mt-14 dark:text-darkmode-dark">I'm interested in...</p>
+        <p className="contact-smd mt-14 text-light dark:text-darkmode-dark">I'm interested in...</p>
         <div className="cont-tabs">
          {interest.map((item, i) => {
           return (
-           <span key={i} className={`cont-tab dark:bg-darkmode-catBtn dark:hover:bg-darkmode-catBtn_hover`} id={`tab${i}`} onClick={(e) => handleInterest(e, i)}>
+           <span key={i} className={`cont-tab  text-light hover:bg-catBtn_hover dark:bg-darkmode-catBtn dark:hover:bg-darkmode-catBtn_hover`} id={`tab${i}`} onClick={(e) => handleInterest(e, i)}>
             {item}
            </span>
           );
          })}
         </div>
-        <input className="contact-input dark:border-border dark:placeholder:text-darkmode-dark focus:ring-0" type="text" autoComplete="off" placeholder="Your Name" name="name" onChange={(e) => handleChange(e)} />
-        <input className="contact-input dark:border-border dark:placeholder:text-darkmode-dark focus:ring-0" type="email" autoComplete="off" placeholder="Your Email" name="email" onChange={(e) => handleChange(e)} />
-        <input className="contact-input dark:border-border dark:placeholder:text-darkmode-dark focus:ring-0" type="text" autoComplete="off" placeholder="Tell us about your project" name="project" onChange={(e) => handleChange(e)} />
-        <input className="contact-input dark:border-border dark:placeholder:text-darkmode-dark focus:ring-0" type="text" autoComplete="off" placeholder="Project Budget" name="budget" onChange={(e) => handleChange(e)} />
-        <input className="contact-input dark:border-border dark:placeholder:text-darkmode-dark focus:ring-0" type="text" autoComplete="off" placeholder="Message" name="message" onChange={(e) => handleChange(e)} />
+        <input className="contact-input border-border dark:border-border dark:placeholder:text-darkmode-dark focus:ring-0" type="text" autoComplete="off" placeholder="Your Name" name="name" onChange={(e) => handleChange(e)} />
+        <input className="contact-input border-border dark:border-border dark:placeholder:text-darkmode-dark focus:ring-0" type="email" autoComplete="off" placeholder="Your Email" name="email" onChange={(e) => handleChange(e)} />
+        <input className="contact-input border-border dark:border-border dark:placeholder:text-darkmode-dark focus:ring-0" type="text" autoComplete="off" placeholder="Tell us about your project" name="project" onChange={(e) => handleChange(e)} />
+        <input className="contact-input border-border dark:border-border dark:placeholder:text-darkmode-dark focus:ring-0" type="text" autoComplete="off" placeholder="Project Budget" name="budget" onChange={(e) => handleChange(e)} />
+        <input className="contact-input border-border dark:border-border dark:placeholder:text-darkmode-dark focus:ring-0" type="text" autoComplete="off" placeholder="Message" name="message" onChange={(e) => handleChange(e)} />
         <div className="flex items-center gap-4 mb-4">
          <label className="switch ">
           <input type="checkbox" />
@@ -97,7 +97,7 @@ const Contact = () => {
          </p>
         </div>
 
-        <button className="contact-btn dark:bg-darkmode-button dark:hover:bg-darkmode-btn_hover dark:text-light" type="submit">
+        <button className="contact-btn text-light bg-button hover:bg-btn_hover dark:bg-darkmode-button dark:hover:bg-darkmode-btn_hover dark:text-light" type="submit">
          Send Request
         </button>
        </form>

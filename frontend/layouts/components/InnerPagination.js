@@ -8,12 +8,12 @@ const InnerPagination = ({ posts, date }) => {
  const next = postIndex == 0 ? undefined : orderedPosts[postIndex - 1].slug;
  const prev = postIndex == lastIndex ? undefined : orderedPosts[postIndex + 1].slug;
  const prevButton = prev && (
-  <Link href={prev} className={"cat-btn bg-button dark:bg-darkmode-button dark:hover:bg-darkmode-btn_hover"} style={{ border: "none", borderRadius: "20px" }}>
+  <Link href={prev} className={"cat-btn bg-button hover:bg-btn_hover dark:bg-darkmode-button dark:hover:bg-darkmode-btn_hover"} style={{ border: "none", borderRadius: "20px" }}>
    Prev
   </Link>
  );
  const nextButton = next && (
-  <Link href={next} className={"cat-btn bg-button dark:bg-darkmode-button dark:hover:bg-darkmode-btn_hover"} style={{ border: "none", borderRadius: "20px" }}>
+  <Link href={next} className={"cat-btn bg-button hover:bg-btn_hover dark:bg-darkmode-button dark:hover:bg-darkmode-btn_hover"} style={{ border: "none", borderRadius: "20px" }}>
    Next
   </Link>
  );

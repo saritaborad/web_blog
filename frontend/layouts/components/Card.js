@@ -4,7 +4,7 @@ import React from "react";
 
 const Card = ({ post }) => {
  return (
-  <div className="card rounded overflow-hidden shadow-lg dark:bg-darkmode-theme-light">
+  <div className="card rounded overflow-hidden shadow-lg bg-theme-dark dark:bg-darkmode-theme-light">
    <Link href={`/posts/${post.slug}`}>
     <img className="card-img" src={"http://127.0.0.1:1337" + post.image.url} alt={post.title} />
    </Link>
@@ -12,20 +12,20 @@ const Card = ({ post }) => {
     <div className="card-tags ">
      {post.categories?.length > 0 &&
       post.categories.map((tag, i) => (
-       <Link key={i} className="capitalize card-tag dark:bg-darkmode-catBtn dark:hover:bg-darkmode-catBtn_hover" href={`/categories/${tag.name.replace(" ", "-")}`}>
+       <Link key={i} className="capitalize card-tag bg-cardTag text-light dark:bg-darkmode-catBtn dark:hover:bg-darkmode-catBtn_hover" href={`/categories/${tag.name.replace(" ", "-")}`}>
         {tag.name}
        </Link>
       ))}
     </div>
-    <Link href={`/posts/${post.slug}`} className="card-txt dark:text-darkmode-dark xxs:text-xl sm:text-2xl">
+    <Link href={`/posts/${post.slug}`} className="card-txt text-light dark:text-darkmode-dark xxs:text-xl sm:text-2xl">
      {post.title}
     </Link>
     <div className="card-dt-section ">
-     <span className="card-dt dark:text-darkmode-light">
+     <span className="card-dt text-dark dark:text-darkmode-light">
       {dateFormat(post.createdAt)} By {post.authors[0]?.name}
      </span>
      <div className="card-read-sec">
-      <Link href={`/posts/${post.slug}`} className="card-read-txt pr-2 dark:text-darkmode-light">
+      <Link href={`/posts/${post.slug}`} className="card-read-txt pr-2 text-dark dark:text-darkmode-light">
        Read More
        {/* <BsArrowRightShort className="card-arrow dark:text-darkmode-dark" /> */}
        <svg className="card-arrow dark:text-darkmode-dark" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">

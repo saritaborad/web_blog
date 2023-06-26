@@ -36,7 +36,7 @@ export const getStaticPaths = async () => {
   },
  }));
 
- return { paths, fallback: false };
+ return { paths, fallback: "blocking" };
 };
 
 // category page data
@@ -60,5 +60,6 @@ export const getStaticProps = async ({ params }) => {
    category: params.category,
    categories: categoriesWithPostsCount,
   },
+  revalidate: 20,
  };
 };

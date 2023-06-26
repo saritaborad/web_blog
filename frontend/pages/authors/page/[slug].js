@@ -29,7 +29,7 @@ export default AuthorPagination;
 
 export const getStaticPaths = async () => {
  const authors = await axios.get(process.env.NEXT_STRAPI_API + GET_ALL_AUTHORS);
- const allSlug = await authors.map((item) => item.name);
+ const allSlug = await authors.data.data.map((item) => item.name);
  const { pagination } = config.settings; //size per page
  const totalPages = Math.ceil(allSlug.length / pagination);
  let paths = [];
@@ -42,7 +42,7 @@ export const getStaticPaths = async () => {
  }
  return {
   paths,
-  fallback: false,
+  fallback: "blocking",
  };
 };
 
@@ -57,5 +57,6 @@ export const getStaticProps = async ({ params }) => {
    pagination: pagination,
    currentPage: currentPage,
   },
+  revalidate: 20,
  };
 };

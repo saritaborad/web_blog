@@ -45,6 +45,7 @@ module.exports = {
    //    backgroundImage: { "custom-image": `url(${theme.backgroundImage.url})` },
    colors: {
     linkColor: "#1F6BFF",
+    cardTag: theme.colors.default.theme_color.cardTag,
     button: theme.colors.default.theme_color.button,
     btn_hover: theme.colors.default.theme_color.btn_hover,
     catBtn: theme.colors.default.theme_color.catBtn,

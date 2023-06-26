@@ -19,5 +19,6 @@ export const getStaticProps = async () => {
   props: {
    data: notFound.data.data,
   },
+  revalidate: 20,
  };
 };

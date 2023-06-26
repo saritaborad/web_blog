@@ -18,7 +18,7 @@ const Authors = ({ authors }) => {
         {author?.name}
        </Link>
       </h3>
-      {markdownify(author?.about.slice(0, 120), "p", "dark:text-darkmode-dark")}
+      {markdownify(author?.about.slice(0, 120), "p", "text-light dark:text-darkmode-dark")}
      </div>
     ))}
   </div>
