@@ -14,7 +14,7 @@ const Authors = ({ authors }) => {
        </div>
       )}
       <h3 className="h4 mb-2 ">
-       <Link href={`/authors/${slugify(author?.name)}`} className="block text-white hover:text-blue dark:text-darkmode-dark">
+       <Link href={`/authors/${slugify(author?.name)}`} className="block text-light hover:text-blue dark:text-darkmode-dark">
         {author?.name}
        </Link>
       </h3>
