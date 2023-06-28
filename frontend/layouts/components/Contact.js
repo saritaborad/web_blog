@@ -90,13 +90,12 @@ const Contact = () => {
           <span className="slider dark:bg-darkmode-button"></span>
          </label>
          <p>
-          I agree to the{" "}
+          I agree to the
           <Link href="/privacy-policy" className="border-b">
            privacy agreement
-          </Link>{" "}
+          </Link>
          </p>
         </div>
-
         <button className="contact-btn text-light bg-button hover:bg-btn_hover dark:bg-darkmode-button dark:hover:bg-darkmode-btn_hover dark:text-light" type="submit">
          Send Request
         </button>

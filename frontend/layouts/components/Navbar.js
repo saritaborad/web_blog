@@ -23,18 +23,15 @@ const Navbar = () => {
  return (
   <div className="navbar sticky flex items-center shadow-md md:flex md:items-center md:justify-between md:w-full top-0 left-0 z-[2] dark:bg-light">
    <div className="cursor-pointer flex items-center">
-    {mounted && (
-     <Link href="/">
-      <img src={theme === "dark" ? `/images/logoLight.svg` : `${"http://127.0.0.1:1337" + themeInfo?.logoImg?.url || "/images/logo.svg"}`} className="xxs:w-3/5 md:w-full" />
-     </Link>
-    )}
+    <Link href="/" className="flex items-center">
+     {mounted && <img src={theme === "dark" ? `/images/athhlogo.svg` : `${"http://127.0.0.1:1337" + themeInfo?.logoImg?.url || "/images/athhlogo.svg"}`} className="" />}
+     &nbsp;&nbsp;&nbsp;<h4 className="text-light dark:text-darkmode-dark">Athh Tech</h4>
+    </Link>
    </div>
-
    <div className="flex text-3xl absolute right-4 cursor-pointer md:hidden">
     <ThemeSwitcher className="text-xl" />
     <ion-icon onClick={() => setOpen(!open)} name={open ? "close-outline" : "menu-outline"}></ion-icon>
    </div>
-
    <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[2] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? "nav-open mt-0 dark:bg-darkmode-light " : "top-[-490px] bg-transparent"} `}>
     {Links.map((link) => (
      <li key={link.name} className={`${link.name === "Categories" ? "xxs:block md:hidden md:ml-8 text-xl md:my-0 my-7 " : "md:ml-8 text-xl md:my-0 my-7 "}`}>

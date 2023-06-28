@@ -4,7 +4,6 @@ import React, { useState } from "react";
 const Category = ({ categories }) => {
  const [activeButton, setActiveButton] = useState(null);
  const router = useRouter();
-
  const handleButtonClick = (buttonId, name) => {
   setActiveButton(buttonId);
   router.push(`/categories/${name.replace(" ", "-")}`);

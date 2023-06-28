@@ -1,13 +1,13 @@
 {
  "site": {
-  "title": "Athh Technology",
+  "title": "Athh Tech",
   "base_url": "/",
   "favicon": "/images/favicon.ico",
-  "logo": "Athh Technology",
+  "logo": "Athh Tech",
   "logo_white": "",
   "logo_width": "150",
   "logo_height": "39",
-  "logo_text": "Athh Technology"
+  "logo_text": "Athh Tech"
  },
  "settings": {
   "theme_switcher": true,
@@ -28,7 +28,7 @@
  "metadata": {
   "meta_author": "Bharat",
   "meta_image": "/images/og-image.png",
-  "meta_description": "Athh Technology"
+  "meta_description": "Athh Tech"
  },
  "widgets": {
   "about": {

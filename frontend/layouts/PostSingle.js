@@ -43,7 +43,7 @@ const PostSingle = ({ post, slug, posts, allCategories, relatedPosts }) => {
         <FaUserAlt className="mr-1.5 " />
         {authors &&
          authors.map((item, i) => (
-          <Link href={`/authors/${slugify(item.name)}`} key={`author-${i}`}>
+          <Link href={`/authors/${slugify(item.name)}`} key={`author-${i}`} passHref={true}>
            {item.name}
           </Link>
          ))}

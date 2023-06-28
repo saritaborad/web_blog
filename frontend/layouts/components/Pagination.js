@@ -32,7 +32,6 @@ const Pagination = ({ section, currentPage, totalPages }) => {
        </>
       </span>
      )}
-
      {/* page index */}
      {pageList.map((pagination, i) => (
       <React.Fragment key={`page-${i}`}>
@@ -47,7 +46,6 @@ const Pagination = ({ section, currentPage, totalPages }) => {
        )}
       </React.Fragment>
      ))}
-
      {/* next page */}
      {hasNextPage ? (
       <Link href={`${section ? "/" + section : ""}/page/${currentPage + 1}`} className="ml-4 flex items-center rounded-full px-2 py-1 text-3xl font-bold leading-none text-white">

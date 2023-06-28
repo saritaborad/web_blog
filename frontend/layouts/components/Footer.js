@@ -11,7 +11,7 @@ const FooterNew = () => {
  const { theme } = useTheme();
  const mounted = useMounted();
 
- let social = { twitter: "https://www.twitter.com", facebook: "https://www.facebook.com", linkedin: "https://www.linkedin.com", instagram: "https://www.instagram.com" };
+ let social = { twitter: "https://twitter.com/Athh_Tech", facebook: "https://facebook.com/athhtech", linkedin: "https://in.linkedin.com/company/athh-technologies-llp", instagram: "https://www.instagram.com/athh_tech/?igshid=YmMyMTA2M2Y%3D" };
 
  const handleSubmit = async (e) => {
   e.preventDefault();
@@ -25,45 +25,48 @@ const FooterNew = () => {
  return (
   <div className="footer grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 ">
    <div className="footer-sec1 p-6 xs:px-0 xxs:px-0">
-    {mounted && (
-     <Link href="/">
-      <img src={theme === "dark" ? `/images/logoLight.svg` : `${"http://127.0.0.1:1337" + themeInfo?.logoImg?.url || "/images/logo.svg"}`} />
+    <div className="flex items-center">
+     <Link href="/" className="flex items-center">
+      {mounted && <img src={theme === "dark" ? `/images/athhlogo.svg` : `${"http://127.0.0.1:1337" + themeInfo?.logoImg?.url || "/images/athhlogo.svg"}`} />}
+      &nbsp;&nbsp;&nbsp;
+      <h4 className="text-light dark:text-darkmode-dark">Athh Tech</h4>
      </Link>
-    )}
-
+    </div>
     <div className="">
      <Social source={social} className="footer-social text-light dark:text-darkmode-dark pl-4" />
     </div>
-    <span className="footer-copy xs:hidden md:block text-dark pl-4">Copyright © Verselix LLP 2023</span>
+    <Link className="footer-copy xs:hidden md:block text-dark pl-4 cursor-pointer" href="https://athh.tech/">
+     Copyright © Athh Technologies LLP 2016
+    </Link>
    </div>
    <div className="footer-sec2 ">
-    <Link href="/about" className="f-sec2 text-light  dark:text-darkmode-dark">
+    <Link href="https://athh.tech/#/about" className="f-sec2 text-light  dark:text-darkmode-dark">
      About
     </Link>
-    <Link href="/" className="f-sec2 text-light  dark:text-darkmode-dark">
-     Services
+    <Link href="https://athh.tech/#/ourwork" className="f-sec2 text-light  dark:text-darkmode-dark">
+     Our Work
     </Link>
-    <Link href="/" className="f-sec2 text-light  dark:text-darkmode-dark">
-     Industries
+    <Link href="https://athh.tech/#/services" className="f-sec2 text-light  dark:text-darkmode-dark">
+     Services
     </Link>
    </div>
    <div className="footer-sec3">
-    <Link href="/" className="f-sec3 text-light  dark:text-darkmode-dark">
-     Portfolio
+    <Link href="https://athh.tech/#/contact" className="f-sec3 text-light  dark:text-darkmode-dark">
+     Contact
     </Link>
-    <Link href="/" className="f-sec3 text-light  dark:text-darkmode-dark">
-     Blogs
+    <Link href="https://athh.tech/#/servicesApp" className="f-sec3 text-light  dark:text-darkmode-dark">
+     App development
     </Link>
-    <Link href="/" className="f-sec3  text-light dark:text-darkmode-dark">
-     Career
+    <Link href="https://athh.tech/#/servicesBlock" className="f-sec3  text-light dark:text-darkmode-dark">
+     Blockchain
     </Link>
    </div>
    <div className="footer-sec4">
-    <Link href="/privacy-policy" className="f-sec4  text-light dark:text-darkmode-dark">
-     Privacy Policy
+    <Link href="https://athh.tech/#/servicesGame" className="f-sec4  text-light dark:text-darkmode-dark">
+     Game development
     </Link>
-    <Link href="/" className="f-sec4  text-light dark:text-darkmode-dark">
-     Terms & Conditions
+    <Link href="https://athh.tech/#/servicesUiUx" className="f-sec4  text-light dark:text-darkmode-dark">
+     UI / UX design
     </Link>
    </div>
    <div className="footer-sec5">
@@ -76,7 +79,9 @@ const FooterNew = () => {
      </button>
     </form>
    </div>
-   <span className="footer-copy sm:block xxs:py-6 md:hidden">Copyright © Verselix LLP 2023</span>
+   <Link className="footer-copy sm:block xxs:py-6 md:hidden cursor-pointer" href="https://athh.tech/">
+    Copyright © Athh Technologies LLP 2016
+   </Link>
   </div>
  );
 };
