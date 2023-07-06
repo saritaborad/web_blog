@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
 /**
  * theme service
  */
 
-const { createCoreService } = require('@strapi/strapi').factories;
+const { createCoreService } = require("@strapi/strapi").factories;
 
-module.exports = createCoreService('api::theme.theme');
+module.exports = createCoreService("api::theme.theme");

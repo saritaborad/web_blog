@@ -22,8 +22,8 @@ const Navbar = () => {
 
  return (
   <div className="navbar sticky flex items-center shadow-md md:flex md:items-center md:justify-between md:w-full top-0 left-0 z-[2] dark:bg-light">
-   <div className="cursor-pointer flex items-center">
-    <Link href="/" className="flex items-center">
+   <div className="flex items-center">
+    <Link href="/" className="flex items-center cursor-pointer">
      {mounted && <img src={theme === "dark" ? `/images/athhlogo.svg` : `${"http://127.0.0.1:1337" + themeInfo?.logoImg?.url || "/images/athhlogo.svg"}`} className="" />}
      &nbsp;&nbsp;&nbsp;<h4 className="text-light dark:text-darkmode-dark">Athh Tech</h4>
     </Link>
