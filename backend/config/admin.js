@@ -1,4 +1,5 @@
 module.exports = ({ env }) => ({
+  url: ("ADMIN_URL", "http://piks.in/strapi_admin"),
   auth: {
     secret: env("ADMIN_JWT_SECRET"),
   },

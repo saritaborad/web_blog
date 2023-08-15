@@ -1,0 +1,10 @@
+{
+  "host": "localhost",
+  "port": 1337,
+  "admin": {
+    "path": ".",
+    "build": {
+      "backend": "http://piks.in"
+    }
+  }
+}
